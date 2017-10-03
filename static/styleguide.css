@@ -1,0 +1,56 @@
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f5;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    color: black;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+      "sidebar main";
+}
+.sg-logo {
+  width: 100px;
+  padding-bottom: 10px;
+}
+
+.sg-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sg-sectionborder {
+  border: 1px #D9D9D9 solid;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.sg-border__item {
+  margin: 0;
+  height: 100px;
+  background-color: #f0f0f5;
+}
+
+.spa-page pre.prettyprint {
+  font-family: "Courier";
+  font-size: 12px;
+  background-color: #eff0f1;
+  padding: 10px;
+}

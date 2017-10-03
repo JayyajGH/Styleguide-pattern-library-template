@@ -1,0 +1,363 @@
+@charset "UTF-8";
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 37.5em) {
+    body {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 37.5em) {
+    body {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 56.25em) {
+    body {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 75em) {
+    body {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 100em) {
+    body {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+
+.small {
+  font-size: 0.64rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 37.5em) {
+    .small {
+      font-size: 0.64rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 37.5em) {
+    .small {
+      font-size: 0.64rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 56.25em) {
+    .small {
+      font-size: 0.563rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 75em) {
+    .small {
+      font-size: 0.444rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 100em) {
+    .small {
+      font-size: 0.444rem;
+      line-height: 1.5rem; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+�  v2.0b1 | 201101 
+�  NOTE: WORK IN PROGRESS
+�  USE WITH CAUTION AND TEST WITH ABANDON */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+﻿:root {
+  font-size: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+p,
+ul,
+ol,
+div {
+  margin-bottom: 1.5rem; }
+
+body {
+  font-family: Arial, 'Times New Roman', Times, serif;
+  background-color: white;
+  color: black; }
+
+.header1 {
+  font-size: 2.441rem;
+  line-height: 4.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold; }
+  @media (min-width: 37.5em) {
+    .header1 {
+      font-size: 2.441rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 37.5em) {
+    .header1 {
+      font-size: 2.441rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 56.25em) {
+    .header1 {
+      font-size: 3.157rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 75em) {
+    .header1 {
+      font-size: 5.063rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 100em) {
+    .header1 {
+      font-size: 5.063rem;
+      line-height: 4.5rem; } }
+
+.header2 {
+  font-size: 1.953rem;
+  line-height: 3rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 37.5em) {
+    .header2 {
+      font-size: 1.953rem;
+      line-height: 3rem; } }
+  @media (min-width: 37.5em) {
+    .header2 {
+      font-size: 1.953rem;
+      line-height: 3rem; } }
+  @media (min-width: 56.25em) {
+    .header2 {
+      font-size: 2.369rem;
+      line-height: 3rem; } }
+  @media (min-width: 75em) {
+    .header2 {
+      font-size: 3.375rem;
+      line-height: 3rem; } }
+  @media (min-width: 100em) {
+    .header2 {
+      font-size: 3.375rem;
+      line-height: 3rem; } }
+
+.header3 {
+  font-size: 1.563rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 37.5em) {
+    .header3 {
+      font-size: 1.563rem;
+      line-height: 3rem; } }
+  @media (min-width: 37.5em) {
+    .header3 {
+      font-size: 1.563rem;
+      line-height: 3rem; } }
+  @media (min-width: 56.25em) {
+    .header3 {
+      font-size: 1.777rem;
+      line-height: 3rem; } }
+  @media (min-width: 75em) {
+    .header3 {
+      font-size: 2.25rem;
+      line-height: 3rem; } }
+  @media (min-width: 100em) {
+    .header3 {
+      font-size: 2.25rem;
+      line-height: 3rem; } }
+
+.header4 {
+  font-size: 1.25rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 37.5em) {
+    .header4 {
+      font-size: 1.25rem;
+      line-height: 3rem; } }
+  @media (min-width: 37.5em) {
+    .header4 {
+      font-size: 1.25rem;
+      line-height: 3rem; } }
+  @media (min-width: 56.25em) {
+    .header4 {
+      font-size: 1.333rem;
+      line-height: 3rem; } }
+  @media (min-width: 75em) {
+    .header4 {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
+  @media (min-width: 100em) {
+    .header4 {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
+
+sup, sub {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  display: inline-block; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+﻿.u-block--center {
+  margin: 0 auto !important; }
+
+.u-align--left {
+  text-align: left !important; }
+
+.u-align--right {
+  text-align: right !important; }
+
+.u-align--center {
+  text-align: center !important; }
+
+.u-float--left {
+  float: left !important; }
+
+.u-float--right {
+  float: right !important; }
+
+.u-block {
+  display: block !important; }
+
+.u-inline {
+  display: inline !important; }
+
+.u-inline-block {
+  display: inline-block !important; }
+
+.u-text-lowercase {
+  text-transform: lowercase; }
+
+.u-text-uppercase {
+  text-transform: uppercase; }
+
+.u-text-capitalize {
+  text-transform: capitalize; }
+
+.u-hidden {
+  display: none;
+  visibility: hidden; }
+
+.u-hidden-visually {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.site-nav__item {
+  display: block;
+  background-color: grey;
+  border-bottom: 1px solid #888;
+  text-transform: uppercase; }
+  @media (min-width: 37.5em) {
+    .site-nav__item {
+      display: inline-block;
+      width: 100px; } }
+
+.site-nav__open {
+  float: right;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  text-decoration: none; }
+  @media (min-width: 37.5em) {
+    .site-nav__open {
+      display: none; } }
+
+.page-head--masthead {
+  background-image: url("/Media/headerimage2.jpg");
+  margin-bottom: 50px; }
+
+.wrapper {
+  height: 450px;
+  position: relative; }
+
+.mainheading {
+  font-size: 2.441rem;
+  line-height: 4.5rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: rgba(191, 191, 191, 0.8);
+  text-align: center; }
+  @media (min-width: 37.5em) {
+    .mainheading {
+      font-size: 2.441rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 37.5em) {
+    .mainheading {
+      font-size: 2.441rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 56.25em) {
+    .mainheading {
+      font-size: 3.157rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 75em) {
+    .mainheading {
+      font-size: 5.063rem;
+      line-height: 4.5rem; } }
+  @media (min-width: 100em) {
+    .mainheading {
+      font-size: 5.063rem;
+      line-height: 4.5rem; } }
+
+.dummyBPTest {
+  width: 100%; }
+  @media (min-width: 37.5em) {
+    .dummyBPTest {
+      width: 50%; } }
+  @media (min-width: 56.25em) {
+    .dummyBPTest {
+      width: 25%; } }

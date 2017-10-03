@@ -1,0 +1,9 @@
+@import 'abstracts/_abstracts';
+
+.sg-font--smallest {
+    @extend %bodysmallest;
+}
+
+.sg-font--small {
+    @extend %bodysmall;
+}

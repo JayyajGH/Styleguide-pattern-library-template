@@ -1,0 +1,164 @@
+@import 'abstracts/_abstracts';
+
+////
+/// @author Jason Harris
+////
+
+// Border styles
+// To maintain vertical rhythm any border width must be added to any element
+// padding to make up the baseline rhythm value.
+// This is dealt with here by setting the element padding to the baseline
+// rhythm and then taking away the border width
+// This applies to both top and bottom borders where present
+
+$_border-width--thin: .1875rem;
+$_border-width--medium: .3125rem;
+$_border-width--thick: .4375rem;
+
+$_border-radius--small: .1875rem;
+$_border-radius--medium: .3125rem;
+$_border-radius--large: .625rem;
+
+$_border-direction--top: 'top';
+$_border-direction--bottom: 'bottom';
+$_border-direction--left: 'left';
+$_border-direction--right: 'right';
+
+/// Set the border width whilst ensuring the vertical rhythm is correct.
+///
+/// This means adding some padding which, with the border, adds up to the baseline.
+/// For bottom borders this will be bottom padding to separate it from the content.
+/// For top borders this will be top padding.
+/// The padding between the content and the border will be slightly different
+/// depending on the width of the border.  An element with a thicker border will
+/// have slightly less padding than an element with a thiner border.
+/// This is the price you have to pay for keeping a consistent vertical rhythm.
+/// @param {number} $width - Width of required border
+/// @param {string} $side [''] - Side to add border to.  If omitted the border will be added to all sides
+/// @example scss
+///      _border-width($_border-width--thin);
+///      _border-width($_border-width--thin, $_border-direction--top);
+/// @output
+/// ``` css
+///  .border-width--thin {
+///     border-width: 3px;
+///     padding-top: 21px;
+///     padding-bottom: 21px;
+///  }
+///  .borderbottom-width--thin {
+///     border-bottom-width: 3px;
+///     padding-bottom: 21px;
+///  }
+///   ```
+/// @access private
+@mixin _border-width ($width, $side: '') {
+    $padding: $baseline - $width;
+
+    @if ($side == '') {
+        // Borders on all sides
+        border-width: $width;
+        padding-top: $padding;
+        padding-bottom: $padding;
+    } @else {
+        border-#{$side}-width: $width;
+        @if ($side == 'top' or $side == 'bottom') {
+            padding-#{$side}: $padding;
+        }
+    }
+}
+
+.border--solid {
+    border-style: solid;
+}
+
+.border--dashed {
+    border-style: dashed;
+}
+
+.border--dotted {
+    border-style: dotted;
+}
+
+.border-width--thin {
+    @include _border-width($_border-width--thin);
+}
+
+.border-width--medium {
+    @include _border-width($_border-width--medium);
+}
+
+.border-width--thick {
+    @include _border-width($_border-width--thick);
+}
+
+.bordertop-width--thin {
+    @include _border-width($_border-width--thin, $_border-direction--top);
+}
+
+.bordertop-width--medium {
+    @include _border-width($_border-width--medium, $_border-direction--top);
+}
+
+.bordertop-width--thick {
+    @include _border-width($_border-width--thick, $_border-direction--top);
+}
+
+.borderbottom-width--thin {
+    @include _border-width($_border-width--thin, $_border-direction--bottom);
+}
+
+.borderbottom-width--medium {
+    @include _border-width($_border-width--medium, $_border-direction--bottom);
+}
+
+.borderbottom-width--thick {
+    @include _border-width($_border-width--thick, $_border-direction--bottom);
+}
+
+.borderleft-width--thin {
+    @include _border-width($_border-width--thin, $_border-direction--left);
+}
+
+.borderleft-width--medium {
+    @include _border-width($_border-width--medium, $_border-direction--left);
+}
+
+.borderleft-width--thick {
+    @include _border-width($_border-width--thick, $_border-direction--left);
+}
+
+.borderright-width--thin {
+    @include _border-width($_border-width--thin, $_border-direction--right);
+}
+
+.borderright-width--medium {
+    @include _border-width($_border-width--medium, $_border-direction--right);
+}
+
+.borderright-width--thick {
+    @include _border-width($_border-width--thick, $_border-direction--right);
+}
+
+.border-color--black {
+    border-color: color('black');
+}
+
+.border-color--grey {
+    border-color: color('grey');
+}
+
+.border-radius--small {
+    border-radius: $_border-radius--small;
+}
+
+.border-radius--medium {
+    border-radius: $_border-radius--medium;
+}
+
+.border-radius--large {
+    border-radius: $_border-radius--large;
+}
+
+.border-radius--circle {
+    border-radius: 50%;
+}
