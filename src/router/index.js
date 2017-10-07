@@ -9,7 +9,7 @@ import Icons from '@/components/icons'
 import Utility from '@/components/utility'
 import Links from '@/components/links'
 import Buttons from '@/components/buttons'
-import Grid from '@/components/grid'
+import Layout from '@/components/layout'
 import Colours from '@/components/colours'
 import Borders from '@/components/borders'
 import Panels from '@/components/panels'
@@ -28,7 +28,7 @@ export default new Router({
     { path: '/utility', component: Utility },
     { path: '/links', component: Links },
     { path: '/buttons', component: Buttons },
-    { path: '/grid', component: Grid },
+    { path: '/layout', component: Layout },
     { path: '/colours', component: Colours },
     { path: '/borders', component: Borders },
     { path: '/panels', component: Panels },

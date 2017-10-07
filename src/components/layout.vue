@@ -1,0 +1,76 @@
+<template>
+  <div id="layout" class="spa-page">
+    <h1 class="header1">Layout</h1>
+
+    <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
+
+    <div class="sg-sectionborder">
+      <div class="sg-flex">
+        <div class="sg-layout">
+          <div class="border--solid border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+      <div class="sg-flex">
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+      <div class="sg-flex">
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+      <div class="sg-flex">
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+    <pre class="prettyprint">
+    <code>&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
+    &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
+    &lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'layout'
+}
+</script>
+
+<style scoped lang="scss">
+  @import 'static/sass/styleguide-layout.scss';
+</style>

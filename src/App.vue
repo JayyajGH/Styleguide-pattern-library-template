@@ -23,7 +23,7 @@
           <li class="sg-menu-section">
             <a href="" class="sg-menu-anchor sg-menu-anchor-parent">Pattern Library</a>
             <ul>
-                <li class="sg-menu-item"><router-link to="/grid" class="sg-menu-anchor">Grid</router-link></li>
+                <li class="sg-menu-item"><router-link to="/layout" class="sg-menu-anchor">Layout</router-link></li>
                 <li class="sg-menu-item"><router-link to="/buttons" class="sg-menu-anchor">Buttons</router-link></li>
                 <li class="sg-menu-item"><a href="" class="sg-menu-anchor">Header</a></li>
                 <li class="sg-menu-item"><router-link to="/panels" class="sg-menu-anchor">Panels</router-link></li>
