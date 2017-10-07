@@ -317,10 +317,6 @@ sub {
   background-image: url("/Media/headerimage2.jpg");
   margin-bottom: 50px; }
 
-.wrapper {
-  height: 450px;
-  position: relative; }
-
 .mainheading {
   font-size: 2.441rem;
   line-height: 4.5rem;

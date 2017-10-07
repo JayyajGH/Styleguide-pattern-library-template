@@ -25,3 +25,36 @@
   display: inline-block;
   padding-bottom: 10px;
 }
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f5;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    color: black;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+      "sidebar main";
+}
+
+.sg-logo {
+  width: 100px;
+  padding-bottom: 10px;
+}

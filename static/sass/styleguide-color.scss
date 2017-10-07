@@ -1,3 +1,4 @@
+@import 'abstracts/_abstracts';
 
 .sg-base-color {
   margin-bottom: 20px;
@@ -11,71 +12,89 @@
   display: flex;
   justify-content: center;
 }
+
 .palette {
   margin: 10px;
   width: 50px;
   flex: 0 0 120px;
 }
+
 .tone {
   text-align: center;
   list-style-type: none;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .black {
-  background-color: #000;
-  color: #FFF;
+  background-color: color('black');
+  color: color('white');
 }
+
 .white {
-  background-color: #FFF;
+  background-color: color('white');
   border: 1px grey solid;
 }
+
 .purple {
-  background-color: #60C;
-  color: #FFF;
+  background-color: color('purple','base');
+  color: color('white');
 }
+
 .purplelight {
-  background-color: #D9B3FF;
+  background-color: color('purple','light');
 }
+
 .purpledark {
-  background-color: #4D0099;
-  color: #FFF;
+  background-color: color('purple','dark');
+  color: color('white');
 }
+
 .grey {
-  background-color: #BFBFBF;
+  background-color: color('grey','base');
 }
+
 .greyxlight {
-  background-color: #F2F2F2;
+  background-color: color('grey','x-light');
 }
+
 .greylight {
-  background-color: #D9D9D9;
+  background-color: color('grey','light');
 }
+
 .greydark {
-  background-color: #8C8C8C;
-  color: #FFF;
+  background-color: color('grey','dark');
+  color: color('white');
 }
+
 .greydarker {
-  background-color: #666;
-  color: #FFF;
+  background-color: color('grey','darker');
+  color: color('white');
 }
+
 .green {
-  background-color: #0C4;
+  background-color: color('green','base');
 }
+
 .greenlight {
-  background-color: #9FB;
+  background-color: color('green','light');
 }
+
 .greendark {
-  background-color: #062;
-  color: #FFF;
+  background-color: color('green','dark');
+  color: color('white');
 }
+
 .blue {
-  background-color: #00F;
-  color: #FFF;
+  background-color: color('blue','base');
+  color: color('white');
 }
+
 .bluelight {
-  background-color: #D6D6FF;
+  background-color: color('blue','light');
 }
+
 .bluedark {
-  background-color: #4C4C7F;
-  color: #FFF;
+  background-color: color('blue','dark');
+  color: color('white');
 }
