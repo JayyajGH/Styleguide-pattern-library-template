@@ -4,21 +4,9 @@
 
     <style-wrapper header="Border styles" description="Define a border style with border--solid">
       <div slot="exampleSlot" class="sg-flex">
-        <span class="sg-border">
-          <div class="border--solid border-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Solid</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--dashed border-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Dashed</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--dotted border-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Dotted</p>
-          </div>
-        </span>
+        <border-example title="Solid" styling="border--solid border-width--medium border-color--black"></border-example>
+        <border-example title="Dashed" styling="border--dashed border-width--medium border-color--black"></border-example>
+        <border-example title="Dotted" styling="border--dotted border-width--medium border-color--black"></border-example>
       </div>
 
       <pre slot="codeSlot" class="prettyprint">
@@ -32,21 +20,9 @@
       <p>Define a border size with border-width--thin, border-width--medium or border-width--thick</p>
 
       <div class="sg-flex sg-sectionborder">
-        <span class="sg-border">
-          <div class="border--solid border-width--thin border-color--black sg-border__item">
-            <p class="sg-border-para">Thin</p>
-          </div>
-        </span>
-        <span  class="sg-border">
-          <div class="border--solid border-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Medium</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid border-width--thick border-color--black sg-border__item">
-            <p class="sg-border-para">Thick</p>
-          </div>
-        </span>
+        <border-example title="Thin" styling="border--solid border-width--thin border-color--black"></border-example>
+        <border-example title="Medium" styling="border--solid border-width--medium border-color--black"></border-example>
+        <border-example title="Thick" styling="border--solid border-width--thick border-color--black"></border-example>
       </div>
 
       <div>
@@ -63,69 +39,21 @@
         borderright-width--thin, borderright-width--medium, borderright-width--thick</p>
 
       <div class="sg-flex sg-sectionborder">
-        <span class="sg-border">
-          <div class="border--solid bordertop-width--thin border-color--black sg-border__item">
-            <p class="sg-border-para">Top thin</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid bordertop-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Top medium</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid bordertop-width--thick border-color--black sg-border__item">
-            <p class="sg-border-para">Top thick</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderbottom-width--thin border-color--black sg-border__item">
-            <p class="sg-border-para">Bottom thin</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderbottom-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Bottom medium</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderbottom-width--thick border-color--black sg-border__item">
-            <p class="sg-border-para">Bottom thick</p>
-          </div>
-        </span>
+        <border-example title="Top thin" styling="border--solid bordertop-width--thin border-color--black"></border-example>
+        <border-example title="Top medium" styling="border--solid bordertop-width--medium border-color--black"></border-example>
+        <border-example title="Top thick" styling="border--solid bordertop-width--thick border-color--black"></border-example>
+        <border-example title="Bottom thin" styling="border--solid borderbottom-width--thin border-color--black"></border-example>
+        <border-example title="Bottom medium" styling="border--solid borderbottom-width--medium border-color--black"></border-example>
+        <border-example title="Bottom thick" styling="border--solid borderbottom-width--thick border-color--black"></border-example>
       </div>
 
       <div class="sg-flex sg-sectionborder">
-        <span class="sg-border">
-          <div class="border--solid borderleft-width--thin border-color--black sg-border__item">
-            <p class="sg-border-para">Left thin</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderleft-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Left medium</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderleft-width--thick border-color--black sg-border__item">
-            <p class="sg-border-para">Left thick</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderright-width--thin border-color--black sg-border__item">
-            <p class="sg-border-para">Right thin</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderright-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Right medium</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid borderright-width--thick border-color--black sg-border__item">
-            <p class="sg-border-para">Right thick</p>
-          </div>
-        </span>
+        <border-example title="Left thin" styling="border--solid borderleft-width--thin border-color--black"></border-example>
+        <border-example title="Left medium" styling="border--solid borderleft-width--medium border-color--black"></border-example>
+        <border-example title="Left thick" styling="border--solid borderleft-width--thick border-color--black"></border-example>
+        <border-example title="Right thin" styling="border--solid borderright-width--thin border-color--black"></border-example>
+        <border-example title="Right medium" styling="border--solid borderright-width--medium border-color--black"></border-example>
+        <border-example title="Right thick" styling="border--solid borderright-width--thick border-color--black"></border-example>
       </div>
 
       <div>
@@ -148,16 +76,8 @@
       <p>Define a border colour with border-color--black or border-color--grey</p>
 
       <div class="sg-flex sg-sectionborder">
-        <span class="sg-border">
-          <div class="border--solid border-width--medium border-color--black sg-border__item">
-            <p class="sg-border-para">Black</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid border-width--medium border-color--grey sg-border__item">
-            <p class="sg-border-para">Grey</p>
-          </div>
-        </span>
+        <border-example title="Black" styling="border--solid border-width--medium border-color--black"></border-example>
+        <border-example title="Grey" styling="border--solid border-width--medium border-color--grey"></border-example>
       </div>
 
       <div>
@@ -171,26 +91,10 @@
       <p>Define a border radius with border-radius--small, border-radius--medium, border-radius--large, border-radius--circle</p>
 
       <div class="sg-flex sg-sectionborder">
-        <span class="sg-border">
-          <div class="border--solid border-width--thin border-color--black border-radius--small sg-border__item">
-            <p class="sg-border-para">Small border radius</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid border-width--thin border-color--black border-radius--medium sg-border__item">
-            <p class="sg-border-para">Medium border radius</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid border-width--thin border-color--black border-radius--large sg-border__item">
-            <p class="sg-border-para">Large border radius</p>
-          </div>
-        </span>
-        <span class="sg-border">
-          <div class="border--solid border-width--thin border-color--black border-radius--circle sg-border__item">
-            <p class="sg-border-para">Circle border radius</p>
-          </div>
-        </span>
+        <border-example title="Small border radius" styling="border--solid border-width--thin border-color--black border-radius--small"></border-example>
+        <border-example title="Medium border radius" styling="border--solid border-width--thin border-color--black border-radius--medium"></border-example>
+        <border-example title="Large border radius" styling="border--solid border-width--thin border-color--black border-radius--large"></border-example>
+        <border-example title="Circle border radius" styling="border--solid border-width--thin border-color--black border-radius--circle"></border-example>
       </div>
 
       <div>
@@ -205,10 +109,11 @@
 
 <script>
   import StyleWrapper from '@/components/stylewrapper'
+  import BorderExample from '@/components/borderexample'
 
   export default {
     name: 'borders',
-    components: { StyleWrapper }
+    components: { StyleWrapper, BorderExample }
   }
 </script>
 

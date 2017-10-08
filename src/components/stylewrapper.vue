@@ -18,7 +18,6 @@ export default {
     },
     description: String
   }
-
 }
 </script>
 
