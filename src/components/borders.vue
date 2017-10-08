@@ -2,33 +2,31 @@
   <div id="borders" class="spa-page">
     <h1 class="header1">Borders</h1>
 
-    <h2 class="header2">Border styles</h2>
-    <p>Define a border style with border--solid</p>
-
-    <div class="sg-flex sg-sectionborder">
-      <span class="sg-border">
-        <div class="border--solid border-width--medium border-color--black sg-border__item">
-          <p class="sg-border-para">Solid</p>
-        </div>
-      </span>
-      <span class="sg-border">
-        <div class="border--dashed border-width--medium border-color--black sg-border__item">
-          <p class="sg-border-para">Dashed</p>
-        </div>
-      </span>
-      <span class="sg-border">
-        <div class="border--dotted border-width--medium border-color--black sg-border__item">
-          <p class="sg-border-para">Dotted</p>
-        </div>
-      </span>
-    </div>
-
-      <div>
-        <pre class="prettyprint">
-  <code>&lt;div class="border--solid border-width--medium border-color--black"&gt;Solid&lt;/div&gt;
-  &lt;div class="border--dashed border-width--medium border-color--black"&gt;Dashed&lt;/div&gt;
-  &lt;div class="border--dotted border-width--medium border-color--black"&gt;Dotted&lt;/div&gt;</code></pre>
+    <style-wrapper header="Border styles" description="Define a border style with border--solid">
+      <div slot="exampleSlot" class="sg-flex">
+        <span class="sg-border">
+          <div class="border--solid border-width--medium border-color--black sg-border__item">
+            <p class="sg-border-para">Solid</p>
+          </div>
+        </span>
+        <span class="sg-border">
+          <div class="border--dashed border-width--medium border-color--black sg-border__item">
+            <p class="sg-border-para">Dashed</p>
+          </div>
+        </span>
+        <span class="sg-border">
+          <div class="border--dotted border-width--medium border-color--black sg-border__item">
+            <p class="sg-border-para">Dotted</p>
+          </div>
+        </span>
       </div>
+
+      <pre slot="codeSlot" class="prettyprint">
+<code>&lt;div class="border--solid border-width--medium border-color--black"&gt;Solid&lt;/div&gt;
+&lt;div class="border--dashed border-width--medium border-color--black"&gt;Dashed&lt;/div&gt;
+&lt;div class="border--dotted border-width--medium border-color--black"&gt;Dotted&lt;/div&gt;</code></pre>
+
+    </style-wrapper>
 
       <h2 class="header2">Uniform border sizes</h2>
       <p>Define a border size with border-width--thin, border-width--medium or border-width--thick</p>
@@ -206,9 +204,12 @@
 </template>
 
 <script>
-export default {
-  name: 'borders'
-}
+  import StyleWrapper from '@/components/stylewrapper'
+
+  export default {
+    name: 'borders',
+    components: { StyleWrapper }
+  }
 </script>
 
 <style scoped lang="scss">
