@@ -1,8 +1,8 @@
 <template>
   <span class="sg-border">
-    <div :class="[styling, 'sg-border__item']">
+    <span :class="[styling, 'sg-border__item']">
       <p class="sg-border-para">{{title}}</p>
-    </div>
+    </span>
   </span>
 </template>
 
