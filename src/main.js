@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from './router'
+import VueHighlightJS from 'vue-highlightjs'
+
+Vue.use(VueHighlightJS)
 
 // 3. Create the router instance and pass the `routes` option
 // You can pass in additional options here, but let's

@@ -9,8 +9,8 @@
         <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;p class="fontfamily"&gt;...&lt;/p&gt;</code></pre>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;p class="fontfamily"&gt;...&lt;/p&gt;</code></pre>
     </style-wrapper>
 
     <style-wrapper header="Font sizes" description="The font scale contains 7 different font sizes.">
@@ -23,8 +23,8 @@
         <p class="sg-font--small">Pack my box with five dozen liquor jugs</p>
         <p class="sg-font--smallest">Pack my box with five dozen liquor jugs</p>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;p class="header1"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborde">
+<code class="html">&lt;p class="header1"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
 &lt;p class="header2"&gt;Pack my box with five dozen liquor jugs.&lt;/p&gt;
 &lt;p class="header3"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
 &lt;p class="header4"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
@@ -45,8 +45,8 @@
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;
 &lt;p class="u-text-uppercase"&gt;Uppercase text&lt;/p&gt;
 &lt;p class="u-text-capitalize"&gt;Capitalized text&lt;/p&gt;</code></pre>
     </style-wrapper>

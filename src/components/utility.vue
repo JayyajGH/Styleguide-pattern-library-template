@@ -10,8 +10,8 @@
           <p class="u-align--right">Right aligned text</p>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;
 &lt;p class="u-align--center"&gt;Center aligned text&lt;/p&gt;
 &lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;</code></pre>
     </style-wrapper>
@@ -22,8 +22,8 @@
           <div class="sg-utility-block u-block--center"></div>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;div class="u-block--center"&gt;...&lt;/div&gt;</code></pre>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;div class="u-block--center"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
     <style-wrapper header="Float elements" description="The following classes are used to float elements.">
@@ -35,8 +35,8 @@
           <div style="clear: both;"></div>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;div class="u-float--left"&gt;...&lt;/div&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;div class="u-float--left"&gt;...&lt;/div&gt;
 &lt;div class="u-float--right"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
@@ -48,8 +48,8 @@
           <p class="sg-utility-block u-inline-block"></p>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;div class="u-block"&gt;...&lt;/div&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
 &lt;div class="u-inline"&gt;...&lt;/div&gt;
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
@@ -62,8 +62,8 @@
           <p class="u-text-capitalize">Capitalized text</p>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;div class="u-block"&gt;...&lt;/div&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
 &lt;div class="u-inline"&gt;...&lt;/div&gt;
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
@@ -75,34 +75,10 @@
           <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
         </div>
       </div>
-      <pre slot="codeSlot" class="prettyprint">
-<code>&lt;div class="u-hidden"&gt;...&lt;/div&gt;
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;div class="u-hidden"&gt;...&lt;/div&gt;
 &lt;div class="u-hidden-visually"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
-
-<!--
-// Hiding content
-
-// NB: This will not be available to screenreaders.  Some screenreaders will ignore display: none
-.u-hidden {
-    display: none;
-    visibility: hidden;
-}
-
-// NB: This will be hidden from view but still be available to screenreaders
-// http://webaim.org/techniques/css/invisiblecontent/
-.u-hidden-visually {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-
--->
-
 
   </div>
 </template>

@@ -4,7 +4,7 @@
 
     <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
 
-    <div class="sg-sectionborder">
+    <div class="sg-sectionborder sg-bottompadding--large">
       <div class="sg-flex">
         <div class="sg-layout">
           <div class="border--solid border-width--medium border-color--black sg-layout__item">
@@ -56,10 +56,10 @@
     </div>
 
     <div>
-    <pre class="prettyprint">
-    <code>&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
-    &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
-    &lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
+    <pre v-highlightjs class="sg-sectionborder">
+<code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
+&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
+&lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
     </div>
 
   </div>
