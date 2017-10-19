@@ -103,5 +103,4 @@
 
 <style scoped lang="scss">
   @import 'static/sass/borders.scss';
-  @import 'static/sass/styleguide-borders.scss';
 </style>
