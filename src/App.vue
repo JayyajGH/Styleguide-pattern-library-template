@@ -8,7 +8,7 @@
 
       <ul>
         <li class="sg-menu-section">
-            <a href="" class="sg-menu-anchor sg-menu-anchor-parent">Brand</a>
+            <router-link to="/brand" class="sg-menu-anchor sg-menu-anchor-parent">Brand</router-link>
             <ul>
                 <li class="sg-menu-item"><router-link to="/logo" class="sg-menu-anchor">Logo</router-link></li>
                 <li class="sg-menu-item"><router-link to="/colours" class="sg-menu-anchor">Colours</router-link></li>
@@ -21,7 +21,7 @@
             </ul>
           </li>
           <li class="sg-menu-section">
-            <a href="" class="sg-menu-anchor sg-menu-anchor-parent">Pattern Library</a>
+            <router-link to="/patternlibrary" class="sg-menu-anchor sg-menu-anchor-parent">Pattern Library</router-link>
             <ul>
                 <li class="sg-menu-item"><router-link to="/layout" class="sg-menu-anchor">Layout</router-link></li>
                 <li class="sg-menu-item"><router-link to="/buttons" class="sg-menu-anchor">Buttons</router-link></li>
