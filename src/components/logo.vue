@@ -3,6 +3,8 @@
     <h1 class="header1">Logo</h1>
     <p>Add an example logo with colour options and any guard space around it.  Grab idea from EIS brand guidelines and twitter guidelines.</p>
 
+    <p>Lockup?</p>
+
     <h2 class="header2">General guidelines</h2>
     <ul>
       <li>Only show logo in blue</li>
