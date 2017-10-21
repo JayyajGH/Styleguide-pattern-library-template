@@ -89,9 +89,11 @@
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   @import 'static/sass/borders.scss';
+</style>
 
+<style scoped lang="scss">
   .sg-utility-block {
     width: 100px;
     height: 100px;
@@ -102,5 +104,4 @@
   .sg-utility-block--wide {
     width: 300px;
   }
-
 </style>

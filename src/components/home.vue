@@ -4,7 +4,7 @@
     <p>Describe what the styleguide is all about</p>
 
     Say where each item should be used.
-    
+
   </div>
 </template>
 
@@ -15,5 +15,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

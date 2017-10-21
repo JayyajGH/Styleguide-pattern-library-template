@@ -15,9 +15,11 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   @import 'static/sass/borders.scss';
+</style>
 
+<style scoped lang="scss">
   .sg-border__item {
     width: 100px;
   }

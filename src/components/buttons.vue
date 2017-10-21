@@ -94,6 +94,9 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   @import 'static/sass/buttons.scss';
+</style>
+
+<style scoped lang="scss">
 </style>
