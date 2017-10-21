@@ -10,6 +10,14 @@
   margin-bottom: 0;
 }
 
-.sg-bottompadding--large {
+.sg-paddingleft--medium {
+  padding-left: 10px;
+}
+
+.sg-paddingright--medium {
+  padding-right: 10px;
+}
+
+.sg-padding--large {
   padding: 20px;
 }

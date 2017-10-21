@@ -2,7 +2,7 @@
   <div>
     <h2 class="header2">{{header}}</h2>
     <p>{{description}}</p>
-    <div class="sg-sectionborder sg-bottompadding--large">
+    <div class="sg-sectionborder sg-padding--large">
       <slot name="exampleSlot"></slot>
     </div>
     <slot name="codeSlot"></slot>

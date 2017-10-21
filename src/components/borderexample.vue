@@ -1,6 +1,6 @@
 <template>
   <span class="sg-border__item">
-    <span :class="[styling, 'sg-border__contents u-inline-block']">
+    <span :class="[styling, 'sg-border__contents sg-paddingleft--medium sg-paddingright--medium u-inline-block']">
       <p class="u-align--center">{{title}}</p>
     </span>
   </span>
@@ -26,7 +26,5 @@ export default {
     height: 100px;
     width: 100%;
     background-color: color('grey','x-light');
-    padding-left: 10px;
-    padding-right: 10px;
   }
 </style>

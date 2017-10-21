@@ -4,7 +4,7 @@
 
     <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
 
-    <div class="sg-sectionborder sg-bottompadding--large">
+    <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex">
         <div class="sg-layout">
           <div class="border--solid border-width--medium border-color--black sg-layout__item">
