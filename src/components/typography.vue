@@ -63,5 +63,13 @@
 </script>
 
 <style scoped lang="scss">
-  @import 'static/sass/styleguide-typography.scss';
+  @import 'static/sass/abstracts/_abstracts';
+
+  .sg-font--smallest {
+      @extend %bodysmallest;
+  }
+
+  .sg-font--small {
+      @extend %bodysmall;
+  }
 </style>

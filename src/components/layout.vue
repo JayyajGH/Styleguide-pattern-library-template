@@ -72,5 +72,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import 'static/sass/styleguide-layout.scss';
+  .sg-layout {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .sg-layout__item {
+    margin: 0;
+    height: 40px;
+    background-color: #f0f0f5;
+  }
 </style>
