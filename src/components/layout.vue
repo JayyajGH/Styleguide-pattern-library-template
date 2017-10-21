@@ -4,6 +4,13 @@
 
     <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
 
+    <p>Most elements will already have the correct spacing added to them.</p>
+
+    <p>Talk about using css grid for layout.  And mention support. </p>
+
+    Maybe some ideas from:
+    https://marvelapp.com/styleguide/design/layout
+
     <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex">
         <div class="sg-layout">
