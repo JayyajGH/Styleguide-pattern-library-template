@@ -243,7 +243,7 @@ sup {
 sub {
   bottom: -.25em; }
 
-﻿.u-block--center {
+.u-block--center {
   margin: 0 auto !important; }
 
 .u-align--left {
@@ -287,8 +287,8 @@ sub {
   position: absolute;
   left: -10000px;
   top: auto;
-  width: 1px;
-  height: 1px;
+  width: 1px !important;
+  height: 1px !important;
   overflow: hidden; }
 
 .site-nav__item {
@@ -316,6 +316,10 @@ sub {
 .page-head--masthead {
   background-image: url("/Media/headerimage2.jpg");
   margin-bottom: 50px; }
+
+.wrapper {
+  height: 450px;
+  position: relative; }
 
 .mainheading {
   font-size: 2.441rem;
