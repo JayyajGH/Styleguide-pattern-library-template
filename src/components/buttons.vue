@@ -96,5 +96,4 @@ export default {
 
 <style scoped lang="scss">
   @import 'static/sass/buttons.scss';
-  @import 'static/sass/styleguide-buttons.scss';
 </style>
