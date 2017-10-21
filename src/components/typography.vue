@@ -33,8 +33,15 @@
 &lt;p class="xyz"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;</code></pre>
     </style-wrapper>
 
-    <h2 class="header2">Font weight</h2>
-    <p>There are x font weights available to use.</p>
+    <style-wrapper header="Font weight" description="There are x font weights available to use.">
+      <div slot="exampleSlot" class="button--group">
+        <p class="">Normal weight text</p>
+        <p class="sg-font--bold">Bold weight text</p>
+      </div>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;p&gt;Normal weight text&lt;/p&gt;
+&lt;p class="xyz"&gt;Bold weight text&lt;/p&gt;</code></pre>
+    </style-wrapper>
 
     <h2 class="header2">Type tags</h2>
     <p>Text can be set in a number of different html tags — &lt;p&gt;, &lt;small&gt;, &lt;strong&gt;, &lt;time&gt;, etc. Each tag communicates a different semantic meaning but tags don't carry any aesthetic value.</p>
@@ -71,5 +78,9 @@
 
   .sg-font--small {
       @extend %bodysmall;
+  }
+
+  .sg-font--bold {
+      @extend %bodybold;
   }
 </style>
