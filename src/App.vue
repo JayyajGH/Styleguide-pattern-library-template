@@ -1,41 +1,41 @@
 <template>
   <main id="app" class="wrapper">
 
-    <nav class="sidebar">
+    <nav class="sidebar sg-padding--large">
       <a href="/" class="logo">
         <img src="/static/logo.png" class="sg-logo"/>
       </a>
 
       <ul>
-        <li class="sg-menu-section">
-            <router-link to="/brand" class="sg-menu-anchor sg-menu-anchor-parent">Brand</router-link>
+        <li class="sg-menu-section sg-paddingleft--small">
+            <router-link to="/brand" class="sg-menu-anchor sg-menu-anchor-parent u-inline-block">Brand</router-link>
             <ul>
-                <li class="sg-menu-item"><router-link to="/logo" class="sg-menu-anchor">Logo</router-link></li>
-                <li class="sg-menu-item"><router-link to="/colours" class="sg-menu-anchor">Colours</router-link></li>
-                <li class="sg-menu-item"><router-link to="/typography" class="sg-menu-anchor">Typography</router-link></li>
-                <li class="sg-menu-item"><router-link to="/language" class="sg-menu-anchor">Language</router-link></li>
-                <li class="sg-menu-item"><router-link to="/icons" class="sg-menu-anchor">Icons</router-link></li>
-                <li class="sg-menu-item"><router-link to="/utility" class="sg-menu-anchor">Utility Classes</router-link></li>
-                <li class="sg-menu-item"><router-link to="/borders" class="sg-menu-anchor">Borders</router-link></li>
-                <li class="sg-menu-item"><router-link to="/links" class="sg-menu-anchor">Links</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/logo" class="sg-menu-anchor">Logo</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/colours" class="sg-menu-anchor">Colours</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/typography" class="sg-menu-anchor">Typography</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/language" class="sg-menu-anchor">Language</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/icons" class="sg-menu-anchor">Icons</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/utility" class="sg-menu-anchor">Utility Classes</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/borders" class="sg-menu-anchor">Borders</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/links" class="sg-menu-anchor">Links</router-link></li>
             </ul>
           </li>
-          <li class="sg-menu-section">
-            <router-link to="/patternlibrary" class="sg-menu-anchor sg-menu-anchor-parent">Pattern Library</router-link>
+          <li class="sg-menu-section sg-paddingleft--small">
+            <router-link to="/patternlibrary" class="sg-menu-anchor sg-menu-anchor-parent u-inline-block">Pattern Library</router-link>
             <ul>
-                <li class="sg-menu-item"><router-link to="/layout" class="sg-menu-anchor">Layout</router-link></li>
-                <li class="sg-menu-item"><router-link to="/buttons" class="sg-menu-anchor">Buttons</router-link></li>
-                <li class="sg-menu-item"><a href="" class="sg-menu-anchor">Header</a></li>
-                <li class="sg-menu-item"><router-link to="/panels" class="sg-menu-anchor">Panels</router-link></li>
-                <li class="sg-menu-item"><router-link to="/navigation" class="sg-menu-anchor">Navigation</router-link></li>
-                <li class="sg-menu-item"><router-link to="/forms" class="sg-menu-anchor">Forms</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/layout" class="sg-menu-anchor">Layout</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/buttons" class="sg-menu-anchor">Buttons</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><a href="" class="sg-menu-anchor">Header</a></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/panels" class="sg-menu-anchor">Panels</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/navigation" class="sg-menu-anchor">Navigation</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/forms" class="sg-menu-anchor">Forms</router-link></li>
             </ul>
           </li>
-          <li class="sg-menu-section">
-            <a href="" class="sg-menu-anchor sg-menu-anchor-parent">Examples</a>
+          <li class="sg-menu-section sg-paddingleft--small">
+            <a href="" class="sg-menu-anchor sg-menu-anchor-parent u-inline-block">Examples</a>
             <ul>
-              <li class="sg-menu-item"><a href="#/page1" class="sg-menu-anchor">Page 1</a></li>
-              <li class="sg-menu-item"><a href="#/page2" class="sg-menu-anchor">Page 2</a></li>
+              <li class="sg-menu-item sg-paddingleft--large"><a href="#/page1" class="sg-menu-anchor">Page 1</a></li>
+              <li class="sg-menu-item sg-paddingleft--large"><a href="#/page2" class="sg-menu-anchor">Page 2</a></li>
             </ul>
           </li>
       </ul>
