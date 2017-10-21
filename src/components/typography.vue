@@ -43,8 +43,24 @@
 &lt;p class="xyz"&gt;Bold weight text&lt;/p&gt;</code></pre>
     </style-wrapper>
 
-    <h2 class="header2">Type tags</h2>
-    <p>Text can be set in a number of different html tags — &lt;p&gt;, &lt;small&gt;, &lt;strong&gt;, &lt;time&gt;, etc. Each tag communicates a different semantic meaning but tags don't carry any aesthetic value.</p>
+    <style-wrapper header="Type tags" description="Text can be set in a number of different semantic html tags. Each tag communicates a different semantic meaning but tags don't carry any aesthetic value.">
+      <div slot="exampleSlot" class="button--group">
+        <p>Paragraph tag</p>
+        <p><small>Small tag</small></p>
+        <p><strong>Strong tag</strong></p>
+        <p><b>Bold tag</b></p>
+        <p><i>Italic tag</i></p>
+        <p><em>Emphasis tag</em></p>
+      </div>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+<code class="html">&lt;p&gt;Paragraph tag&lt;/p&gt;
+&lt;small&gt;Small tag&lt;/small&gt;
+&lt;strong&gt;Strong tag&lt;/strong&gt;
+&lt;b&gt;Bold tag&lt;/b&gt;
+&lt;i&gt;Italic tag&lt;/i&gt;
+&lt;em&gt;Emphasis tag&lt;/em&gt;</code></pre>
+    </style-wrapper>
+
 
     <style-wrapper header="Transformation classes" description="Transform text with text transformation classes">
       <div slot="exampleSlot" class="button--group">
