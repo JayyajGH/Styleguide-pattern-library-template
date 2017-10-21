@@ -33,5 +33,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import 'static/sass/styleguide-logo.scss';
+  .logo-border-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black;
+
+    width: 300px;
+    height: 300px;
+  }
+
+  .logo-border {
+    display: inline-block;
+    border: 1px dotted black;
+  }
+
+  .sg-logo-space {
+    width: 200px;
+  }
 </style>
