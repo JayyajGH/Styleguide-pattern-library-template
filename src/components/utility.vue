@@ -66,7 +66,7 @@
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
-    <style-wrapper header="Hiding content" description="The following classes are used to hide content.">
+    <style-wrapper header="Hiding content" description="The following classes are used to hide content.  A visually hidden element is useful for screen-readers where an element is required for accessibility reasons but not desirable to be displayed on the screen.">
       <div slot="exampleSlot">
         <p>Following this line is a hidden element</p>
         <div class="sg-utility-block u-hidden">This is a hidden element</div>
