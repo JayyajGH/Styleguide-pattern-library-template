@@ -8,11 +8,12 @@
       <li>Only show logo in blue</li>
       <li>Don't alter, rotate or modify the logo</li>
       <li>Follow the clear space guidance</li>
+      <li>The logo should always be a minimum size of ...</li>
     </ul>
 
     <h2 class="header2">Spacing guidelines</h2>
     <ul>
-    <li>Empty space around logo should be at least 150% of the width of the logo.</li>
+    <li>Empty space around logo should be at least 150% of the width of the logo. Or maybe take a letter from the logo and use that.</li>
     <li>Do not make the logo smaller than 16px wide.</li>
     </ul>
 
@@ -23,6 +24,8 @@
         <img src="/static/logo.png" class="sg-logo-space"/>
       </span>
     </span>
+
+    <h2 class="header2">Logo dont's</h2>
   </div>
 </template>
 
