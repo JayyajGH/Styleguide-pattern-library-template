@@ -3,12 +3,10 @@
     <h1 class="header1">Utility Classes</h1>
 
     <style-wrapper header="Inline content alignment" description="The following classes are used to align inline content">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <p class="u-align--left">Left aligned text</p>
-          <p class="u-align--center">Center aligned text</p>
-          <p class="u-align--right">Right aligned text</p>
-        </div>
+      <div slot="exampleSlot">
+        <p class="u-align--left">Left aligned text</p>
+        <p class="u-align--center">Center aligned text</p>
+        <p class="u-align--right">Right aligned text</p>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
 <code class="html">&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;
@@ -16,24 +14,20 @@
 &lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;</code></pre>
     </style-wrapper>
 
-    <style-wrapper header="Block element alignment" description="The following classes are used to align block elements">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <div class="sg-utility-block u-block--center"></div>
-        </div>
+    <style-wrapper header="Block element alignment" description="The following class is used to align block elements">
+      <div slot="exampleSlot">
+        <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
 <code class="html">&lt;div class="u-block--center"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
     <style-wrapper header="Float elements" description="The following classes are used to float elements.">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <div class="sg-utility-block u-float--left"></div>
-          <div class="sg-utility-block u-float--right"></div>
-          <!-- Hack to stop parent collapsing -->
-          <div style="clear: both;"></div>
-        </div>
+      <div slot="exampleSlot">
+        <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--left"></div>
+        <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--right"></div>
+        <!-- Hack to stop parent collapsing -->
+        <div style="clear: both;"></div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
 <code class="html">&lt;div class="u-float--left"&gt;...&lt;/div&gt;
@@ -41,11 +35,17 @@
     </style-wrapper>
 
     <style-wrapper header="Display settings" description="The following classes are used to change the display property.">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <p class="sg-utility-block u-block"></p>
-                    <p class="sg-utility-block u-block"></p>
-          <p class="sg-utility-block u-inline-block"></p>
+      <div slot="exampleSlot">
+        <div>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block">Inline element displayed as block element</span>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block">Inline element displayed as block element</span>
+        </div>
+        <div>
+          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline">Block element displayed as inline element</p>
+          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline">Block element displayed as inline element</p>
+        </div>
+        <div>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-inline-block">Inline element displayed as inline-block element</span>
         </div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
@@ -55,12 +55,10 @@
     </style-wrapper>
 
     <style-wrapper header="Text transforms" description="The following classes are used to transform text.">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <p class="u-text-lowercase">Lowercase text</p>
-          <p class="u-text-uppercase">Uppercase text</p>
-          <p class="u-text-capitalize">Capitalized text</p>
-        </div>
+      <div slot="exampleSlot">
+        <p class="u-text-lowercase">Lowercase text</p>
+        <p class="u-text-uppercase">Uppercase text</p>
+        <p class="u-text-capitalize">Capitalized text</p>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
 <code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
@@ -69,11 +67,11 @@
     </style-wrapper>
 
     <style-wrapper header="Hiding content" description="The following classes are used to hide content.">
-      <div slot="exampleSlot" class="">
-        <div class="sg-utility-box">
-          <div class="sg-utility-block u-hidden">This is a hidden element</div>
-          <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
-        </div>
+      <div slot="exampleSlot">
+        <p>Following this line is a hidden element</p>
+        <div class="sg-utility-block u-hidden">This is a hidden element</div>
+        <p>Following this line is a visually hidden element</p>
+        <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
 <code class="html">&lt;div class="u-hidden"&gt;...&lt;/div&gt;
@@ -92,5 +90,17 @@
 </script>
 
 <style scoped lang="scss">
-  @import 'static/sass/styleguide-utility.scss';
+  @import 'static/sass/borders.scss';
+
+  .sg-utility-block {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: color('grey','x-light');
+  }
+
+  .sg-utility-block--wide {
+    width: 300px;
+  }
+
 </style>
