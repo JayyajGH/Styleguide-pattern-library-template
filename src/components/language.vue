@@ -1,6 +1,7 @@
 <template>
   <div id="language" class="spa-page">
-    <h1 class="header1">Language</h1>
+    <heading title="Language"></heading>
+
     <p>Refer to this guide when crafting language for "company".</p>
     <h2 class="header2">Brand</h2>
     <p>Our mission is to..  We do this by...</p>
@@ -16,9 +17,11 @@
 </template>
 
 <script>
-export default {
-  name: 'language'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style scoped>

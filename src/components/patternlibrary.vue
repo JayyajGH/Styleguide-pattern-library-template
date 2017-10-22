@@ -1,13 +1,17 @@
 <template>
   <div id="forms" class="spa-page">
-    <h1 class="header1">Pattern Library</h1>
+
+    <heading title="Pattern Library" :isMainHeading=true></heading>
 
   </div>
 </template>
 
 <script>
-export default {
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style>

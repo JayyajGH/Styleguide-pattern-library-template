@@ -1,6 +1,6 @@
 <template>
   <div id="links" class="spa-page">
-    <h1 class="header1">Links</h1>
+    <heading title="Links"></heading>
 
     <style-wrapper header="Link styles" description="Define a link style with link--regular, link--subtle, link--dark or link--phone">
       <div slot="exampleSlot" class="sg-flex">
@@ -31,9 +31,10 @@
 
 <script>
   import StyleWrapper from '@/components/stylewrapper'
+  import Heading from '@/components/heading'
 
   export default {
-    components: { StyleWrapper }
+    components: { StyleWrapper, Heading }
   }
 </script>
 

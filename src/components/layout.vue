@@ -1,6 +1,6 @@
 <template>
   <div id="layout" class="spa-page">
-    <h1 class="header1">Layout</h1>
+    <heading title="Layout"></heading>
 
     <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
 
@@ -73,9 +73,11 @@
 </template>
 
 <script>
-export default {
-  name: 'layout'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style scoped lang="scss">

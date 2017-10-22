@@ -1,6 +1,6 @@
 <template>
   <div id="buttons" class="spa-page">
-    <h1 class="header1">Buttons</h1>
+    <heading title="Buttons"></heading>
 
     <p>These styles will work on the button element, an input element with a type of button and an anchor styled as a button</p>
 
@@ -89,9 +89,11 @@
 </template>
 
 <script>
-export default {
-  name: 'buttons'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style lang="scss">

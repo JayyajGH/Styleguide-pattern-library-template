@@ -1,6 +1,6 @@
 <template>
   <div id="colours" class="spa-page">
-    <h1 class="header1">Colours</h1>
+    <heading title="Colours"></heading>
 
     <div class="color-palette">
       <ul class="palette">
@@ -84,9 +84,11 @@
 </template>
 
 <script>
-export default {
-  name: 'colours'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style scoped lang="scss">

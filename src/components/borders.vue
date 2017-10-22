@@ -1,6 +1,7 @@
 <template>
   <div id="borders" class="spa-page">
-    <h1 class="header1">Borders</h1>
+
+    <heading title="Borders"></heading>
 
     <style-wrapper header="Border styles" description="Define a border style with border--solid">
       <div slot="exampleSlot" class="sg-flex">
@@ -95,9 +96,10 @@
 <script>
   import StyleWrapper from '@/components/stylewrapper'
   import BorderExample from '@/components/borderexample'
+  import Heading from '@/components/heading'
 
   export default {
-    components: { StyleWrapper, BorderExample }
+    components: { StyleWrapper, BorderExample, Heading }
   }
 </script>
 

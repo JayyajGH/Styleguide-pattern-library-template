@@ -1,6 +1,6 @@
 <template>
   <div id="forms" class="spa-page">
-    <h1 class="header1">Forms</h1>
+    <heading title="Forms"></heading>
 
     <h2>Form fields</h2>
 
@@ -10,9 +10,11 @@
 </template>
 
 <script>
-export default {
-  name: 'forms'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style>

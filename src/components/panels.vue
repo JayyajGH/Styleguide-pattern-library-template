@@ -1,12 +1,14 @@
 <template>
   <div id="panels" class="spa-page">
-    <h1 class="header1">Panels</h1>
+    <heading title="Panels"></heading>
   </div>
 </template>
 
 <script>
+import Heading from '@/components/heading'
+
 export default {
-  name: 'panels'
+  components: { Heading }
 }
 </script>
 

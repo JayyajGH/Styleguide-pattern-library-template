@@ -1,13 +1,15 @@
 <template>
   <div id="icons" class="spa-page">
-    <h1 class="header1">Icons</h1>
+    <heading title="Icons"></heading>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'icons'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style scoped lang="scss">

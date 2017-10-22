@@ -1,6 +1,6 @@
 <template>
   <div id="logo" class="spa-page">
-    <h1 class="header1">Logo</h1>
+    <heading title="Logo"></heading>
     <p>Add an example logo with colour options and any guard space around it.  Grab idea from EIS brand guidelines and twitter guidelines.</p>
 
     <p>Lockup?</p>
@@ -32,9 +32,11 @@
 </template>
 
 <script>
-export default {
-  name: 'logo'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style scoped lang="scss">

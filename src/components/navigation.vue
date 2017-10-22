@@ -1,13 +1,15 @@
 <template>
   <div id="forms" class="spa-page">
-    <h1 class="header1 testclass">Navigation</h1>
+    <heading title="Navigation"></heading>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'navigation'
-}
+  import Heading from '@/components/heading'
+
+  export default {
+    components: { Heading }
+  }
 </script>
 
 <style>

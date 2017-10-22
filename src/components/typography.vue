@@ -1,6 +1,7 @@
 <template>
   <div id="typography" class="spa-page">
-    <h1 class="header1">Typography</h1>
+    <heading title="Typography"></heading>
+
     <p>We follow a 1.5rem baseline grid for achieving a vertical rhythm on all block-level elements.</p>
 
     <style-wrapper header="Typefaces" description="Our standard typeface is Arial.  Arial is a sans-serif typeface.">
@@ -79,9 +80,10 @@
 
 <script>
   import StyleWrapper from '@/components/stylewrapper'
+  import Heading from '@/components/heading'
 
   export default {
-    components: { StyleWrapper }
+    components: { StyleWrapper, Heading }
   }
 </script>
 
