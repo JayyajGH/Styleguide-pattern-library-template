@@ -1,6 +1,6 @@
 <template>
   <div id="utility" class="spa-page">
-    <h1 class="header1">Utility Classes</h1>
+    <heading title="Utility Classes"></heading>
 
     <style-wrapper header="Inline content alignment" description="The following classes are used to align inline content">
       <div slot="exampleSlot">
@@ -54,6 +54,20 @@
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
+    <style-wrapper header="Position settings" description="The following classes are used to change the position property.">
+      <div slot="exampleSlot">
+        <div>
+          <span class="u-relative sg-relative-block sg-utility-block border--solid border-width--thin border-color--black u-align--center sg-padding--medium">Relatively position element</span>
+        </div>
+        <div class="u-relative">
+          <span class="u-absolute sg-absolute-block sg-utility-block border--solid border-width--thin border-color--black u-align--center sg-padding--medium">Absolutely positioned element</span>
+        </div>
+      </div>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+    <code class="html">&lt;div class="u-relative"&gt;...&lt;/div&gt;
+&lt;div class="u-absolute"&gt;...&lt;/div&gt;</code></pre>
+    </style-wrapper>
+
     <style-wrapper header="Text transforms" description="The following classes are used to transform text.">
       <div slot="exampleSlot">
         <p class="u-text-lowercase">Lowercase text</p>
@@ -83,9 +97,10 @@
 
 <script>
   import StyleWrapper from '@/components/stylewrapper'
+  import Heading from '@/components/heading'
 
   export default {
-    components: { StyleWrapper }
+    components: { StyleWrapper, Heading }
   }
 </script>
 
@@ -104,5 +119,13 @@
 
   .sg-utility-block--wide {
     width: 300px;
+  }
+
+  .sg-relative-block {
+    left: 50px;
+  }
+
+  .sg-absolute-block {
+    left: 300px;
   }
 </style>

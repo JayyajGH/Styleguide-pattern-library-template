@@ -270,6 +270,12 @@ sub {
 .u-inline-block {
   display: inline-block !important; }
 
+.u-relative {
+  position: relative; }
+
+.u-absolute {
+  position: absolute; }
+
 .u-text-lowercase {
   text-transform: lowercase; }
 
