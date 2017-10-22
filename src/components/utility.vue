@@ -22,7 +22,7 @@
 <code class="html">&lt;div class="u-block--center"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
-    <style-wrapper header="Float elements" description="The following classes are used to float elements.">
+    <style-wrapper header="Float elements" description="The following classes are used to float block elements.">
       <div slot="exampleSlot">
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--left"></div>
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--right"></div>
@@ -94,6 +94,8 @@
 </style>
 
 <style scoped lang="scss">
+  @import 'static/sass/abstracts/_abstracts.scss';
+
   .sg-utility-block {
     width: 100px;
     height: 100px;

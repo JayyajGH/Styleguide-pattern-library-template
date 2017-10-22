@@ -20,6 +20,8 @@ export default {
 </style>
 
 <style scoped lang="scss">
+  @import 'static/sass/abstracts/_abstracts.scss';
+
   .sg-border__item {
     width: 100px;
   }
