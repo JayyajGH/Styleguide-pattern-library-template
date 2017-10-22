@@ -1,6 +1,7 @@
 <template>
   <span class="sg-border__item">
-    <span :class="[styling, 'sg-border__contents sg-paddingleft--medium sg-paddingright--medium u-inline-block']">
+    <span class="sg-border__contents sg-paddingleft--medium sg-paddingright--medium u-inline-block"
+          :class=styling>
       <p class="u-align--center">{{title}}</p>
     </span>
   </span>
