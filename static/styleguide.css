@@ -11,29 +11,33 @@
 }
 
 .sg-paddingleft--small {
-  padding-left: 5px;
+  padding-left: 5px !important;
 }
 
 .sg-paddingleft--medium {
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 
 .sg-paddingleft--large {
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 
 .sg-paddingright--small {
-  padding-right: 5px;
+  padding-right: 5px !important;
 }
 
 .sg-paddingright--medium {
-  padding-right: 10px;
+  padding-right: 10px !important;
 }
 
 .sg-paddingright--large {
-  padding-right: 20px;
+  padding-right: 20px !important;
+}
+
+.sg-padding--medium {
+  padding: 10px !important;
 }
 
 .sg-padding--large {
-  padding: 20px;
+  padding: 20px !important;
 }

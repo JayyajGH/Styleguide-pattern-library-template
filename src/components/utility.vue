@@ -37,15 +37,15 @@
     <style-wrapper header="Display settings" description="The following classes are used to change the display property.">
       <div slot="exampleSlot">
         <div>
-          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block">Inline element displayed as block element</span>
-          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block">Inline element displayed as block element</span>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block sg-padding--medium">Inline element displayed as block element</span>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block sg-padding--medium">Inline element displayed as block element</span>
         </div>
         <div>
-          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline">Block element displayed as inline element</p>
-          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline">Block element displayed as inline element</p>
+          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline sg-padding--medium">Block element displayed as inline element</p>
+          <p class="sg-utility-block border--solid border-width--thin border-color--black u-inline sg-padding--medium">Block element displayed as inline element</p>
         </div>
         <div>
-          <span class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-inline-block">Inline element displayed as inline-block element</span>
+          <span class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-inline-block sg-padding--medium">Inline element displayed as inline-block element</span>
         </div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
@@ -99,7 +99,6 @@
   .sg-utility-block {
     width: 100px;
     height: 100px;
-    padding: 10px;
     background-color: color('grey','x-light');
   }
 
