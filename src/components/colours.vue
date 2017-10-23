@@ -4,80 +4,32 @@
 
     <div class="color-palette">
       <ul class="palette">
-        <li class="tone black">
-          <p class="sg-color-para">Black Base</p>
-          <p class="sg-color-para">#000</p>
-        </li>
+        <color-swatch text="Black Base" hex="#000" styling="black" :isBase=true></color-swatch>
       </ul>
       <ul class="palette">
-        <li class="tone white">
-          <p class="sg-color-para">White Base</p>
-          <p class="sg-color-para">#FFF</p>
-        </li>
+        <color-swatch text="White Base" hex="#FFF" styling="white" :isBase=true></color-swatch>
       </ul>
       <ul class="palette">
-        <li class="tone purple sg-base-color">
-          <p class="sg-color-para">Purple Base</p>
-          <p class="sg-color-para">#60C</p>
-        </li>
-        <li class="tone purplelight">
-          <p class="sg-color-para">Purple Light</p>
-          <p class="sg-color-para">#D9B3FF</p>
-        </li>
-        <li class="tone purpledark">
-          <p class="sg-color-para">Purple Dark</p>
-          <p class="sg-color-para">#4D0099</p>
-        </li>
+        <color-swatch text="Purple Base" hex="#60C" styling="purple sg-base-color" :isBase=true></color-swatch>
+        <color-swatch text="Purple Light" hex="#D9B3FF" styling="purplelight"></color-swatch>
+        <color-swatch text="Purple Dark" hex="#4D0099" styling="purpledark"></color-swatch>
       </ul>
       <ul class="palette">
-        <li class="tone grey sg-base-color">
-          <p class="sg-color-para">Grey Base</p>
-          <p class="sg-color-para">#60C</p>
-        </li>
-        <li class="tone greyxlight">
-          <p class="sg-color-para">Grey X-Light</p>
-          <p class="sg-color-para">#D9B3FF</p>
-        </li>
-        <li class="tone greylight">
-          <p class="sg-color-para">Grey Light</p>
-          <p class="sg-color-para">#D9B3FF</p>
-        </li>
-        <li class="tone greydark">
-          <p class="sg-color-para">Grey Dark</p>
-          <p class="sg-color-para">#4D0099</p>
-        </li>
-        <li class="tone greydarker">
-          <p class="sg-color-para">Grey Darker</p>
-          <p class="sg-color-para">#4D0099</p>
-        </li>
+        <color-swatch text="Grey Base" hex="#BFBFBF" styling="grey sg-base-color" :isBase=true></color-swatch>
+        <color-swatch text="Grey X-Light" hex="#F2F2F2" styling="greyxlight"></color-swatch>
+        <color-swatch text="Grey Light" hex="#D9D9D9" styling="greylight"></color-swatch>
+        <color-swatch text="Grey Dark" hex="#8C8C8C" styling="greydark"></color-swatch>
+        <color-swatch text="Grey Darker" hex="#666" styling="greydarker"></color-swatch>
       </ul>
       <ul class="palette">
-        <li class="tone green sg-base-color">
-          <p class="sg-color-para">Green Base</p>
-          <p class="sg-color-para">#60C</p>
-        </li>
-        <li class="tone greenlight">
-          <p class="sg-color-para">Green Light</p>
-          <p class="sg-color-para">#D9B3FF</p>
-        </li>
-        <li class="tone greendark">
-          <p class="sg-color-para">Green Dark</p>
-          <p class="sg-color-para">#4D0099</p>
-        </li>
+        <color-swatch text="Green Base" hex="#0C4" styling="green sg-base-color" :isBase=true></color-swatch>
+        <color-swatch text="Green Light" hex="#9FB" styling="greenlight"></color-swatch>
+        <color-swatch text="Green Dark" hex="#062" styling="greendark"></color-swatch>
       </ul>
       <ul class="palette">
-        <li class="tone blue sg-base-color">
-          <p class="sg-color-para">Blue Base</p>
-          <p class="sg-color-para">#00F</p>
-        </li>
-        <li class="tone bluelight">
-          <p class="sg-color-para">Blue Light</p>
-          <p class="sg-color-para">#D6D6FF</p>
-        </li>
-        <li class="tone bluedark">
-          <p class="sg-color-para">Blue Dark</p>
-          <p class="sg-color-para">#4C4C7F</p>
-        </li>
+        <color-swatch text="Blue Base" hex="#00F" styling="blue sg-base-color" :isBase=true></color-swatch>
+        <color-swatch text="Blue Light" hex="#D6D6FF" styling="bluelight"></color-swatch>
+        <color-swatch text="Blue Dark" hex="#4C4C7F" styling="bluedark"></color-swatch>
       </ul>
     </div>
   </div>
@@ -85,12 +37,24 @@
 
 <script>
   import Heading from '@/components/heading'
+  import ColorSwatch from '@/components/colorswatch'
 
   export default {
-    components: { Heading }
+    components: { Heading, ColorSwatch }
   }
 </script>
 
 <style scoped lang="scss">
-  @import 'static/sass/styleguide-color.scss';
+  @import 'static/sass/abstracts/_abstracts.scss';
+
+  .color-palette {
+    display: flex;
+    justify-content: center;
+  }
+
+  .palette {
+    margin: 10px;
+    width: 50px;
+    flex: 0 0 120px;
+  }
 </style>

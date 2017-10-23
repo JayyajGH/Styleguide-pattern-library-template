@@ -34,6 +34,14 @@
   padding-right: 20px !important;
 }
 
+.sg-paddingtop--large {
+  padding-top: 20px !important;
+}
+
+.sg-paddingbottom--large {
+  padding-bottom: 20px !important;
+}
+
 .sg-padding--medium {
   padding: 10px !important;
 }
