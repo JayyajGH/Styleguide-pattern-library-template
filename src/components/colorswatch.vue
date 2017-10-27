@@ -39,6 +39,7 @@ export default {
     background-color: color('black');
     color: color('white');
   }
+
   .white {
     background-color: color('white');
     border: 1px grey solid;
