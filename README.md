@@ -1,10 +1,11 @@
-# styleguide-template
+# Styleguide template written in Vue
 
-> A Vue.js project
+This is a template for a styleguide/pattern library/design system.  It is written using Vue.
+
+Currently it is work in progress and acting as much as a way of me learning Vue as it is being useful as a styleguide.  Hopefully it'll be both.
 
 ## Build Setup
 
-``` bash
 # install dependencies
 npm install
 
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Authors
+
+* **Jason Harris** - *Initial work* - [JayyajGH](https://github.com/JayyajGH)
