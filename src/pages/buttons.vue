@@ -80,8 +80,8 @@
 
 <div>
   <pre v-highlightjs class="sg-sectionborder">
-<code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Half-width button&lt;/button&gt;
-&lt;button type="button" class="button button--ghost button-ghost--primary button--medium"&gt;Full-width button&lt;/button&gt;</code></pre>
+<code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Simple button&lt;/button&gt;
+&lt;button type="button" class="button button--ghost button-ghost--primary button--medium"&gt;Ghost button&lt;/button&gt;</code></pre>
 </div>
 
 
