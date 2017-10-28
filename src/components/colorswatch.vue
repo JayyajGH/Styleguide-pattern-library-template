@@ -1,5 +1,5 @@
 <template>
-  <li class="tone u-align--center sg-paddingtop--large sg-paddingbottom--large"
+  <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
       :class="[{'sg-base-color': isBase}, styling]">
     <p class="sg-color-para">{{text}}</p>
     <p class="sg-color-para">{{hex}}</p>
@@ -24,7 +24,15 @@ export default {
   @import 'static/sass/abstracts/_abstracts.scss';
 
   .tone {
-    list-style-type: none;
+    width: 250px;
+
+    @include respond-to('medium and above') {
+      width: 100px;
+    }
+
+    @include respond-to('large and above') {
+        width: 100%;
+    }
   }
 
   .sg-color-para {
@@ -32,7 +40,13 @@ export default {
   }
 
   .sg-base-color {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+
+    @include respond-to('large and above') {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
   }
 
   .black {

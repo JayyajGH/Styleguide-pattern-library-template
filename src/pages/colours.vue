@@ -49,12 +49,31 @@
 
   .color-palette {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to('medium and above') {
+      align-items: stretch;
+    }
+
+    @include respond-to('large and above') {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
   .palette {
     margin: 10px;
-    width: 50px;
-    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to('medium and above') {
+      flex-direction: row;
+      flex: 0 0 120px;
+    }
+
+    @include respond-to('large and above') {
+      display: block;
+    }
   }
 </style>
