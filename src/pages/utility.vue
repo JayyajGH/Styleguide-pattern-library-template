@@ -126,6 +126,10 @@
   }
 
   .sg-absolute-block {
-    left: 300px;
+    left: 250px;
+
+    @include respond-to('large and above') {
+      left: 300px;
+    }
   }
 </style>
