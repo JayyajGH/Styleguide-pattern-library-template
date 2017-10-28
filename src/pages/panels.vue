@@ -7,7 +7,9 @@
       <div slot="exampleSlot" class="sg-flex panel-flex">
         <div class="panel panel--hero">
           <h1 class="header1 hero__title">Brevity is beautiful</h1>
-          <button type="button" class="button button--ghost button--halfwidth button-ghost--primary button--large hero__cta">Click for info</button>
+          <div class="button-group">
+            <button type="button" class="button button--ghost button-ghost--primary button--large hero__cta">Click to find out why</button>
+          </div>
         </div>
       </div>
 
