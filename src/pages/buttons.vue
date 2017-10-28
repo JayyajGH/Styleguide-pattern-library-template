@@ -84,6 +84,26 @@
 &lt;button type="button" class="button button--ghost button-ghost--primary button--medium"&gt;Ghost button&lt;/button&gt;</code></pre>
 </div>
 
+<h2 class="header2">Button Grouping</h2>
+<p>Set a grouping container for buttons.  This will add the correct padding etc.</p>
+
+<div class="button--group sg-flex sg-sectionborder sg-padding--large">
+  <span>
+    <button type="button" class="button button--simple button--primary button--medium">Button 1</button>
+  </span>
+  <span>
+    <button type="button" class="button button--simple button--primary button--medium">Button 2</button>
+  </span>
+</div>
+
+<div>
+  <pre v-highlightjs class="sg-sectionborder sg-code">
+<code class="html">&lt;div class="button--group"&gt;
+  &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;
+  &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
 
   </div>
 </template>
