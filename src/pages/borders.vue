@@ -10,7 +10,7 @@
         <border-example title="Dotted" styling="border--dotted border-width--medium border-color--black"></border-example>
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border--solid border-width--medium border-color--black"&gt;Solid&lt;/div&gt;
 &lt;div class="border--dashed border-width--medium border-color--black"&gt;Dashed&lt;/div&gt;
 &lt;div class="border--dotted border-width--medium border-color--black"&gt;Dotted&lt;/div&gt;</code></pre>
@@ -24,7 +24,7 @@
         <border-example title="Thick" styling="border--solid border-width--thick border-color--black"></border-example>
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border-solid border-width--thin border-color--black"&gt;Thin&lt;/div&gt;
 &lt;div class="border-solid border-width--medium border-color--black"&gt;Medium&lt;/div&gt;
 &lt;div class="border-solid border-width--thick border-color--black"&gt;Thick&lt;/div&gt;</code></pre>
@@ -52,7 +52,7 @@
             <border-example title="Right thick" styling="border--solid borderright-width--thick border-color--black"></border-example>
           </div>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border--solid bordertop-width--thin border-color--black"&gt;Top thin&lt;/div&gt;
 &lt;div class="border--solid bordertop-width--medium border-color--black"&gt;Top medium&lt;/div&gt;
 &lt;div class="border--solid bordertop-width--thick border-color--black"&gt;Top thick&lt;/div&gt;
@@ -72,7 +72,7 @@
           <border-example title="Black" styling="border--solid border-width--medium border-color--black"></border-example>
           <border-example title="Grey" styling="border--solid border-width--medium border-color--grey"></border-example>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border--solid border-width--medium border-color--black"&gt;Black&lt;/div&gt;
 &lt;div class="border--solid border-width--medium border-color--grey"&gt;Grey&lt;/div&gt;</code></pre>
       </style-wrapper>
@@ -84,7 +84,7 @@
           <border-example title="Large border radius" styling="border--solid border-width--thin border-color--black border-radius--large"></border-example>
           <border-example title="Circle border radius" styling="border--solid border-width--thin border-color--black border-radius--circle"></border-example>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border-solid border-width--thin border-color--black border-radius--small"&gt;Small border radius&lt;/div&gt;
 &lt;div class="border-solid border-width--thin border-color--black border-radius--medium"&gt;Medium border radius&lt;/div&gt;
 &lt;div class="border-solid border-width--thin border-color--black border-radius--large"&gt;Large border radius&lt;/div&gt;

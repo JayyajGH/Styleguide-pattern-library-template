@@ -10,6 +10,11 @@
   margin-bottom: 0;
 }
 
+.sg-code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .sg-paddingleft--small {
   padding-left: 5px !important;
 }

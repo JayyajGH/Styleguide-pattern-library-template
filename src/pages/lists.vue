@@ -15,7 +15,7 @@
         </ul>
 
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;ul class="list list--disc"&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
