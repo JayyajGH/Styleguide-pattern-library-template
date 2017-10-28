@@ -2,9 +2,11 @@
   <main id="app" class="wrapper">
 
     <nav class="sidebar sg-padding--large">
-      <a href="/" class="logo">
-        <img src="/static/logo.png" class="sg-logo"/>
-      </a>
+      <div class="sg-logo__container u-align--center">
+        <a href="/">
+          <img src="/static/logo.png" class="sg-logo"/>
+        </a>
+      </div>
 
       <ul>
         <li class="sg-menu-section sg-paddingleft--small">
@@ -53,4 +55,8 @@ export default {
 
 <style scoped lang="scss">
   @import 'static/sass/app.scss';
+
+  .sg-logo__container {
+    margin-bottom: 0;
+  }
 </style>
