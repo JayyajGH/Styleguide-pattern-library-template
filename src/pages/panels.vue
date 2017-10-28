@@ -94,12 +94,11 @@
 
   /* Overide some of the button styles for the purpose of the styleguide */
   .button-ghost--primary {
-    border-color: color('white');
+    border-color: color('grey', 'x-light');
     color: color('white');
 
     &:hover {
       background-color: color('grey', 'x-light');
-      border-color: color('grey', 'x-light');
       color: color('black');
     }
   }
