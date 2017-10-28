@@ -8,13 +8,13 @@
    <p>Define a button size with button--small, button--medium or button--large</p>
 
    <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large">
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--primary button--small">Small button</button>
      </span>
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--primary button--medium">Medium button</button>
      </span>
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--primary button--large">Large button</button>
      </span>
    </div>
@@ -30,13 +30,13 @@
    <p>Define a buttons importance with button--primary, button--secondary or button--tertiary</p>
 
    <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large">
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--primary button--medium">Primary button</button>
      </span>
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--secondary button--medium">Secondary button</button>
      </span>
-     <span>
+     <span class="sg-margin-bottom--medium">
        <button type="button" class="button button--simple button--tertiary button--medium">Tertiary button</button>
      </span>
    </div>
@@ -70,10 +70,10 @@
 <p>Define the style of a button with button--simple or button--ghost.  All other options can be applied to each style.</p>
 
 <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large">
-  <span>
+  <span class="sg-margin-bottom--medium">
     <button type="button" class="button button--simple button--primary button--medium">Simple button</button>
   </span>
-  <span>
+  <span class="sg-margin-bottom--medium">
     <button type="button" class="button button--ghost button-ghost--primary button--medium">Ghost button</button>
   </span>
 </div>
@@ -88,10 +88,10 @@
 <p>Set a grouping container for buttons.  This will add the correct padding etc.</p>
 
 <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large">
-  <span>
+  <span class="sg-margin-bottom--medium">
     <button type="button" class="button button--simple button--primary button--medium">Button 1</button>
   </span>
-  <span>
+  <span class="sg-margin-bottom--medium">
     <button type="button" class="button button--simple button--primary button--medium">Button 2</button>
   </span>
 </div>

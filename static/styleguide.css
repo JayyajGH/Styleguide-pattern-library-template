@@ -54,3 +54,7 @@
 .sg-padding--large {
   padding: 20px !important;
 }
+
+.sg-margin-bottom--medium {
+  margin-bottom: 10px !important;
+}
