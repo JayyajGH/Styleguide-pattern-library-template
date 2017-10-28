@@ -1,7 +1,7 @@
 <template>
   <div id="logo" class="spa-page">
     <heading title="Logo"></heading>
-    <p>Add an example logo with colour options and any guard space around it.  Grab idea from EIS brand guidelines and twitter guidelines.</p>
+    <p>Add an example logo with colour options and any guard space around it.  Grab idea from twitter guidelines.</p>
 
     <p>Lockup?</p>
 
