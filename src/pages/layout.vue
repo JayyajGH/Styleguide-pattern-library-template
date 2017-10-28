@@ -2,11 +2,11 @@
   <div id="layout" class="spa-page">
     <heading title="Layout"></heading>
 
-    <p>Uniform spacing.  Mention layout stuff.  How to add padding/margins etc.</p>
+    <p>Uniform spacing.  How to add padding/margins etc.</p>
 
     <p>Most elements will already have the correct spacing added to them.</p>
 
-    <p>Talk about using css grid for layout.  And mention support. </p>
+    <p>Talk about using css grid for layout.  And mention support. Should there be some default boilerplate classes for layout? </p>
 
     Maybe some ideas from:
     https://marvelapp.com/styleguide/design/layout
@@ -14,49 +14,49 @@
     <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex">
         <div class="sg-layout">
-          <div class="border--solid border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex">
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
-          </div>
-        </div>
-      </div>
-      <div class="sg-flex">
-        <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex">
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+      <div class="sg-flex">
+        <div class="sg-layout">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
         <div class="sg-layout">
-          <div class="border--dashed border-width--medium border-color--black sg-layout__item">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
@@ -79,6 +79,10 @@
     components: { Heading }
   }
 </script>
+
+<style lang="scss">
+  @import 'static/sass/borders.scss';
+</style>
 
 <style scoped lang="scss">
   .sg-layout {
