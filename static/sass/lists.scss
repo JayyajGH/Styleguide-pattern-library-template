@@ -1,0 +1,16 @@
+////
+/// @author Jason Harris
+////
+
+// Basic styles for lists
+.list {
+  list-style-position: inside;
+}
+
+.list--disc {
+  list-style-type: disc;
+}
+
+.list--circle {
+  list-style-type: circle;
+}

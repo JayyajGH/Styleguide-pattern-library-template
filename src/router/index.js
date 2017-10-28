@@ -9,6 +9,7 @@ import Language from '@/pages/language'
 import Icons from '@/pages/icons'
 import Utility from '@/pages/utility'
 import Links from '@/pages/links'
+import Lists from '@/pages/lists'
 import Buttons from '@/pages/buttons'
 import PatternLibrary from '@/pages/patternlibrary'
 import Layout from '@/pages/layout'
@@ -30,6 +31,7 @@ export default new Router({
     { path: '/icons', component: Icons },
     { path: '/utility', component: Utility },
     { path: '/links', component: Links },
+    { path: '/lists', component: Lists },
     { path: '/buttons', component: Buttons },
     { path: '/patternlibrary', component: PatternLibrary },
     { path: '/layout', component: Layout },

@@ -20,6 +20,7 @@
                 <li class="sg-menu-item sg-paddingleft--large"><router-link to="/utility" class="sg-menu-anchor">Utility Classes</router-link></li>
                 <li class="sg-menu-item sg-paddingleft--large"><router-link to="/borders" class="sg-menu-anchor">Borders</router-link></li>
                 <li class="sg-menu-item sg-paddingleft--large"><router-link to="/links" class="sg-menu-anchor">Links</router-link></li>
+                <li class="sg-menu-item sg-paddingleft--large"><router-link to="/lists" class="sg-menu-anchor">Lists</router-link></li>
             </ul>
           </li>
           <li class="sg-menu-section sg-paddingleft--small">
