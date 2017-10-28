@@ -8,8 +8,9 @@
 
     <p>Talk about using css grid for layout.  And mention support. Should there be some default boilerplate classes for layout? </p>
 
-    Maybe some ideas from:
-    https://marvelapp.com/styleguide/design/layout
+    <p>
+      Maybe some ideas from: https://marvelapp.com/styleguide/design/layout
+    </p>
 
     <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex">
