@@ -4,6 +4,8 @@ This is a template for a styleguide/pattern library/design system.  It is writte
 
 Currently it is work in progress and acting as much as a way of me learning Vue as it is being useful as a styleguide.  Hopefully it'll be both.
 
+It makes use of the [Sass boilerplate library](https://github.com/JayyajGH/Sass-Boilerplate)
+
 ## Build Setup
 
 ### install dependencies
