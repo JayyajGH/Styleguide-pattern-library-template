@@ -58,7 +58,7 @@
     background-color: white;
     color: color('black');
     max-width: 1000px;
-    margin: 25px;
+    margin: 0 25px 25px 25px;
 
     @include respond-to('small and above') {
       margin: 50px;
@@ -101,4 +101,48 @@
 .sg-logo--small {
   width: 75px;
   padding-bottom: 10px;
+}
+
+.sg-logo__container {
+  margin-bottom: 0;
+  display: none;
+
+  @include respond-to('small and above') {
+    display: block;
+  }
+}
+
+/* These styles all deal with the hamburger menu */
+.hamburger__container {
+  height: 100%;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius: 3px;
+  background-color: color('grey','x-light');
+  padding: 3px;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: color('black');
+  margin: 6px 0;
+  transition: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 7px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -7px) ;
 }
