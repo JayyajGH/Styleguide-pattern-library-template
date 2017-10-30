@@ -13,7 +13,7 @@ export default {
     title: String,
     styling: String
   }
-}
+};
 </script>
 
 <style lang="scss">

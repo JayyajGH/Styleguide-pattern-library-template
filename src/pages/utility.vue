@@ -96,12 +96,12 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper'
-  import Heading from '@/components/heading'
+  import StyleWrapper from '@/components/stylewrapper';
+  import Heading from '@/components/heading';
 
   export default {
     components: { StyleWrapper, Heading }
-  }
+  };
 </script>
 
 <style lang="scss">

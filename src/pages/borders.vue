@@ -35,7 +35,7 @@
         borderleft-width--thin, borderleft-width--medium, borderleft-width--thick
         borderright-width--thin, borderright-width--medium, borderright-width--thick">
         <div slot="exampleSlot">
-          <div class="sg-flex">
+          <div class="sg-flex sg-flex-border">
             <border-example title="Top thin" styling="border--solid bordertop-width--thin border-color--black"></border-example>
             <border-example title="Top medium" styling="border--solid bordertop-width--medium border-color--black"></border-example>
             <border-example title="Top thick" styling="border--solid bordertop-width--thick border-color--black"></border-example>
@@ -94,13 +94,13 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper'
-  import BorderExample from '@/components/borderexample'
-  import Heading from '@/components/heading'
+  import StyleWrapper from '@/components/stylewrapper';
+  import BorderExample from '@/components/borderexample';
+  import Heading from '@/components/heading';
 
   export default {
     components: { StyleWrapper, BorderExample, Heading }
-  }
+  };
 </script>
 
 <style lang="scss">
@@ -108,4 +108,7 @@
 </style>
 
 <style scoped lang="scss">
+  .sg-flex-border {
+    flex-wrap: wrap;
+  }
 </style>

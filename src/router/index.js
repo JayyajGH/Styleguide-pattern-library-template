@@ -1,25 +1,25 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-import Home from '@/pages/home'
-import Brand from '@/pages/brand'
-import Logo from '@/pages/logo'
-import Typography from '@/pages/typography'
-import Language from '@/pages/language'
-import Icons from '@/pages/icons'
-import Utility from '@/pages/utility'
-import Links from '@/pages/links'
-import Lists from '@/pages/lists'
-import Buttons from '@/pages/buttons'
-import PatternLibrary from '@/pages/patternlibrary'
-import Layout from '@/pages/layout'
-import Colours from '@/pages/colours'
-import Borders from '@/pages/borders'
-import Panels from '@/pages/panels'
-import Navigation from '@/pages/navigation'
-import Forms from '@/pages/forms'
+import Home from '@/pages/home';
+import Brand from '@/pages/brand';
+import Logo from '@/pages/logo';
+import Typography from '@/pages/typography';
+import Language from '@/pages/language';
+import Icons from '@/pages/icons';
+import Utility from '@/pages/utility';
+import Links from '@/pages/links';
+import Lists from '@/pages/lists';
+import Buttons from '@/pages/buttons';
+import PatternLibrary from '@/pages/patternlibrary';
+import Layout from '@/pages/layout';
+import Colours from '@/pages/colours';
+import Borders from '@/pages/borders';
+import Panels from '@/pages/panels';
+import Navigation from '@/pages/navigation';
+import Forms from '@/pages/forms';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -41,4 +41,4 @@ export default new Router({
     { path: '/navigation', component: Navigation },
     { path: '/forms', component: Forms }
   ]
-})
+});

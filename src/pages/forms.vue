@@ -10,11 +10,11 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading'
+  import Heading from '@/components/heading';
 
   export default {
     components: { Heading }
-  }
+  };
 </script>
 
 <style>

@@ -36,12 +36,12 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading'
-  import ColorSwatch from '@/components/colorswatch'
+  import Heading from '@/components/heading';
+  import ColorSwatch from '@/components/colorswatch';
 
   export default {
     components: { Heading, ColorSwatch }
-  }
+  };
 </script>
 
 <style scoped lang="scss">

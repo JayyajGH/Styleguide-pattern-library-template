@@ -69,7 +69,7 @@
         $('.sidebar').toggleClass('is-active');
       });
     }
-  }
+  };
 </script>
 
 <style scoped lang="scss">
