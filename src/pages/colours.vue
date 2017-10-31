@@ -3,25 +3,11 @@
     <heading title="Colours"></heading>
 
     <div class="color-palette">
-      <ul class="palette">
-        <color-swatch v-for="item in blackList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
-      </ul>
-      <ul class="palette">
-        <color-swatch v-for="item in whiteList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
-      </ul>
-      <ul class="palette">
-        <color-swatch v-for="item in purpleList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
-      </ul>
-      <ul class="palette">
-        <color-swatch v-for="item in greyList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
-      </ul>
-      <ul class="palette">
-        <color-swatch v-for="item in greenList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
-      </ul>
-      <ul class="palette">
-        <color-swatch v-for="item in blueList" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
+      <ul v-for="colour in colorList" class="palette">
+        <color-swatch v-for="item in colour.colorGroup" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
       </ul>
     </div>
+
   </div>
 </template>
 
@@ -33,33 +19,35 @@
     components: { Heading, ColorSwatch },
     data: function () {
       return {
-        whiteList: [
-          {name: 'White Base', hex: '#FFF', styling: 'white', isBase: true}
-        ],
-        blackList: [
-          {name: 'Black Base', hex: '#000', styling: 'black', isBase: true}
-        ],
-        purpleList: [
-          {name: 'Purple Base', hex: '#60C', styling: 'purple', isBase: true},
-          {name: 'Purple Light', hex: '#D9B3FF', styling: 'purplelight'},
-          {name: 'Purple Dark', hex: '#4D0099', styling: 'purpledark'}
-        ],
-        greyList: [
-          {name: 'Grey Base', hex: '#BFBFBF', styling: 'grey', isBase: true},
-          {name: 'Grey X-Light', hex: '#F2F2F2', styling: 'greyxlight'},
-          {name: 'Grey Light', hex: '#D9D9D9', styling: 'greylight'},
-          {name: 'Grey Dark', hex: '#8C8C8C', styling: 'greydark'},
-          {name: 'Grey Darker', hex: '#0666', styling: 'greydarker'}
-        ],
-        greenList: [
-          {name: 'Green Base', hex: '#0C4', styling: 'green', isBase: true},
-          {name: 'Green Light', hex: '#9FB', styling: 'greenlight'},
-          {name: 'Green Dark', hex: '#062', styling: 'greendark'}
-        ],
-        blueList: [
-          {name: 'Blue Base', hex: '#00F', styling: 'blue', isBase: true},
-          {name: 'Blue Light', hex: '#D6D6FF', styling: 'bluelight'},
-          {name: 'Blue Dark', hex: '#4C4C7F', styling: 'bluedark'}
+        colorList: [
+          {colorGroup: [
+            {name: 'White Base', hex: '#FFF', styling: 'white', isBase: true}
+          ]},
+          {colorGroup: [
+            {name: 'Black Base', hex: '#000', styling: 'black', isBase: true}
+          ]},
+          {colorGroup: [
+            {name: 'Purple Base', hex: '#60C', styling: 'purple', isBase: true},
+            {name: 'Purple Light', hex: '#D9B3FF', styling: 'purplelight'},
+            {name: 'Purple Dark', hex: '#4D0099', styling: 'purpledark'}
+          ]},
+          {colorGroup: [
+            {name: 'Grey Base', hex: '#BFBFBF', styling: 'grey', isBase: true},
+            {name: 'Grey X-Light', hex: '#F2F2F2', styling: 'greyxlight'},
+            {name: 'Grey Light', hex: '#D9D9D9', styling: 'greylight'},
+            {name: 'Grey Dark', hex: '#8C8C8C', styling: 'greydark'},
+            {name: 'Grey Darker', hex: '#0666', styling: 'greydarker'}
+          ]},
+          {colorGroup: [
+            {name: 'Green Base', hex: '#0C4', styling: 'green', isBase: true},
+            {name: 'Green Light', hex: '#9FB', styling: 'greenlight'},
+            {name: 'Green Dark', hex: '#062', styling: 'greendark'}
+          ]},
+          {colorGroup: [
+            {name: 'Blue Base', hex: '#00F', styling: 'blue', isBase: true},
+            {name: 'Blue Light', hex: '#D6D6FF', styling: 'bluelight'},
+            {name: 'Blue Dark', hex: '#4C4C7F', styling: 'bluedark'}
+          ]}
         ]
       };
     }
