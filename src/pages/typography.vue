@@ -16,22 +16,22 @@
 
     <style-wrapper header="Font sizes" description="The font scale contains 7 different font sizes.">
       <div slot="exampleSlot" class="button--group">
-        <p class="header1">Pack my box with five dozen liquor jugs</p>
-        <p class="header2">Pack my box with five dozen liquor jugs</p>
-        <p class="header3">Pack my box with five dozen liquor jugs</p>
-        <p class="header4">Pack my box with five dozen liquor jugs</p>
-        <p class="body">Pack my box with five dozen liquor jugs</p>
-        <p class="sg-font--small">Pack my box with five dozen liquor jugs</p>
-        <p class="sg-font--smallest">Pack my box with five dozen liquor jugs</p>
+        <p class="header1">{{pangramText}}</p>
+        <p class="header2">{{pangramText}}</p>
+        <p class="header3">{{pangramText}}</p>
+        <p class="header4">{{pangramText}}</p>
+        <p class="body">{{pangramText}}</p>
+        <p class="sg-font--small">{{pangramText}}</p>
+        <p class="sg-font--smallest">{{pangramText}}</p>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;p class="header1"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
-&lt;p class="header2"&gt;Pack my box with five dozen liquor jugs.&lt;/p&gt;
-&lt;p class="header3"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
-&lt;p class="header4"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
-&lt;p class="body"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
-&lt;p class="xyz"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;
-&lt;p class="xyz"&gt;Pack my box with five dozen liquor jugs&lt;/p&gt;</code></pre>
+<code class="html">&lt;p class="header1"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="header2"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="header3"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="header4"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="body"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="xyz"&gt;{{pangramText}}&lt;/p&gt;
+&lt;p class="xyz"&gt;{{pangramText}}&lt;/p&gt;</code></pre>
     </style-wrapper>
 
     <style-wrapper header="Font weight" description="There are x font weights available to use.">
@@ -83,7 +83,12 @@
   import Heading from '@/components/heading';
 
   export default {
-    components: { StyleWrapper, Heading }
+    components: { StyleWrapper, Heading },
+    data: function () {
+      return {
+        pangramText: 'Pack my box with five dozen liquor jugs'
+      };
+    }
   };
 </script>
 
