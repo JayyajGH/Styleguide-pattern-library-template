@@ -67,6 +67,7 @@
       $('.js-trigger').click(function () {
         $(this).toggleClass('change');
         $('.sidebar').toggleClass('is-active');
+        $('.main').toggleClass('is-overflowhidden');
       });
     }
   };

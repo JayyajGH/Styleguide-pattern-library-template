@@ -40,17 +40,23 @@
     background-color: color('grey', 'x-light');
     z-index: 5;
     display: none;
+    overflow-y: auto;
 
     @include respond-to('small and above') {
       display: block;
       width: 200px;
       top: 0;
       bottom: 0;
+      overflow-y: visible;
     }
 }
 
 .is-active {
   display: block;
+}
+
+.is-overflowhidden {
+    overflow: hidden;
 }
 
 .main {
