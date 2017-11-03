@@ -5,9 +5,7 @@
 
     <style-wrapper header="Border styles" description="Define a border style with border--solid">
       <div slot="exampleSlot" class="sg-flex">
-        <border-example title="Solid" styling="border--solid border-width--medium border-color--black"></border-example>
-        <border-example title="Dashed" styling="border--dashed border-width--medium border-color--black"></border-example>
-        <border-example title="Dotted" styling="border--dotted border-width--medium border-color--black"></border-example>
+          <border-example v-for="bstyle in borderStyle" :key=bstyle.name :title=bstyle.name :styling="[bstyle.style,'border-width--medium border-color--black']"></border-example>
       </div>
 
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
@@ -19,9 +17,7 @@
 
     <style-wrapper header="Uniform border sizes" description="Define a border size with border-width--thin, border-width--medium or border-width--thick">
       <div slot="exampleSlot" class="sg-flex">
-        <border-example title="Thin" styling="border--solid border-width--thin border-color--black"></border-example>
-        <border-example title="Medium" styling="border--solid border-width--medium border-color--black"></border-example>
-        <border-example title="Thick" styling="border--solid border-width--thick border-color--black"></border-example>
+        <border-example v-for="bsize in borderSize" :key=bsize.name :title=bsize.name :styling="[bsize.style,'border--solid border-color--black']"></border-example>
       </div>
 
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
@@ -36,20 +32,10 @@
         borderright-width--thin, borderright-width--medium, borderright-width--thick">
         <div slot="exampleSlot">
           <div class="sg-flex sg-flex-border">
-            <border-example title="Top thin" styling="border--solid bordertop-width--thin border-color--black"></border-example>
-            <border-example title="Top medium" styling="border--solid bordertop-width--medium border-color--black"></border-example>
-            <border-example title="Top thick" styling="border--solid bordertop-width--thick border-color--black"></border-example>
-            <border-example title="Bottom thin" styling="border--solid borderbottom-width--thin border-color--black"></border-example>
-            <border-example title="Bottom medium" styling="border--solid borderbottom-width--medium border-color--black"></border-example>
-            <border-example title="Bottom thick" styling="border--solid borderbottom-width--thick border-color--black"></border-example>
+            <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
           </div>
           <div class="sg-flex">
-            <border-example title="Left thin" styling="border--solid borderleft-width--thin border-color--black"></border-example>
-            <border-example title="Left medium" styling="border--solid borderleft-width--medium border-color--black"></border-example>
-            <border-example title="Left thick" styling="border--solid borderleft-width--thick border-color--black"></border-example>
-            <border-example title="Right thin" styling="border--solid borderright-width--thin border-color--black"></border-example>
-            <border-example title="Right medium" styling="border--solid borderright-width--medium border-color--black"></border-example>
-            <border-example title="Right thick" styling="border--solid borderright-width--thick border-color--black"></border-example>
+            <border-example v-for="bsizeueq in borderSizeUnequal2" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
           </div>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
@@ -69,8 +55,7 @@
 
       <style-wrapper header="Border colour" description="Define a border colour with border-color--black or border-color--grey">
         <div slot="exampleSlot" class="sg-flex">
-          <border-example title="Black" styling="border--solid border-width--medium border-color--black"></border-example>
-          <border-example title="Grey" styling="border--solid border-width--medium border-color--grey"></border-example>
+          <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border--solid border-width--medium border-color--black"&gt;Black&lt;/div&gt;
@@ -79,10 +64,7 @@
 
       <style-wrapper header="Border radius" description="Define a border radius with border-radius--small, border-radius--medium, border-radius--large, border-radius--circle">
         <div slot="exampleSlot" class="sg-flex">
-          <border-example title="Small border radius" styling="border--solid border-width--thin border-color--black border-radius--small"></border-example>
-          <border-example title="Medium border radius" styling="border--solid border-width--thin border-color--black border-radius--medium"></border-example>
-          <border-example title="Large border radius" styling="border--solid border-width--thin border-color--black border-radius--large"></border-example>
-          <border-example title="Circle border radius" styling="border--solid border-width--thin border-color--black border-radius--circle"></border-example>
+          <border-example v-for="bradius in borderRadius" :key=bradius.name :title=bradius.name :styling="[bradius.style,'border--solid border-width--thin border-color--black']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
 <code class="html">&lt;div class="border-solid border-width--thin border-color--black border-radius--small"&gt;Small border radius&lt;/div&gt;
@@ -99,7 +81,47 @@
   import Heading from '@/components/heading';
 
   export default {
-    components: { StyleWrapper, BorderExample, Heading }
+    components: { StyleWrapper, BorderExample, Heading },
+    data: function () {
+      return {
+        borderStyle: [
+          {name: 'Solid', style: 'border--solid'},
+          {name: 'Dashed', style: 'border--dashed'},
+          {name: 'Dotted', style: 'border--dotted'}
+        ],
+        borderSize: [
+          {name: 'Thin', style: 'border-width--thin'},
+          {name: 'Medium', style: 'border-width--medium'},
+          {name: 'Thick', style: 'border-width--thick'}
+        ],
+        borderSizeUnequal: [
+          {name: 'Top Thin', style: 'bordertop-width--thin'},
+          {name: 'Top Medium', style: 'bordertop-width--medium'},
+          {name: 'Top Thick', style: 'bordertop-width--thick'},
+          {name: 'Bottom Thin', style: 'borderbottom-width--thin'},
+          {name: 'Bottom Medium', style: 'borderbottom-width--medium'},
+          {name: 'Bottom Thick', style: 'borderbottom-width--thick'}
+        ],
+        borderSizeUnequal2: [
+          {name: 'Left Thin', style: 'borderleft-width--thin'},
+          {name: 'Left Medium', style: 'borderleft-width--medium'},
+          {name: 'Left Thick', style: 'borderleft-width--thick'},
+          {name: 'Right Thin', style: 'borderright-width--thin'},
+          {name: 'Right Medium', style: 'borderright-width--medium'},
+          {name: 'Right Thick', style: 'borderright-width--thick'}
+        ],
+        borderColour: [
+          {name: 'Black', style: 'border-color--black'},
+          {name: 'Grey', style: 'border-color--grey'}
+        ],
+        borderRadius: [
+          {name: 'Small', style: 'border-radius--small'},
+          {name: 'Medium', style: 'border-radius--medium'},
+          {name: 'Large', style: 'border-radius--large'},
+          {name: 'Circle', style: 'border-radius--circle'}
+        ]
+      };
+    }
   };
 </script>
 
