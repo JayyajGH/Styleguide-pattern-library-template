@@ -25,6 +25,7 @@ export default {
 
   .sg-border__item {
     width: 100px;
+    margin: 0 15px 15px 15px;
   }
 
   .sg-border__contents {

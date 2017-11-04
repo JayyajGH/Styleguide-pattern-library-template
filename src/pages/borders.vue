@@ -3,8 +3,9 @@
 
     <heading title="Borders"></heading>
 
+    <!-- Border styles -->
     <style-wrapper header="Border styles" description="Define the style of the border">
-      <div slot="exampleSlot" class="sg-flex">
+      <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
           <border-example v-for="bstyle in borderStyle" :key=bstyle.name :title=bstyle.name :styling="[bstyle.style,'border-width--medium border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -12,8 +13,9 @@
       </pre>
     </style-wrapper>
 
+    <!-- Uniform border sizes -->
     <style-wrapper header="Uniform border sizes" description="Define the width of the border where the width required is the same on all sides">
-      <div slot="exampleSlot" class="sg-flex">
+      <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
         <border-example v-for="bsize in borderSize" :key=bsize.name :title=bsize.name :styling="[bsize.style,'border--solid border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -21,23 +23,19 @@
       </pre>
       </style-wrapper>
 
+      <!-- Unequal border sizes -->
       <style-wrapper header="Unequal border sizes" description="Define the width of the border on individual sides">
-        <div slot="exampleSlot">
-          <div class="sg-flex sg-flex-border">
-            <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
-          </div>
-          <div class="sg-flex">
-            <border-example v-for="bsizeueq in borderSizeUnequal2" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
-          </div>
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+          <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
           <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal, 'border--solid border-color--black')" class="sg-code"></div></code>
-          <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal2, 'border--solid border-color--black')" class="sg-code"></div></code>
         </pre>
       </style-wrapper>
 
+      <!-- Border colour -->
       <style-wrapper header="Border colour" description="Define the colour of the border">
-        <div slot="exampleSlot" class="sg-flex">
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
           <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -45,8 +43,9 @@
         </pre>
       </style-wrapper>
 
+      <!-- Border radius -->
       <style-wrapper header="Border radius" description="Define the border radius of the border">
-        <div slot="exampleSlot" class="sg-flex">
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
           <border-example v-for="bradius in borderRadius" :key=bradius.name :title=bradius.name :styling="[bradius.style,'border--solid border-width--thin border-color--black']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -81,9 +80,7 @@
           {name: 'Top Thick', style: 'bordertop-width--thick'},
           {name: 'Bottom Thin', style: 'borderbottom-width--thin'},
           {name: 'Bottom Medium', style: 'borderbottom-width--medium'},
-          {name: 'Bottom Thick', style: 'borderbottom-width--thick'}
-        ],
-        borderSizeUnequal2: [
+          {name: 'Bottom Thick', style: 'borderbottom-width--thick'},
           {name: 'Left Thin', style: 'borderleft-width--thin'},
           {name: 'Left Medium', style: 'borderleft-width--medium'},
           {name: 'Left Thick', style: 'borderleft-width--thick'},
@@ -122,7 +119,4 @@
 </style>
 
 <style scoped lang="scss">
-  .sg-flex-border {
-    flex-wrap: wrap;
-  }
 </style>
