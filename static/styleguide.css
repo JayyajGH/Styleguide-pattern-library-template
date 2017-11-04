@@ -66,3 +66,7 @@
 .sg-margin-bottom--medium {
   margin-bottom: 10px !important;
 }
+
+.sg-margin-bottom--none {
+  margin-bottom: 0 !important;
+}

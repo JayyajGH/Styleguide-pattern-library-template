@@ -14,49 +14,49 @@
 
     <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex">
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex">
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-      </div>
-      <div class="sg-flex">
-        <div class="sg-layout">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex">
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout">
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout">
+      </div>
+      <div class="sg-flex">
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
@@ -90,7 +90,6 @@
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 0;
   }
 
   .sg-layout__item {

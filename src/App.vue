@@ -2,7 +2,7 @@
   <main id="app" class="wrapper">
 
     <nav class="sidebar sg-padding--large">
-      <div class="sg-logo__container u-align--center">
+      <div class="sg-logo__container sg-margin-bottom--none u-align--center">
         <a href="/">
           <img src="/static/logo.png" class="sg-logo"/>
         </a>
@@ -49,7 +49,7 @@
         <img src="/static/logo.png" class="sg-logo--small"/>
       </a>
       <!--<button class="menu__open js-trigger">Menu</button>-->
-      <div class="hamburger__container js-trigger">
+      <div class="hamburger__container sg-margin-bottom--none js-trigger">
         <span>MENU</span>
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>

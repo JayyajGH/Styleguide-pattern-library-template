@@ -22,8 +22,8 @@
     <style-wrapper header="Promotional panels" description="These panels are used to promote a product or feature.">
       <div slot="exampleSlot" class="sg-flex panel-flex">
         <div class="panel panel--promo">
-          <div class="panel__image"></div>
-          <div class="panel__text">
+          <div class="panel__image sg-margin-bottom--none"></div>
+          <div class="panel__text sg-margin-bottom--none">
             <h2 class="header2">Item #1</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque nec sapien eget lobortis. Mauris ut tristique nulla, eu porta elit. Integer hendrerit orci et congue lobortis. Vestibulum commodo porttitor blandit.
@@ -32,8 +32,8 @@
         </div>
 
         <div class="panel panel--promo">
-          <div class="panel__image"></div>
-          <div class="panel__text">
+          <div class="panel__image sg-margin-bottom--none"></div>
+          <div class="panel__text sg-margin-bottom--none">
             <h2 class="header2">Item #2</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque nec sapien eget lobortis. Mauris ut tristique nulla, eu porta elit. Integer hendrerit orci et congue lobortis. Vestibulum commodo porttitor blandit.
@@ -123,7 +123,6 @@
     flex: 1 1 100%;
     background-image: url("/static/panel1.jpg");
     background-size: cover;
-    margin-bottom: 0;
     min-height: 200px;
 
     @include respond-to('large and above') {
@@ -135,7 +134,6 @@
     flex: 1 1 100%;
     background-color: color('purple', 'light');
     padding: 10px;
-    margin-bottom: 0;
 
     @include respond-to('large and above') {
         flex: 0 1 60%;
