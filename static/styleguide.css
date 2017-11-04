@@ -77,3 +77,7 @@
 .sg-margin-bottom--none {
   margin-bottom: 0 !important;
 }
+
+.sg-margin--medium {
+  margin: 10px !important;
+}

@@ -19,7 +19,7 @@
     150%
     <div class="logo-border-outer u-flex">
       <span>100%</span>
-      <span class="logo-border">
+      <span class="logo-border u-inline-block">
         <img src="/static/logo.png" class="sg-logo-space"/>
       </span>
     </div>
@@ -54,7 +54,6 @@
   }
 
   .logo-border {
-    display: inline-block;
     border: 1px dotted black;
   }
 

@@ -14,49 +14,49 @@
 
     <div class="sg-sectionborder sg-padding--large">
       <div class="sg-flex u-flex">
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex u-flex">
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-      </div>
-      <div class="sg-flex u-flex">
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
       <div class="sg-flex u-flex">
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout sg-margin-bottom--none">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
-        <div class="sg-layout sg-margin-bottom--none">
+      </div>
+      <div class="sg-flex u-flex">
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
@@ -86,15 +86,15 @@
 </style>
 
 <style scoped lang="scss">
+  @import 'static/sass/abstracts/_abstracts';
+
   .sg-layout {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .sg-layout__item {
     margin: 0;
     height: 40px;
-    background-color: #f0f0f5;
+    background-color: color('grey', 'x-light');
   }
 </style>

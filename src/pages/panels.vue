@@ -6,7 +6,7 @@
     <style-wrapper header="Hero panels" description="These panels are used as the page hero.">
       <div slot="exampleSlot" class="sg-flex panel-flex u-flex">
         <div class="panel panel--hero u-flex">
-          <h1 class="header1 hero__title">Brevity is beautiful</h1>
+          <h1 class="header1 hero__title u-align--center sg-paddingleft--large sg-paddingright--large">Brevity is beautiful</h1>
           <div class="button-group">
             <button type="button" class="button button--ghost button-ghost--primary button--large hero__cta">Click to find out why</button>
           </div>
@@ -85,8 +85,6 @@
 
   .hero__title {
     color: color('white');
-    text-align: center;
-    padding: 15px;
   }
 
   .hero_cta {

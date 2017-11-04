@@ -3,7 +3,7 @@
     <heading title="Colours"></heading>
 
     <div class="color-palette u-flex">
-      <ul v-for="colour in colorList" class="palette">
+      <ul v-for="colour in colorList" class="palette sg-margin--medium">
         <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
     </div>
@@ -72,7 +72,6 @@
   }
 
   .palette {
-    margin: 10px;
     display: flex;
     flex-direction: column;
 
