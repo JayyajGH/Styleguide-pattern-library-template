@@ -4,7 +4,7 @@
 
     <div class="color-palette">
       <ul v-for="colour in colorList" class="palette">
-        <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :key=item.hex></color-swatch>
+        <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
     </div>
 
@@ -21,32 +21,32 @@
       return {
         colorList: [
           [
-            {name: 'White Base', hex: '#FFF', styling: 'white', isBase: true}
+            {name: 'White Base', hex: '#FFF', isBase: true, isLightColour: true}
           ],
           [
-            {name: 'Black Base', hex: '#000', styling: 'black', isBase: true}
+            {name: 'Black Base', hex: '#000', isBase: true, isDarkColour: true}
           ],
           [
-            {name: 'Purple Base', hex: '#60C', styling: 'purple', isBase: true},
-            {name: 'Purple Light', hex: '#D9B3FF', styling: 'purplelight'},
-            {name: 'Purple Dark', hex: '#4D0099', styling: 'purpledark'}
+            {name: 'Purple Base', hex: '#60C', isBase: true, isDarkColour: true},
+            {name: 'Purple Light', hex: '#D9B3FF'},
+            {name: 'Purple Dark', hex: '#4D0099', isDarkColour: true}
           ],
           [
-            {name: 'Grey Base', hex: '#BFBFBF', styling: 'grey', isBase: true},
-            {name: 'Grey X-Light', hex: '#F2F2F2', styling: 'greyxlight'},
-            {name: 'Grey Light', hex: '#D9D9D9', styling: 'greylight'},
-            {name: 'Grey Dark', hex: '#8C8C8C', styling: 'greydark'},
-            {name: 'Grey Darker', hex: '#0666', styling: 'greydarker'}
+            {name: 'Grey Base', hex: '#BFBFBF', isBase: true},
+            {name: 'Grey X-Light', hex: '#F2F2F2'},
+            {name: 'Grey Light', hex: '#D9D9D9'},
+            {name: 'Grey Dark', hex: '#8C8C8C', isDarkColour: true},
+            {name: 'Grey Darker', hex: '#666', isDarkColour: true}
           ],
           [
-            {name: 'Green Base', hex: '#0C4', styling: 'green', isBase: true},
-            {name: 'Green Light', hex: '#9FB', styling: 'greenlight'},
-            {name: 'Green Dark', hex: '#062', styling: 'greendark'}
+            {name: 'Green Base', hex: '#0C4', isBase: true},
+            {name: 'Green Light', hex: '#9FB'},
+            {name: 'Green Dark', hex: '#062', isDarkColour: true}
           ],
           [
-            {name: 'Blue Base', hex: '#00F', styling: 'blue', isBase: true},
-            {name: 'Blue Light', hex: '#D6D6FF', styling: 'bluelight'},
-            {name: 'Blue Dark', hex: '#4C4C7F', styling: 'bluedark'}
+            {name: 'Blue Base', hex: '#00F', isBase: true, isDarkColour: true},
+            {name: 'Blue Light', hex: '#D6D6FF'},
+            {name: 'Blue Dark', hex: '#4C4C7F', isDarkColour: true}
           ]
         ]
       };

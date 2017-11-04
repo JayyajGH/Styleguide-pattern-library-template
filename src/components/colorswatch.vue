@@ -1,8 +1,8 @@
 <template>
   <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
-      :class="[{'sg-base-color': isBase}, styling]">
-    <p class="sg-color-para">{{text}}</p>
-    <p class="sg-color-para">{{hex}}</p>
+      :class="{'sg-base-color': isBase, 'light-text': isDarkColour, 'light-border': isLightColour}" :style="{backgroundColor: hex}">
+    <p class="sg-margin-bottom--none">{{text}}</p>
+    <p class="sg-margin-bottom--none">{{hex}}</p>
   </li>
 </template>
 
@@ -13,6 +13,14 @@ export default {
     hex: String,
     styling: String,
     isBase: {
+      type: Boolean,
+      default: false
+    },
+    isDarkColour: {
+      type: Boolean,
+      default: false
+    },
+    isLightColour: {
       type: Boolean,
       default: false
     }
@@ -35,10 +43,6 @@ export default {
     }
   }
 
-  .sg-color-para {
-    margin-bottom: 0;
-  }
-
   .sg-base-color {
     margin-bottom: 0;
     margin-right: 20px;
@@ -49,76 +53,12 @@ export default {
     }
   }
 
-  .black {
-    background-color: color('black');
+  .light-text {
     color: color('white');
   }
 
-  .white {
-    background-color: color('white');
+  .light-border {
     border: 1px grey solid;
   }
 
-  .purple {
-    background-color: color('purple','base');
-    color: color('white');
-  }
-
-  .purplelight {
-    background-color: color('purple','light');
-  }
-
-  .purpledark {
-    background-color: color('purple','dark');
-    color: color('white');
-  }
-
-  .grey {
-    background-color: color('grey','base');
-  }
-
-  .greyxlight {
-    background-color: color('grey','x-light');
-  }
-
-  .greylight {
-    background-color: color('grey','light');
-  }
-
-  .greydark {
-    background-color: color('grey','dark');
-    color: color('white');
-  }
-
-  .greydarker {
-    background-color: color('grey','darker');
-    color: color('white');
-  }
-
-  .green {
-    background-color: color('green','base');
-  }
-
-  .greenlight {
-    background-color: color('green','light');
-  }
-
-  .greendark {
-    background-color: color('green','dark');
-    color: color('white');
-  }
-
-  .blue {
-    background-color: color('blue','base');
-    color: color('white');
-  }
-
-  .bluelight {
-    background-color: color('blue','light');
-  }
-
-  .bluedark {
-    background-color: color('blue','dark');
-    color: color('white');
-  }
 </style>
