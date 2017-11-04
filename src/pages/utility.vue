@@ -47,11 +47,15 @@
         <div>
           <span class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-inline-block sg-padding--medium">Inline element displayed as inline-block element</span>
         </div>
+        <div>
+          <div class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-flex sg-padding--medium">Element displayed as flex element</div>
+        </div>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
 &lt;div class="u-inline"&gt;...&lt;/div&gt;
-&lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
+&lt;div class="u-inline-block"&gt;...&lt;/div&gt;
+&lt;div class="u-flex"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
     <style-wrapper header="Position settings" description="The following classes are used to change the position property.">
