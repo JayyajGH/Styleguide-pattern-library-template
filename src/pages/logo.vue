@@ -17,7 +17,7 @@
     </ul>
 
     150%
-    <div class="logo-border-outer">
+    <div class="logo-border-outer u-flex">
       <span>100%</span>
       <span class="logo-border">
         <img src="/static/logo.png" class="sg-logo-space"/>
@@ -46,11 +46,9 @@
 
 <style scoped lang="scss">
   .logo-border-outer {
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px dotted black;
-
     width: 300px;
     height: 300px;
   }
