@@ -49,7 +49,7 @@
         <img src="/static/logo.png" class="sg-logo--small"/>
       </a>
       <!--<button class="menu__open js-trigger">Menu</button>-->
-      <div class="hamburger__container sg-margin-bottom--none js-trigger">
+      <div class="hamburger__container border-radius--small sg-margin-bottom--none js-trigger">
         <span>MENU</span>
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>
@@ -75,4 +75,5 @@
 
 <style scoped lang="scss">
   @import 'static/sass/app.scss';
+  @import 'static/sass/hamburger.scss';
 </style>
