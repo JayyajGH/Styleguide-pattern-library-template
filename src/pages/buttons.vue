@@ -14,9 +14,8 @@
    </div>
    <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-<code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-code"></div></code>
+</pre>
 </div>
 
 <h2 class="header2">Button importance</h2>
@@ -30,9 +29,8 @@
 
    <div>
      <pre v-highlightjs class="sg-sectionborder sg-code__section">
-<code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Primary button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--secondary button--medium"&gt;Secondary button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--tertiary button--medium"&gt;Tertiary button&lt;/button&gt;</code></pre>
+       <code class="html"><div v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-code"></div></code>
+     </pre>
    </div>
 
    <h2 class="header2">Button width</h2>
@@ -46,8 +44,8 @@
 
 <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-<code class="html">&lt;button type="button" class="button button--simple button--halfwidth button--primary button--medium"&gt;Half-width button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--fullwidth button--primary button--medium"&gt;Full-width button&lt;/button&gt;</code></pre>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-code"></div></code>
+  </pre>
 </div>
 
 <h2 class="header2">Button Styles</h2>
@@ -61,8 +59,8 @@
 
 <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-<code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Simple button&lt;/button&gt;
-&lt;button type="button" class="button button--ghost button-ghost--primary button--medium"&gt;Ghost button&lt;/button&gt;</code></pre>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-code"></div></code>
+  </pre>
 </div>
 
 <h2 class="header2">Button Grouping</h2>
@@ -115,6 +113,17 @@
           {name: 'Ghost button', styling: 'button--ghost button-ghost--primary'}
         ]
       };
+    },
+    methods: {
+      returnFormattedCodeString: function (styleList, additionalClasses) {
+        let templateString = ``;
+
+        styleList.forEach(function (value) {
+          templateString += `&lt;div class="${value.styling} ${additionalClasses}"&gt${value.name}&lt;/div&gt;\n`;
+        });
+
+        return templateString;
+      }
     }
   };
 </script>
