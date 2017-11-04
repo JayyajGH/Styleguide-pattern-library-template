@@ -20,7 +20,7 @@
    </div>
 
    <div>
-  <pre v-highlightjs class="sg-sectionborder sg-code">
+  <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
@@ -42,7 +42,7 @@
    </div>
 
    <div>
-     <pre v-highlightjs class="sg-sectionborder sg-code">
+     <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Primary button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--secondary button--medium"&gt;Secondary button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--tertiary button--medium"&gt;Tertiary button&lt;/button&gt;</code></pre>
@@ -61,7 +61,7 @@
 </div>
 
 <div>
-  <pre v-highlightjs class="sg-sectionborder sg-code">
+  <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--halfwidth button--primary button--medium"&gt;Half-width button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--fullwidth button--primary button--medium"&gt;Full-width button&lt;/button&gt;</code></pre>
 </div>
@@ -79,7 +79,7 @@
 </div>
 
 <div>
-  <pre v-highlightjs class="sg-sectionborder sg-code">
+  <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Simple button&lt;/button&gt;
 &lt;button type="button" class="button button--ghost button-ghost--primary button--medium"&gt;Ghost button&lt;/button&gt;</code></pre>
 </div>
@@ -97,7 +97,7 @@
 </div>
 
 <div>
-  <pre v-highlightjs class="sg-sectionborder sg-code">
+  <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="button--group"&gt;
   &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;
   &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 2&lt;/button&gt;

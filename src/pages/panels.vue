@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
       <code class="html">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
 &lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;</code></pre>
 
@@ -43,7 +43,7 @@
 
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
       <code class="html">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
 &lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;</code></pre>
 

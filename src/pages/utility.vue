@@ -8,7 +8,7 @@
         <p class="u-align--center">Center aligned text</p>
         <p class="u-align--right">Right aligned text</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;
 &lt;p class="u-align--center"&gt;Center aligned text&lt;/p&gt;
 &lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;</code></pre>
@@ -18,7 +18,7 @@
       <div slot="exampleSlot">
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-block--center"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
 
@@ -29,7 +29,7 @@
         <!-- Hack to stop parent collapsing -->
         <div style="clear: both;"></div>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-float--left"&gt;...&lt;/div&gt;
 &lt;div class="u-float--right"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
@@ -48,7 +48,7 @@
           <span class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-inline-block sg-padding--medium">Inline element displayed as inline-block element</span>
         </div>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
 &lt;div class="u-inline"&gt;...&lt;/div&gt;
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
@@ -63,7 +63,7 @@
           <span class="u-absolute sg-absolute-block sg-utility-block border--solid border-width--thin border-color--black u-align--center sg-padding--medium">Absolutely positioned element</span>
         </div>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
     <code class="html">&lt;div class="u-relative"&gt;...&lt;/div&gt;
 &lt;div class="u-absolute"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>
@@ -74,7 +74,7 @@
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-block"&gt;...&lt;/div&gt;
 &lt;div class="u-inline"&gt;...&lt;/div&gt;
 &lt;div class="u-inline-block"&gt;...&lt;/div&gt;</code></pre>
@@ -87,7 +87,7 @@
         <p>Following this line is a visually hidden element</p>
         <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;div class="u-hidden"&gt;...&lt;/div&gt;
 &lt;div class="u-hidden-visually"&gt;...&lt;/div&gt;</code></pre>
     </style-wrapper>

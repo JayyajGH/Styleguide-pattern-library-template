@@ -10,7 +10,7 @@
         <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;p&gt;...&lt;/p&gt;</code></pre>
     </style-wrapper>
 
@@ -24,7 +24,7 @@
         <p class="sg-font--small">{{pangramText}}</p>
         <p class="sg-font--smallest">{{pangramText}}</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;p class="header1"&gt;{{pangramText}}&lt;/p&gt;
 &lt;p class="header2"&gt;{{pangramText}}&lt;/p&gt;
 &lt;p class="header3"&gt;{{pangramText}}&lt;/p&gt;
@@ -39,7 +39,7 @@
         <p class="">Normal weight text</p>
         <p class="sg-font--bold">Bold weight text</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;p&gt;Normal weight text&lt;/p&gt;
 &lt;p class="xyz"&gt;Bold weight text&lt;/p&gt;</code></pre>
     </style-wrapper>
@@ -53,7 +53,7 @@
         <p><i>Italic tag</i></p>
         <p><em>Emphasis tag</em></p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder  sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder  sg-code__section">
 <code class="html">&lt;p&gt;Paragraph tag&lt;/p&gt;
 &lt;small&gt;Small tag&lt;/small&gt;
 &lt;strong&gt;Strong tag&lt;/strong&gt;
@@ -69,7 +69,7 @@
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder  sg-code">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder  sg-code__section">
 <code class="html">&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;
 &lt;p class="u-text-uppercase"&gt;Uppercase text&lt;/p&gt;
 &lt;p class="u-text-capitalize"&gt;Capitalized text&lt;/p&gt;</code></pre>

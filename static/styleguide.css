@@ -10,9 +10,13 @@
   margin-bottom: 0;
 }
 
-.sg-code {
+.sg-code__section {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.sg-code {
+  margin-bottom: 0;
 }
 
 .sg-paddingleft--small {

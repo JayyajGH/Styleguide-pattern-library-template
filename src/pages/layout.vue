@@ -64,7 +64,7 @@
     </div>
 
     <div>
-    <pre v-highlightjs class="sg-sectionborder sg-code">
+    <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
