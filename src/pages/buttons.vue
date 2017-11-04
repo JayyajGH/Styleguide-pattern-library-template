@@ -8,17 +8,10 @@
    <p>Define a button size with button--small, button--medium or button--large</p>
 
    <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex">
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--primary button--small">Small button</button>
-     </span>
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--primary button--medium">Medium button</button>
-     </span>
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--primary button--large">Large button</button>
+     <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
+       <button type="button" class="button button--simple button--primary" :class=bsize.styling>{{bsize.name}}</button>
      </span>
    </div>
-
    <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
@@ -30,14 +23,8 @@
    <p>Define a buttons importance with button--primary, button--secondary or button--tertiary</p>
 
    <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex">
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--primary button--medium">Primary button</button>
-     </span>
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--secondary button--medium">Secondary button</button>
-     </span>
-     <span class="sg-margin-bottom--medium">
-       <button type="button" class="button button--simple button--tertiary button--medium">Tertiary button</button>
+     <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
+       <button type="button" class="button button--simple button--medium" :class=bimportant.styling>{{bimportant.name}}</button>
      </span>
    </div>
 
@@ -49,16 +36,13 @@
    </div>
 
    <h2 class="header2">Button width</h2>
-<p>Define the width of a button to a set size with button--halfwidth or button--fullwidth</p>
+   <p>Define the width of a button to a set size with button--halfwidth or button--fullwidth</p>
 
-<div class="button--group sg-sectionborder sg-padding--large">
-  <div>
-    <button type="button" class="button button--simple button--halfwidth button--primary button--medium">Half-width button</button>
-  </div>
-  <span>
-    <button type="button" class="button button--simple button--fullwidth button--primary button--medium">Full-width button</button>
-  </span>
-</div>
+   <div class="button--group sg-sectionborder sg-padding--large">
+     <div v-for="bwidth in buttonWidth">
+       <button type="button" class="button button--simple button--primary button--medium" :class=bwidth.styling>{{bwidth.name}}</button>
+     </div>
+   </div>
 
 <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
@@ -70,11 +54,8 @@
 <p>Define the style of a button with button--simple or button--ghost.  All other options can be applied to each style.</p>
 
 <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex">
-  <span class="sg-margin-bottom--medium">
-    <button type="button" class="button button--simple button--primary button--medium">Simple button</button>
-  </span>
-  <span class="sg-margin-bottom--medium">
-    <button type="button" class="button button--ghost button-ghost--primary button--medium">Ghost button</button>
+  <span v-for="bstyle in buttonStyle" class="sg-margin-bottom--medium">
+    <button type="button" class="button button--medium" :class=bstyle.styling>{{bstyle.name}}</button>
   </span>
 </div>
 
@@ -112,7 +93,29 @@
   import Heading from '@/components/heading';
 
   export default {
-    components: { Heading }
+    components: { Heading },
+    data: function () {
+      return {
+        buttonSize: [
+          {name: 'Small button', styling: 'button--small'},
+          {name: 'Medium button', styling: 'button--medium'},
+          {name: 'Large button', styling: 'button--large'}
+        ],
+        buttonImportance: [
+          {name: 'Primary button', styling: 'button--primary'},
+          {name: 'Secondary button', styling: 'button--secondary'},
+          {name: 'Tertiary button', styling: 'button--tertiary'}
+        ],
+        buttonWidth: [
+          {name: 'Half-width button', styling: 'button--halfwidth'},
+          {name: 'Full-width button', styling: 'button--fullwidth'}
+        ],
+        buttonStyle: [
+          {name: 'Simple button', styling: 'button--simple button--primary'},
+          {name: 'Ghost button', styling: 'button--ghost button-ghost--primary'}
+        ]
+      };
+    }
   };
 </script>
 
