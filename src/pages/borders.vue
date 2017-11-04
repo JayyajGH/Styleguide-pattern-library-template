@@ -5,7 +5,7 @@
 
     <!-- Border styles -->
     <style-wrapper header="Border styles" description="Define the style of the border">
-      <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+      <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
           <border-example v-for="bstyle in borderStyle" :key=bstyle.name :title=bstyle.name :styling="[bstyle.style,'border-width--medium border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -15,7 +15,7 @@
 
     <!-- Uniform border sizes -->
     <style-wrapper header="Uniform border sizes" description="Define the width of the border where the width required is the same on all sides">
-      <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+      <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
         <border-example v-for="bsize in borderSize" :key=bsize.name :title=bsize.name :styling="[bsize.style,'border--solid border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -25,7 +25,7 @@
 
       <!-- Unequal border sizes -->
       <style-wrapper header="Unequal border sizes" description="Define the width of the border on individual sides">
-        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
           <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -35,7 +35,7 @@
 
       <!-- Border colour -->
       <style-wrapper header="Border colour" description="Define the colour of the border">
-        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
           <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
@@ -45,7 +45,7 @@
 
       <!-- Border radius -->
       <style-wrapper header="Border radius" description="Define the border radius of the border">
-        <div slot="exampleSlot" class="sg-flex sg-flex--wrap">
+        <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
           <border-example v-for="bradius in borderRadius" :key=bradius.name :title=bradius.name :styling="[bradius.style,'border--solid border-width--thin border-color--black']"></border-example>
         </div>
         <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
