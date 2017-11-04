@@ -2,7 +2,7 @@
   <div id="colours" class="spa-page">
     <heading title="Colours"></heading>
 
-    <div class="color-palette">
+    <div class="color-palette u-flex">
       <ul v-for="colour in colorList" class="palette">
         <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
@@ -58,7 +58,6 @@
   @import 'static/sass/abstracts/_abstracts.scss';
 
   .color-palette {
-    display: flex;
     flex-direction: column;
     align-items: center;
 
