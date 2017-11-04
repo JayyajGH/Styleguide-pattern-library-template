@@ -3,7 +3,7 @@
     <heading title="Lists"></heading>
 
     <style-wrapper header="List styles" description="Define a list style with list--disc or list--circle">
-      <div slot="exampleSlot" class="sg-flex">
+      <div slot="exampleSlot" class="sg-flex u-flex">
         <ul class="list list--disc">
           <li>Item 1</li>
           <li>Item 2</li>

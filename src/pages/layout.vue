@@ -13,27 +13,13 @@
     </p>
 
     <div class="sg-sectionborder sg-padding--large">
-      <div class="sg-flex">
+      <div class="sg-flex u-flex">
         <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
         </div>
       </div>
-      <div class="sg-flex">
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
-      </div>
-      <div class="sg-flex">
-        <div class="sg-layout sg-margin-bottom--none">
-          <div class="border--solid border-width--thin border-color--black sg-layout__item">
-          </div>
-        </div>
+      <div class="sg-flex u-flex">
         <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>
@@ -43,7 +29,21 @@
           </div>
         </div>
       </div>
-      <div class="sg-flex">
+      <div class="sg-flex u-flex">
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+        <div class="sg-layout sg-margin-bottom--none">
+          <div class="border--solid border-width--thin border-color--black sg-layout__item">
+          </div>
+        </div>
+      </div>
+      <div class="sg-flex u-flex">
         <div class="sg-layout sg-margin-bottom--none">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
           </div>

@@ -3,7 +3,7 @@
     <heading title="Links"></heading>
 
     <style-wrapper header="Link styles" description="Define a link style with link--regular, link--subtle, link--dark or link--phone">
-      <div slot="exampleSlot" class="sg-flex">
+      <div slot="exampleSlot" class="sg-flex u-flex">
         <span>
           <a href="#" class="link link--regular">Regular</a>
         </span>
