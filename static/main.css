@@ -268,7 +268,11 @@ sub {
   display: inline !important; }
 
 .u-inline-block {
-  display: inline-block !important; }.u-flex {
+  display: inline-block !important; }
+
+.u-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important; }
 
 .u-relative {
@@ -285,6 +289,9 @@ sub {
 
 .u-text-capitalize {
   text-transform: capitalize; }
+
+.u-text-decoration--none {
+  text-decoration: none; }
 
 .u-hidden {
   display: none;

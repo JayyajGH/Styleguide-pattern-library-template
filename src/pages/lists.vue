@@ -14,6 +14,11 @@
           <li>Item 2</li>
         </ul>
 
+        <ul class="list list--none">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
 <code class="html">&lt;ul class="list list--disc"&gt;
@@ -22,6 +27,11 @@
 &lt;/ul&gt;
 
 &lt;ul class="list list--circle"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list list--none"&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;</code></pre>

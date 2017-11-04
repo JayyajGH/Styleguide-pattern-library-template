@@ -17,6 +17,10 @@
         </span>
 
         <span>
+          <a href="#" class="link link--regular u-text-decoration--none">No decoration</a>
+        </span>
+
+        <span>
           <a href="tel: 0800 111111" class="link link--phone">0800 111111</a>
         </span>
       </div>
@@ -24,6 +28,7 @@
 <code class="html">&lt;a href="#" class="link link--regular"&gt;Regular&lt;/a&gt;
 &lt;a href="#" class="link link--subtle"&gt;Subtle&lt;/a&gt;
 &lt;a href="#" class="link link--dark"&gt;Dark&lt;/a&gt;
+&lt;a href="#" class="link link--regular u-text-decoration--none"&gt;No decoration&lt;/a&gt;
 &lt;a href="tel: 0800 111111" class="link link--phone"&gt;0800 111111&lt;/a&gt;</code></pre>
     </style-wrapper>
   </div>
