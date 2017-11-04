@@ -3,33 +3,25 @@
 
     <heading title="Borders"></heading>
 
-    <style-wrapper header="Border styles" description="Define a border style with border--solid">
+    <style-wrapper header="Border styles" description="Define the style of the border">
       <div slot="exampleSlot" class="sg-flex">
           <border-example v-for="bstyle in borderStyle" :key=bstyle.name :title=bstyle.name :styling="[bstyle.style,'border-width--medium border-color--black']"></border-example>
       </div>
-
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;div class="border--solid border-width--medium border-color--black"&gt;Solid&lt;/div&gt;
-&lt;div class="border--dashed border-width--medium border-color--black"&gt;Dashed&lt;/div&gt;
-&lt;div class="border--dotted border-width--medium border-color--black"&gt;Dotted&lt;/div&gt;</code></pre>
-
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+        <code class="html"><div v-html="returnFormattedCodeString(borderStyle, 'border--solid border-color--black')" class="sg-code"></div></code>
+      </pre>
     </style-wrapper>
 
-    <style-wrapper header="Uniform border sizes" description="Define a border size with border-width--thin, border-width--medium or border-width--thick">
+    <style-wrapper header="Uniform border sizes" description="Define the width of the border where the width required is the same on all sides">
       <div slot="exampleSlot" class="sg-flex">
         <border-example v-for="bsize in borderSize" :key=bsize.name :title=bsize.name :styling="[bsize.style,'border--solid border-color--black']"></border-example>
       </div>
-
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;div class="border-solid border-width--thin border-color--black"&gt;Thin&lt;/div&gt;
-&lt;div class="border-solid border-width--medium border-color--black"&gt;Medium&lt;/div&gt;
-&lt;div class="border-solid border-width--thick border-color--black"&gt;Thick&lt;/div&gt;</code></pre>
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+        <code class="html"><div v-html="returnFormattedCodeString(borderSize, 'border--solid border-color--black')" class="sg-code"></div></code>
+      </pre>
       </style-wrapper>
 
-      <style-wrapper header="Unequal border sizes" description="Define a border size with bordertop-width--thin, bordertop-width--medium, bordertop-width--thick,
-        borderbottom-width--thin, borderbottom-width--medium, borderbottom-width--thick
-        borderleft-width--thin, borderleft-width--medium, borderleft-width--thick
-        borderright-width--thin, borderright-width--medium, borderright-width--thick">
+      <style-wrapper header="Unequal border sizes" description="Define the width of the border on individual sides">
         <div slot="exampleSlot">
           <div class="sg-flex sg-flex-border">
             <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
@@ -38,39 +30,28 @@
             <border-example v-for="bsizeueq in borderSizeUnequal2" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
           </div>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;div class="border--solid bordertop-width--thin border-color--black"&gt;Top thin&lt;/div&gt;
-&lt;div class="border--solid bordertop-width--medium border-color--black"&gt;Top medium&lt;/div&gt;
-&lt;div class="border--solid bordertop-width--thick border-color--black"&gt;Top thick&lt;/div&gt;
-&lt;div class="border--solid borderbottom-width--thin border-color--black"&gt;Bottom thin&lt;/div&gt;
-&lt;div class="border--solid borderbottom-width--medium border-color--black"&gt;Bottom medium&lt;/div&gt;
-&lt;div class="border--solid borderbottom-width--thick border-color--black"&gt;Bottom thick&lt;/div&gt;
-&lt;div class="border--solid borderleft-width--thin border-color--black"&gt;Left thin&lt;/div&gt;
-&lt;div class="border--solid borderleft-width--medium border-color--black"&gt;Left medium&lt;/div&gt;
-&lt;div class="border--solid borderleft-width--thick border-color--black"&gt;Left thick&lt;/div&gt;
-&lt;div class="border--solid borderright-width--thin border-color--black"&gt;Right thin&lt;/div&gt;
-&lt;div class="border--solid borderright-width--medium border-color--black"&gt;Right medium&lt;/div&gt;
-&lt;div class="border--solid borderright-width--thick border-color--black"&gt;Right thick&lt;/div&gt;</code></pre>
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+          <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal, 'border--solid border-color--black')" class="sg-code"></div></code>
+          <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal2, 'border--solid border-color--black')" class="sg-code"></div></code>
+        </pre>
       </style-wrapper>
 
-      <style-wrapper header="Border colour" description="Define a border colour with border-color--black or border-color--grey">
+      <style-wrapper header="Border colour" description="Define the colour of the border">
         <div slot="exampleSlot" class="sg-flex">
           <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;div class="border--solid border-width--medium border-color--black"&gt;Black&lt;/div&gt;
-&lt;div class="border--solid border-width--medium border-color--grey"&gt;Grey&lt;/div&gt;</code></pre>
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+          <code class="html"><div v-html="returnFormattedCodeString(borderColour, 'border--solid border-width--medium')" class="sg-code"></div></code>
+        </pre>
       </style-wrapper>
 
-      <style-wrapper header="Border radius" description="Define a border radius with border-radius--small, border-radius--medium, border-radius--large, border-radius--circle">
+      <style-wrapper header="Border radius" description="Define the border radius of the border">
         <div slot="exampleSlot" class="sg-flex">
           <border-example v-for="bradius in borderRadius" :key=bradius.name :title=bradius.name :styling="[bradius.style,'border--solid border-width--thin border-color--black']"></border-example>
         </div>
-        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code">
-<code class="html">&lt;div class="border-solid border-width--thin border-color--black border-radius--small"&gt;Small border radius&lt;/div&gt;
-&lt;div class="border-solid border-width--thin border-color--black border-radius--medium"&gt;Medium border radius&lt;/div&gt;
-&lt;div class="border-solid border-width--thin border-color--black border-radius--large"&gt;Large border radius&lt;/div&gt;
-&lt;div class="border-solid border-width--thin border-color--black border-radius--circle"&gt;Circle border radius&lt;/div&gt;</code></pre>
+        <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+          <code class="html"><div v-html="returnFormattedCodeString(borderRadius, 'border-solid border-width--thin border-color--black')" class="sg-code"></div></code>
+        </pre>
       </style-wrapper>
   </div>
 </template>
@@ -121,6 +102,17 @@
           {name: 'Circle', style: 'border-radius--circle'}
         ]
       };
+    },
+    methods: {
+      returnFormattedCodeString: function (styleList, additionalClasses) {
+        let templateString = ``;
+
+        styleList.forEach(function (value) {
+          templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt${value.name}&lt;/div&gt;\n`;
+        });
+
+        return templateString;
+      }
     }
   };
 </script>
