@@ -89,9 +89,11 @@
 
 <script>
   import Heading from '@/components/heading';
+  import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
     components: { Heading },
+    mixins: [returnFormattedCodeString],
     data: function () {
       return {
         buttonSize: [
@@ -113,19 +115,6 @@
           {name: 'Ghost button', styling: 'button--ghost button-ghost--primary'}
         ]
       };
-    },
-    methods: {
-      returnFormattedCodeString: function (styleList, additionalClasses) {
-        let templateString = ``;
-
-        if (styleList) {
-          styleList.forEach(function (value) {
-            templateString += `&lt;div class="${value.styling} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
-          });
-        }
-
-        return templateString;
-      }
     }
   };
 </script>

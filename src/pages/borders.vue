@@ -59,9 +59,11 @@
   import StyleWrapper from '@/components/stylewrapper';
   import BorderExample from '@/components/borderexample';
   import Heading from '@/components/heading';
+  import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
     components: { StyleWrapper, BorderExample, Heading },
+    mixins: [returnFormattedCodeString],
     data: function () {
       return {
         borderStyle: [
@@ -99,19 +101,6 @@
           {name: 'Circle', style: 'border-radius--circle'}
         ]
       };
-    },
-    methods: {
-      returnFormattedCodeString: function (styleList, additionalClasses) {
-        let templateString = ``;
-
-        if (styleList) {
-          styleList.forEach(function (value) {
-            templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
-          });
-        }
-
-        return templateString;
-      }
     }
   };
 </script>
