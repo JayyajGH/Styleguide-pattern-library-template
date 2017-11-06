@@ -118,9 +118,11 @@
       returnFormattedCodeString: function (styleList, additionalClasses) {
         let templateString = ``;
 
-        styleList.forEach(function (value) {
-          templateString += `&lt;div class="${value.styling} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
-        });
+        if (styleList) {
+          styleList.forEach(function (value) {
+            templateString += `&lt;div class="${value.styling} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
+          });
+        }
 
         return templateString;
       }
