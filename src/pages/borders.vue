@@ -105,7 +105,7 @@
         let templateString = ``;
 
         styleList.forEach(function (value) {
-          templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt${value.name}&lt;/div&gt;\n`;
+          templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
         });
 
         return templateString;
