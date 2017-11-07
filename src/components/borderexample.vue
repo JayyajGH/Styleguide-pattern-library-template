@@ -11,7 +11,7 @@
 export default {
   props: {
     title: String,
-    styling: String
+    styling: [String, Array]
   }
 };
 </script>
