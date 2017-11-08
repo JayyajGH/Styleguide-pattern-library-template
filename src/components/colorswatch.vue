@@ -1,6 +1,6 @@
 <template>
   <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
-      :class="{'sg-base-color': isBase, 'light-text': isDarkColour, 'light-border': isLightColour}" :style="{backgroundColor: hex}">
+      :class="classObject" :style="{backgroundColor: hex}">
     <p class="sg-margin-bottom--none">{{text}}</p>
     <p class="sg-margin-bottom--none">{{hex}}</p>
   </li>
@@ -23,6 +23,15 @@ export default {
     isLightColour: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    classObject: function () {
+      return {
+        'sg-base-color': this.isBase,
+        'light-text': this.isDarkColour,
+        'light-border': this.isLightColour
+      };
     }
   }
 };
