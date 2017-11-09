@@ -1,6 +1,19 @@
 <template>
   <main id="app" class="wrapper">
 
+    <header class="header">
+      <a href="/" class="">
+        <img src="/static/logo.png" class="sg-logo--small sg-paddingbottom--medium"/>
+      </a>
+      <!--<button class="menu__open js-trigger">Menu</button>-->
+      <div class="hamburger__container border-radius--small sg-margin-bottom--none js-trigger">
+        <span>MENU</span>
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </header>
+
     <nav class="sidebar sg-padding--large">
       <div class="sg-logo__container sg-margin-bottom--none u-align--center">
         <a href="/">
@@ -44,18 +57,6 @@
       </ul>
     </nav>
 
-    <div class="header">
-      <a href="/" class="">
-        <img src="/static/logo.png" class="sg-logo--small sg-paddingbottom--medium"/>
-      </a>
-      <!--<button class="menu__open js-trigger">Menu</button>-->
-      <div class="hamburger__container border-radius--small sg-margin-bottom--none js-trigger">
-        <span>MENU</span>
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
-      </div>
-    </div>
     <router-view class="main"></router-view>
   </main>
 </template>
