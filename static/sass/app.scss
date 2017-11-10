@@ -19,7 +19,6 @@
 
 .sg-menu-anchor-parent {
   background-color: color('grey');
-  width: 100%;
   color: color('white');
 
   @include respond-to('small and above') {
@@ -80,7 +79,6 @@
 
 .wrapper {
   display: grid;
-  width: 100%;
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;

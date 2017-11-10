@@ -1,5 +1,5 @@
 <template>
-  <main id="app" class="wrapper">
+  <main id="app" class="wrapper u-full-width">
 
     <header class="header">
       <a href="/" class="">
@@ -23,7 +23,7 @@
 
       <ul class="sg-menu">
         <li class="list list--none sg-paddingleft--small">
-            <router-link to="/brand" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium">Brand</router-link>
+            <router-link to="/brand" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium u-full-width">Brand</router-link>
             <ul>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/logo" class="sg-menu-anchor u-text-decoration--none">Logo</router-link></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/colours" class="sg-menu-anchor u-text-decoration--none">Colours</router-link></li>
@@ -37,7 +37,7 @@
             </ul>
           </li>
           <li class="list list--none sg-paddingleft--small">
-            <router-link to="/patternlibrary" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium">Pattern Library</router-link>
+            <router-link to="/patternlibrary" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium u-full-width">Pattern Library</router-link>
             <ul>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/layout" class="sg-menu-anchor u-text-decoration--none">Layout</router-link></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/buttons" class="sg-menu-anchor u-text-decoration--none">Buttons</router-link></li>
@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li class="list list--none sg-paddingleft--small">
-            <a href="" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium">Examples</a>
+            <a href="" class="sg-menu-anchor sg-menu-anchor-parent u-text-decoration--none u-inline-block sg-padding--small sg-margin-bottom--medium u-full-width">Examples</a>
             <ul>
               <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><a href="#/page1" class="sg-menu-anchor u-text-decoration--none">Page 1</a></li>
               <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><a href="#/page2" class="sg-menu-anchor u-text-decoration--none">Page 2</a></li>

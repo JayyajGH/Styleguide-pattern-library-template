@@ -121,7 +121,8 @@ html {
 p,
 ul,
 ol,
-div {
+div,
+section {
   margin-bottom: 1.5rem; }
 
 body {
@@ -280,6 +281,9 @@ sub {
 
 .u-absolute {
   position: absolute; }
+
+.u-full-width {
+  width: 100%; }
 
 .u-text-lowercase {
   text-transform: lowercase; }

@@ -2,7 +2,7 @@
   <div class="u-relative">
     <h1 class="header1 u-relative highzindex">{{title}}</h1>
 
-    <div class="brush-stroke u-absolute"
+    <div class="brush-stroke u-absolute u-full-width"
       :class="{'brush-stroke--large': isMainHeading, 'brush-stroke--small': !isMainHeading }"></div>
   </div>
 </template>
@@ -21,7 +21,6 @@ export default {
 
 <style scoped lang="scss">
   .brush-stroke {
-    width: 100%;
     background-image: url("/static/blue-brush-stroke.png");
     z-index: 1;
     left: -30px;
