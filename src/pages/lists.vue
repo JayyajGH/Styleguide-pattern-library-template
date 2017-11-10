@@ -1,5 +1,5 @@
 <template>
-  <div id="links" class="spa-page">
+  <div id="lists" class="spa-page">
     <heading title="Lists"></heading>
 
     <style-wrapper header="List styles" description="Define a list style with list--disc or list--circle">
