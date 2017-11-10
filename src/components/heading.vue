@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
   .brush-stroke {
-    background-image: url("/static/blue-brush-stroke.png");
+    background-image: url("/static/images/blue-brush-stroke.png");
     z-index: 1;
     left: -30px;
   }

@@ -73,7 +73,7 @@
   }
 
   .panel--hero {
-    background-image: url("/static/hero.jpg");
+    background-image: url("/static/images/hero.jpg");
     background-size: cover;
     height: 400px;
     flex-direction: column;
@@ -116,7 +116,7 @@
 
   .panel__image {
     flex: 1 1 100%;
-    background-image: url("/static/panel1.jpg");
+    background-image: url("/static/images/panel1.jpg");
     background-size: cover;
     min-height: 200px;
 

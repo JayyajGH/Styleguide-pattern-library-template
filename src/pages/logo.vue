@@ -20,7 +20,7 @@
     <div class="logo-border-outer u-flex">
       <span>100%</span>
       <span class="logo-border u-inline-block">
-        <img src="/static/logo.png" class="sg-logo-space"/>
+        <img src="/static/images/logo.png" class="sg-logo-space"/>
       </span>
     </div>
 

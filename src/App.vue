@@ -3,7 +3,7 @@
 
     <header class="header">
       <a href="/" class="">
-        <img src="/static/logo.png" class="sg-logo--small sg-paddingbottom--medium"/>
+        <img src="/static/images/logo.png" class="sg-logo--small sg-paddingbottom--medium"/>
       </a>
       <!--<button class="menu__open js-trigger">Menu</button>-->
       <div class="hamburger__container border-radius--small sg-margin-bottom--none js-trigger">
@@ -17,7 +17,7 @@
     <nav class="sidebar sg-padding--large">
       <div class="sg-logo__container sg-margin-bottom--none u-align--center">
         <a href="/">
-          <img src="/static/logo.png" class="sg-logo sg-paddingbottom--medium"/>
+          <img src="/static/images/logo.png" class="sg-logo sg-paddingbottom--medium"/>
         </a>
       </div>
 
