@@ -75,6 +75,7 @@
 </script>
 
 <style scoped lang="scss">
+  @import 'static/sass/styleguide.scss';
   @import 'static/sass/app.scss';
   @import 'static/sass/hamburger.scss';
 </style>
