@@ -49,7 +49,6 @@
 </script>
 
 <style lang="scss">
-  @import 'static/sass/lists.scss';
 </style>
 
 <style scoped lang="scss">
