@@ -25,32 +25,6 @@ body {
       font-size: 1rem;
       line-height: 1.5rem; } }
 
-.small {
-  font-size: 0.64rem;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  margin-bottom: 1.5rem; }
-  @media (min-width: 37.5em) {
-    .small {
-      font-size: 0.64rem;
-      line-height: 1.5rem; } }
-  @media (min-width: 37.5em) {
-    .small {
-      font-size: 0.64rem;
-      line-height: 1.5rem; } }
-  @media (min-width: 56.25em) {
-    .small {
-      font-size: 0.563rem;
-      line-height: 1.5rem; } }
-  @media (min-width: 75em) {
-    .small {
-      font-size: 0.444rem;
-      line-height: 1.5rem; } }
-  @media (min-width: 100em) {
-    .small {
-      font-size: 0.444rem;
-      line-height: 1.5rem; } }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
 �  v2.0b1 | 201101 
 �  NOTE: WORK IN PROGRESS
@@ -309,73 +283,281 @@ sub {
   height: 1px !important;
   overflow: hidden; }
 
-.site-nav__item {
-  display: block;
-  background-color: grey;
-  border-bottom: 1px solid #888;
-  text-transform: uppercase; }
-  @media (min-width: 37.5em) {
-    .site-nav__item {
-      display: inline-block;
-      width: 100px; } }
+.button {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s; }
 
-.site-nav__open {
-  float: right;
-  display: block;
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid grey;
-  border-radius: 10px;
-  text-decoration: none; }
-  @media (min-width: 37.5em) {
-    .site-nav__open {
-      display: none; } }
+.button--simple {
+  border-style: none; }
 
-.page-head--masthead {
-  background-image: url("/Media/headerimage2.jpg");
-  margin-bottom: 50px; }
+.button--ghost {
+  background: none;
+  border-style: solid;
+  border-width: 0.1875rem;
+  border-radius: 0.1875rem; }
 
-.wrapper {
-  height: 450px;
-  position: relative; }
-
-.mainheading {
-  font-size: 2.441rem;
-  line-height: 4.5rem;
-  position: absolute;
-  bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 50px;
-  padding: 10px;
-  background-color: rgba(191, 191, 191, 0.8);
-  text-align: center; }
+.button--small {
+  padding: 0.375rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem; }
   @media (min-width: 37.5em) {
-    .mainheading {
-      font-size: 2.441rem;
-      line-height: 4.5rem; } }
+    .button--small {
+      font-size: 0.8rem;
+      line-height: 1.5rem; } }
   @media (min-width: 37.5em) {
-    .mainheading {
-      font-size: 2.441rem;
-      line-height: 4.5rem; } }
+    .button--small {
+      font-size: 0.8rem;
+      line-height: 1.5rem; } }
   @media (min-width: 56.25em) {
-    .mainheading {
-      font-size: 3.157rem;
-      line-height: 4.5rem; } }
+    .button--small {
+      font-size: 0.75rem;
+      line-height: 1.5rem; } }
   @media (min-width: 75em) {
-    .mainheading {
-      font-size: 5.063rem;
-      line-height: 4.5rem; } }
+    .button--small {
+      font-size: 0.667rem;
+      line-height: 1.5rem; } }
   @media (min-width: 100em) {
-    .mainheading {
-      font-size: 5.063rem;
-      line-height: 4.5rem; } }
+    .button--small {
+      font-size: 0.667rem;
+      line-height: 1.5rem; } }
 
-.dummyBPTest {
-  width: 100%; }
+.button--medium {
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem; }
   @media (min-width: 37.5em) {
-    .dummyBPTest {
-      width: 50%; } }
+    .button--medium {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 37.5em) {
+    .button--medium {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
   @media (min-width: 56.25em) {
-    .dummyBPTest {
-      width: 25%; } }
+    .button--medium {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 75em) {
+    .button--medium {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 100em) {
+    .button--medium {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+
+.button--large {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 3rem; }
+  @media (min-width: 37.5em) {
+    .button--large {
+      font-size: 1.25rem;
+      line-height: 3rem; } }
+  @media (min-width: 37.5em) {
+    .button--large {
+      font-size: 1.25rem;
+      line-height: 3rem; } }
+  @media (min-width: 56.25em) {
+    .button--large {
+      font-size: 1.333rem;
+      line-height: 3rem; } }
+  @media (min-width: 75em) {
+    .button--large {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
+  @media (min-width: 100em) {
+    .button--large {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
+
+.button--fullwidth {
+  width: 100%;
+  text-align: center; }
+
+.button--halfwidth {
+  width: 50%;
+  text-align: center; }
+
+.button--primary {
+  background-color: #6600cc;
+  color: white; }
+  .button--primary:hover {
+    background-color: #4d0099; }
+
+.button--secondary {
+  background-color: #99ffbb;
+  color: black; }
+  .button--secondary:hover {
+    background-color: #00cc44; }
+
+.button--tertiary {
+  background-color: #f2f2f2;
+  color: black; }
+  .button--tertiary:hover {
+    background-color: #8c8c8c; }
+
+.button-ghost--primary {
+  border-color: #6600cc;
+  color: black; }
+  .button-ghost--primary:hover {
+    color: white;
+    background-color: #6600cc; }
+
+.button-ghost--secondary {
+  border-color: #00cc44;
+  color: black; }
+  .button-ghost--secondary:hover {
+    background-color: #00cc44; }
+
+.button-ghost--tertiary {
+  border-color: #bfbfbf;
+  color: black; }
+  .button-ghost--tertiary:hover {
+    background-color: #bfbfbf; }
+
+.button-group {
+  margin-bottom: 1.5rem; }
+
+.link {
+  display: inline-block;
+  margin-bottom: 1.5rem; }
+
+.link--regular {
+  color: black; }
+  .link--regular:visited {
+    color: #bfbfbf; }
+  .link--regular:hover {
+    color: #6600cc; }
+  .link--regular:active, .link--regular:focus {
+    color: white; }
+
+.link--subtle {
+  color: #bfbfbf; }
+  .link--subtle:visited {
+    color: #8c8c8c; }
+  .link--subtle:hover {
+    color: #6600cc; }
+  .link--subtle:active, .link--subtle:focus {
+    color: white; }
+
+.link--dark {
+  color: black; }
+  .link--dark:visited {
+    color: #bfbfbf; }
+  .link--dark:hover {
+    color: #6600cc; }
+  .link--dark:active, .link--dark:focus {
+    color: white; }
+
+.link--phone {
+  text-decoration: none; }
+  .link--phone {
+    color: black; }
+    .link--phone:visited {
+      color: #bfbfbf; }
+    .link--phone:hover {
+      color: #6600cc; }
+    .link--phone:active, .link--phone:focus {
+      color: white; }
+  .link--phone::before {
+    content: '\260e';
+    margin-right: .5em; }
+
+.list {
+  list-style-position: inside; }
+
+.list--none {
+  list-style-type: none; }
+
+.list--disc {
+  list-style-type: disc; }
+
+.list--circle {
+  list-style-type: circle; }
+
+.border--solid {
+  border-style: solid; }
+
+.border--dashed {
+  border-style: dashed; }
+
+.border--dotted {
+  border-style: dotted; }
+
+.border-width--thin {
+  border-width: 0.1875rem;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem; }
+
+.border-width--medium {
+  border-width: 0.3125rem;
+  padding-top: 1.1875rem;
+  padding-bottom: 1.1875rem; }
+
+.border-width--thick {
+  border-width: 0.4375rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem; }
+
+.bordertop-width--thin {
+  border-top-width: 0.1875rem;
+  padding-top: 1.3125rem; }
+
+.bordertop-width--medium {
+  border-top-width: 0.3125rem;
+  padding-top: 1.1875rem; }
+
+.bordertop-width--thick {
+  border-top-width: 0.4375rem;
+  padding-top: 1.0625rem; }
+
+.borderbottom-width--thin {
+  border-bottom-width: 0.1875rem;
+  padding-bottom: 1.3125rem; }
+
+.borderbottom-width--medium {
+  border-bottom-width: 0.3125rem;
+  padding-bottom: 1.1875rem; }
+
+.borderbottom-width--thick {
+  border-bottom-width: 0.4375rem;
+  padding-bottom: 1.0625rem; }
+
+.borderleft-width--thin {
+  border-left-width: 0.1875rem; }
+
+.borderleft-width--medium {
+  border-left-width: 0.3125rem; }
+
+.borderleft-width--thick {
+  border-left-width: 0.4375rem; }
+
+.borderright-width--thin {
+  border-right-width: 0.1875rem; }
+
+.borderright-width--medium {
+  border-right-width: 0.3125rem; }
+
+.borderright-width--thick {
+  border-right-width: 0.4375rem; }
+
+.border-color--black {
+  border-color: black; }
+
+.border-color--grey {
+  border-color: #bfbfbf; }
+
+.border-radius--small {
+  border-radius: 0.1875rem; }
+
+.border-radius--medium {
+  border-radius: 0.3125rem; }
+
+.border-radius--large {
+  border-radius: 0.625rem; }
+
+.border-radius--circle {
+  border-radius: 50%; }

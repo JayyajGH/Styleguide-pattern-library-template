@@ -44,7 +44,6 @@
 </script>
 
 <style lang="scss">
-  @import 'static/sass/links.scss';
 </style>
 
 <style scoped lang="scss">
