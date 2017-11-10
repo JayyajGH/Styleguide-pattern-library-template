@@ -120,7 +120,6 @@
 </script>
 
 <style lang="scss">
-  @import 'static/sass/buttons.scss';
 </style>
 
 <style scoped lang="scss">
