@@ -3,21 +3,21 @@
     <heading title="Links"></heading>
 
     <style-wrapper header="Link styles" description="Define a link style with link--regular, link--subtle, link--dark or link--phone">
-      <div slot="exampleSlot" class="sg-flex u-flex">
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span>
-          <a href="#" class="link link--regular">Regular</a>
+          <a href="#" class="link link--regular sg-margin-bottom--none">Regular</a>
         </span>
 
         <span>
-          <a href="#" class="link link--subtle">Subtle</a>
+          <a href="#" class="link link--subtle sg-margin-bottom--none">Subtle</a>
         </span>
 
         <span>
-          <a href="#" class="link link--dark">Dark</a>
+          <a href="#" class="link link--dark sg-margin-bottom--none">Dark</a>
         </span>
 
         <span>
-          <a href="#" class="link link--regular u-text-decoration--none">No decoration</a>
+          <a href="#" class="link link--regular u-text-decoration--none sg-margin-bottom--none">No decoration</a>
         </span>
 
         <span>

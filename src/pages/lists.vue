@@ -3,18 +3,18 @@
     <heading title="Lists"></heading>
 
     <style-wrapper header="List styles" description="Define a list style with list--disc or list--circle">
-      <div slot="exampleSlot" class="sg-flex u-flex">
-        <ul class="list list--disc">
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+        <ul class="list list--disc sg-list__item sg-margin-bottom--none">
           <li>Item 1</li>
           <li>Item 2</li>
         </ul>
 
-        <ul class="list list--circle">
+        <ul class="list list--circle sg-margin-bottom--none">
           <li>Item 1</li>
           <li>Item 2</li>
         </ul>
 
-        <ul class="list list--none">
+        <ul class="list list--none sg-margin-bottom--none">
           <li>Item 1</li>
           <li>Item 2</li>
         </ul>
