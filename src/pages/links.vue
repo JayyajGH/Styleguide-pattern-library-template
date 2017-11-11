@@ -24,7 +24,7 @@
           <a href="tel: 0800 111111" class="link link--phone">0800 111111</a>
         </span>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
 <code class="html">&lt;a href="#" class="link link--regular"&gt;Regular&lt;/a&gt;
 &lt;a href="#" class="link link--subtle"&gt;Subtle&lt;/a&gt;
 &lt;a href="#" class="link link--dark"&gt;Dark&lt;/a&gt;

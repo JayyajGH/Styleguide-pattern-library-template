@@ -12,7 +12,7 @@
       Maybe some ideas from: https://marvelapp.com/styleguide/design/layout
     </p>
 
-    <div class="sg-sectionborder sg-padding--large">
+    <div class="sg-sectionborder sg-padding--large sg-margin-bottom--none">
       <div class="sg-flex u-flex">
         <div class="sg-layout sg-paddingleft--medium sg-paddingright--medium sg-margin-bottom--none u-full-width">
           <div class="border--solid border-width--thin border-color--black sg-layout__item">
@@ -64,7 +64,7 @@
     </div>
 
     <div>
-    <pre v-highlightjs class="sg-sectionborder sg-code__section">
+    <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
 <code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>

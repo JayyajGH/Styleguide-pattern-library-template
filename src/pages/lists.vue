@@ -20,7 +20,7 @@
         </ul>
 
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
+      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
 <code class="html">&lt;ul class="list list--disc"&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
