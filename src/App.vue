@@ -74,8 +74,11 @@
   };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   @import 'static/sass/styleguide.scss';
+</style>
+
+<style scoped lang="scss">
   @import 'static/sass/app.scss';
   @import 'static/sass/hamburger.scss';
 </style>
