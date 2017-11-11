@@ -2,10 +2,11 @@
   <div id="home" class="spa-page">
 
     <heading title="Company Styleguide" :isMainHeading=true></heading>
-    <p>Describe what the styleguide is all about</p>
+    <p>This pattern library contains the standard set of web components and patterns that are used on the company website.</p>
 
-    Say where each item should be used.
-
+    <p>As well as individual components it also contains descriptions and examples of how these components should be used and how they fit together.
+      Ideally this should help to develop a consistent experience for users of the site as well as providing a central location where developers, content editors and designers can access an up to date library
+      of UI components, brand guidelines, brand assests and code snippets.</p>
   </div>
 </template>
 
@@ -17,5 +18,5 @@
   };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>
