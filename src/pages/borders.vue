@@ -2,14 +2,13 @@
   <div id="borders" class="spa-page">
 
     <heading title="Borders"></heading>
-
     <!-- Border styles -->
     <style-wrapper header="Border styles" description="Define the style of the border">
       <div slot="exampleSlot" class="sg-flex sg-flex--wrap u-flex">
           <border-example v-for="bstyle in borderStyle" :key=bstyle.name :title=bstyle.name :styling="[bstyle.style,'border-width--medium border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
-        <code class="html"><div v-html="returnFormattedCodeString(borderStyle, 'border--solid border-color--black')" class="sg-code"></div></code>
+        <code class="html"><div v-html="returnFormattedCodeString(borderStyle, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div></code>
       </pre>
     </style-wrapper>
 
@@ -19,7 +18,7 @@
         <border-example v-for="bsize in borderSize" :key=bsize.name :title=bsize.name :styling="[bsize.style,'border--solid border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
-        <code class="html"><div v-html="returnFormattedCodeString(borderSize, 'border--solid border-color--black')" class="sg-code"></div></code>
+        <code class="html"><div v-html="returnFormattedCodeString(borderSize, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div></code>
       </pre>
     </style-wrapper>
 
@@ -29,7 +28,7 @@
         <border-example v-for="bsizeueq in borderSizeUnequal" :key=bsizeueq.name :title=bsizeueq.name :styling="[bsizeueq.style,'border--solid border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
-        <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal, 'border--solid border-color--black')" class="sg-code"></div></code>
+        <code class="html"><div v-html="returnFormattedCodeString(borderSizeUnequal, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div></code>
       </pre>
     </style-wrapper>
 
@@ -39,7 +38,7 @@
         <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
-        <code class="html"><div v-html="returnFormattedCodeString(borderColour, 'border--solid border-width--medium')" class="sg-code"></div></code>
+        <code class="html"><div v-html="returnFormattedCodeString(borderColour, 'border--solid border-width--medium')" class="sg-margin-bottom--none"></div></code>
       </pre>
     </style-wrapper>
 
@@ -49,7 +48,7 @@
         <border-example v-for="bradius in borderRadius" :key=bradius.name :title=bradius.name :styling="[bradius.style,'border--solid border-width--thin border-color--black']"></border-example>
       </div>
       <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section">
-        <code class="html"><div v-html="returnFormattedCodeString(borderRadius, 'border-solid border-width--thin border-color--black')" class="sg-code"></div></code>
+        <code class="html"><div v-html="returnFormattedCodeString(borderRadius, 'border-solid border-width--thin border-color--black')" class="sg-margin-bottom--none"></div></code>
       </pre>
     </style-wrapper>
   </div>

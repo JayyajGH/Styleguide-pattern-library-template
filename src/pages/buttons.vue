@@ -14,7 +14,7 @@
    </div>
    <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-    <code class="html"><div v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-code"></div></code>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-margin-bottom--none"></div></code>
 </pre>
 </div>
 
@@ -29,7 +29,7 @@
 
    <div>
      <pre v-highlightjs class="sg-sectionborder sg-code__section">
-       <code class="html"><div v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-code"></div></code>
+       <code class="html"><div v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-margin-bottom--none"></div></code>
      </pre>
    </div>
 
@@ -44,7 +44,7 @@
 
 <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-    <code class="html"><div v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-code"></div></code>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-margin-bottom--none"></div></code>
   </pre>
 </div>
 
@@ -59,7 +59,7 @@
 
 <div>
   <pre v-highlightjs class="sg-sectionborder sg-code__section">
-    <code class="html"><div v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-code"></div></code>
+    <code class="html"><div v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-margin-bottom--none"></div></code>
   </pre>
 </div>
 
