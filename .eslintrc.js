@@ -4,7 +4,8 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
+    esversion: 6
   },
   env: {
     browser: true,
@@ -30,4 +31,4 @@ module.exports = {
     // Enforce semicolons. Always...
     'semi': ['error','always']
   }
-}
+};
