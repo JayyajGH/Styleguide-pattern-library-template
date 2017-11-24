@@ -20,21 +20,26 @@
         </ul>
 
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html">&lt;ul class="list list--disc"&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
+
+      <div slot="codeSlot">
+        <code-snippet slot="codeSlot">
+          <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;ul class="list list--disc"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ul class="list list--circle"&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ul class="list list--none"&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</div>
+        </code-snippet>
+      </div>
+
     </style-wrapper>
   </div>
 </template>
@@ -42,9 +47,10 @@
 <script>
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
+  import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { StyleWrapper, Heading }
+    components: { StyleWrapper, Heading, CodeSnippet }
   };
 </script>
 

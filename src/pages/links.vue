@@ -24,12 +24,17 @@
           <a href="tel: 0800 111111" class="link link--phone">0800 111111</a>
         </span>
       </div>
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html">&lt;a href="#" class="link link--regular"&gt;Regular&lt;/a&gt;
+
+      <div slot="codeSlot">
+        <code-snippet slot="codeSlot">
+          <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;a href="#" class="link link--regular"&gt;Regular&lt;/a&gt;
 &lt;a href="#" class="link link--subtle"&gt;Subtle&lt;/a&gt;
 &lt;a href="#" class="link link--dark"&gt;Dark&lt;/a&gt;
 &lt;a href="#" class="link link--regular u-text-decoration--none"&gt;No decoration&lt;/a&gt;
-&lt;a href="tel: 0800 111111" class="link link--phone"&gt;0800 111111&lt;/a&gt;</code></pre>
+&lt;a href="tel: 0800 111111" class="link link--phone"&gt;0800 111111&lt;/a&gt;</div>
+        </code-snippet>
+      </div>
+
     </style-wrapper>
   </div>
 </template>
@@ -37,9 +42,10 @@
 <script>
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
+  import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { StyleWrapper, Heading }
+    components: { StyleWrapper, Heading, CodeSnippet }
   };
 </script>
 

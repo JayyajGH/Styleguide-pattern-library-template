@@ -64,10 +64,11 @@
     </div>
 
     <div>
-    <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
+      <code-snippet slot="codeSlot">
+        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
 &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</code></pre>
+&lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</div>
+      </code-snippet>
     </div>
 
   </div>
@@ -75,9 +76,10 @@
 
 <script>
   import Heading from '@/components/heading';
+  import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { Heading }
+    components: { Heading, CodeSnippet }
   };
 </script>
 

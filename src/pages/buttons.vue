@@ -12,9 +12,11 @@
         <button type="button" class="button button--simple button--primary" :class=bsize.styling>{{bsize.name}}</button>
       </span>
     </div>
+
     <div>
-      <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html"><div v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-margin-bottom--none"></div></code></pre>
+      <code-snippet>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-margin-bottom--none"></div>
+      </code-snippet>
     </div>
 
     <h2 class="header2">Button importance</h2>
@@ -27,8 +29,9 @@
      </div>
 
      <div>
-       <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html"><div v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-margin-bottom--none"></div></code></pre>
+       <code-snippet>
+         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-margin-bottom--none"></div>
+       </code-snippet>
      </div>
 
     <h2 class="header2">Button width</h2>
@@ -41,8 +44,9 @@
     </div>
 
     <div>
-      <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html"><div v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-margin-bottom--none"></div></code></pre>
+      <code-snippet>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-margin-bottom--none"></div>
+      </code-snippet>
     </div>
 
     <h2 class="header2">Button Styles</h2>
@@ -55,8 +59,9 @@
     </div>
 
     <div>
-      <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html"><div v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-margin-bottom--none"></div></code></pre>
+      <code-snippet>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-margin-bottom--none"></div>
+      </code-snippet>
     </div>
 
     <h2 class="header2">Button Grouping</h2>
@@ -72,11 +77,12 @@
     </div>
 
     <div>
-      <pre v-highlightjs class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-<code class="html">&lt;div class="button--group"&gt;
+      <code-snippet slot="codeSlot">
+        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="button--group"&gt;
     &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;
     &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 2&lt;/button&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</div>
+      </code-snippet>
     </div>
 
   </div>
@@ -84,10 +90,11 @@
 
 <script>
   import Heading from '@/components/heading';
+  import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
-    components: { Heading },
+    components: { Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {

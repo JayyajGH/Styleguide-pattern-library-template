@@ -44,7 +44,9 @@
         <border-example v-for="bcolour in borderColour" :key=bcolour.name :title=bcolour.name :styling="[bcolour.style,'border--solid border-width--medium']"></border-example>
       </div>
       <div slot="codeSlot">
-        <code-snippet><div slot="codeSnippetSlot" v-html="returnFormattedCodeString(borderColour, 'border--solid border-width--medium')" class="sg-margin-bottom--none"></div></code-snippet>
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(borderColour, 'border--solid border-width--medium')" class="sg-margin-bottom--none"></div>
+        </code-snippet>
       </div>
     </style-wrapper>
 
