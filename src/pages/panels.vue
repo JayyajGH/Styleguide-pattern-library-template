@@ -13,10 +13,10 @@
         </div>
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-      <code class="html">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
-&lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;</code></pre>
-
+      <code-snippet slot="codeSlot">
+        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
+&lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;</div>
+      </code-snippet>
     </style-wrapper>
 
     <style-wrapper header="Promotional panels" description="These panels are used to promote a product or feature.">
@@ -43,9 +43,10 @@
 
       </div>
 
-      <pre v-highlightjs slot="codeSlot" class="sg-sectionborder sg-code__section sg-margin-bottom--none">
-      <code class="html">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
-&lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;</code></pre>
+      <code-snippet slot="codeSlot">
+        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
+&lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;</div>
+      </code-snippet>
 
     </style-wrapper>
 
@@ -56,9 +57,10 @@
 <script>
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
+  import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { StyleWrapper, Heading }
+    components: { StyleWrapper, Heading, CodeSnippet }
   };
 </script>
 
