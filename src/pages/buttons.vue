@@ -78,10 +78,7 @@
 
     <div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="button--group"&gt;
-    &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;
-    &lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 2&lt;/button&gt;
-&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="buttonGroupingCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </div>
 
@@ -96,6 +93,11 @@
   export default {
     components: { Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
+    computed: {
+      buttonGroupingCodeSnippet: function () {
+        return `&lt;div class="button--group"&gt;\n  ${this.buttonExampleCodeSnippet}\n  ${this.buttonExampleCodeSnippet}\n&lt;/div&gt;`;
+      }
+    },
     data: function () {
       return {
         buttonSize: [
@@ -115,7 +117,8 @@
         buttonStyle: [
           {name: 'Simple button', styling: 'button--simple button--primary'},
           {name: 'Ghost button', styling: 'button--ghost button-ghost--primary'}
-        ]
+        ],
+        buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;'
       };
     }
   };

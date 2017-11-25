@@ -65,9 +65,7 @@
 
     <div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;button type="button" class="button button--simple button--primary button--small"&gt;Small button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Medium button&lt;/button&gt;
-&lt;button type="button" class="button button--simple button--primary button--large"&gt;Large button&lt;/button&gt;</div>
+        <div slot="codeSnippetSlot" v-html="layoutCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </div>
 
@@ -79,7 +77,17 @@
   import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { Heading, CodeSnippet }
+    components: { Heading, CodeSnippet },
+    computed: {
+      layoutCodeSnippet: function () {
+        return `${this.layoutCodeSnippet}`;
+      }
+    },
+    data: function () {
+      return {
+        layoutCodeSnippet: 'Add some code example here'
+      };
+    }
   };
 </script>
 
