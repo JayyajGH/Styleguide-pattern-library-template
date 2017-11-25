@@ -4,7 +4,7 @@ export default {
       let templateString = ``;
 
       if (styleList) {
-        styleList.forEach(function (value) {
+        styleList.forEach(value => {
           templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
         });
       }
