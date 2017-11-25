@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2 class="header2">{{header}}</h2>
+    <header>
+      <h2 class="header2">{{header}}</h2>
+    </header>
     <p>{{description}}</p>
     <div class="sg-sectionborder sg-padding--large sg-margin-bottom--none">
       <slot name="exampleSlot"></slot>
