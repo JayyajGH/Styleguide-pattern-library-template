@@ -25,11 +25,9 @@
         </span>
       </div>
 
-      <div slot="codeSlot">
-        <code-snippet slot="codeSlot">
-          <div slot="codeSnippetSlot" v-html="linkCodeSnippet" class="sg-margin-bottom--none"></div>
-        </code-snippet>
-      </div>
+      <code-snippet slot="codeSlot">
+        <div slot="codeSnippetSlot" v-html="linkCodeSnippet" class="sg-margin-bottom--none"></div>
+      </code-snippet>
 
     </style-wrapper>
   </div>
