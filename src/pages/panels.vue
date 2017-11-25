@@ -12,10 +12,8 @@
           </div>
         </div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
-&lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;</div>
+        <div slot="codeSnippetSlot" v-html="heroPanelCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -40,12 +38,10 @@
             </p>
           </div>
         </div>
-
       </div>
 
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
-&lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;</div>
+        <div slot="codeSnippetSlot" v-html="promoPanelCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
 
     </style-wrapper>
@@ -60,7 +56,17 @@
   import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { StyleWrapper, Heading, CodeSnippet }
+    components: { StyleWrapper, Heading, CodeSnippet },
+    computed: {
+      heroPanelCodeSnippet: function () {
+        return `&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
+&lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;`;
+      },
+      promoPanelCodeSnippet: function () {
+        return `&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
+&lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;`;
+      }
+    }
   };
 </script>
 
