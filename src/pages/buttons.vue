@@ -4,99 +4,111 @@
 
     <p>These styles will work on the button element, an input element with a type of button and an anchor styled as a button</p>
 
-    <section>
-      <h2 class="header2">Button sizes</h2>
-      <p>Use these classes to define the button size.  The button sizes should be used as follows:</p>
-      <ul class="list">
-        <li>A small button is used...</li>
-        <li>A medium button is used...</li>
-        <li>A large button is used...</li>
-      </ul>
-
-      <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex sg-margin-bottom--none">
+    <style-wrapper header="Button sizes">
+      <div slot="descriptionSlot">
+        <p>Use these classes to define the button size.  The button sizes should be used as follows:</p>
+        <ul class="list">
+          <li>A small button is used...</li>
+          <li>A medium button is used...</li>
+          <li>A large button is used...</li>
+        </ul>
+      </div>
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--primary" :class=bsize.styling>{{bsize.name}}</button>
+          <button type="button" class="button button--simple button--primary" :class=bsize.style>{{bsize.name}}</button>
         </span>
       </div>
+      <div slot="codeSlot">
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonSize, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div>
+        </code-snippet>
+      </div>
+    </style-wrapper>
 
-      <code-snippet>
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-margin-bottom--none"></div>
-      </code-snippet>
-    </section>
+    <style-wrapper header="Button importance">
+      <div slot="descriptionSlot">
+        <p>Use these classes to define a buttons importance. The button importance should be used as follows:</p>
+        <ul class="list">
+          <li>A primary button is used...</li>
+          <li>A secondary button is used...</li>
+          <li>A tertiary button is used...</li>
+        </ul>
+      </div>
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+        <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
+          <button type="button" class="button button--simple button--medium" :class=bimportant.style>{{bimportant.name}}</button>
+        </span>
+      </div>
+      <div slot="codeSlot">
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-margin-bottom--none"></div>
+        </code-snippet>
+      </div>
+    </style-wrapper>
 
-    <section>
-      <h2 class="header2">Button importance</h2>
-      <p>Define a buttons importance with button--primary, button--secondary or button--tertiary</p>
-
-       <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex sg-margin-bottom--none">
-         <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
-           <button type="button" class="button button--simple button--medium" :class=bimportant.styling>{{bimportant.name}}</button>
-         </span>
-       </div>
-
-       <code-snippet>
-         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonImportance, 'button button--simple button--medium')" class="sg-margin-bottom--none"></div>
-       </code-snippet>
-    </section>
-
-    <section>
-      <h2 class="header2">Button width</h2>
-      <p>Define the width of a button to a set size with button--halfwidth or button--fullwidth</p>
-
-      <div class="button--group sg-sectionborder sg-padding--large sg-margin-bottom--none">
-        <div v-for="bwidth in buttonWidth">
-          <button type="button" class="button button--simple button--primary button--medium" :class=bwidth.styling>{{bwidth.name}}</button>
+    <style-wrapper header="Button width">
+      <div slot="descriptionSlot">
+        <p>Use these classes to define the width of a button</p>
+      </div>
+      <div slot="exampleSlot" class="sg-margin-bottom--none">
+        <div v-for="bwidth in buttonWidth" class="sg-margin-bottom--medium">
+          <button type="button" class="button button--simple button--primary button--medium" :class=bwidth.style>{{bwidth.name}}</button>
         </div>
       </div>
+      <div slot="codeSlot">
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-margin-bottom--none"></div>
+        </code-snippet>
+      </div>
+    </style-wrapper>
 
-      <code-snippet>
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonWidth, 'button button--simple button--primary button--medium')" class="sg-margin-bottom--none"></div>
-      </code-snippet>
-    </section>
-
-    <section>
-      <h2 class="header2">Button Styles</h2>
-      <p>Define the style of a button with button--simple or button--ghost.  All other options can be applied to each style.</p>
-
-      <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex sg-margin-bottom--none">
+    <style-wrapper header="Button styles">
+      <div slot="descriptionSlot">
+        <p>Use these classes to define the style of the button. All other options can be applied to each style.</p>
+        <ul class="list">
+          <li>A simple button is used...</li>
+          <li>A ghost button is used...</li>
+        </ul>
+      </div>
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span v-for="bstyle in buttonStyle" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--medium" :class=bstyle.styling>{{bstyle.name}}</button>
+          <button type="button" class="button button--medium" :class=bstyle.style>{{bstyle.name}}</button>
         </span>
       </div>
+      <div slot="codeSlot">
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-margin-bottom--none"></div>
+        </code-snippet>
+      </div>
+    </style-wrapper>
 
-      <code-snippet>
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonStyle, 'button button--medium')" class="sg-margin-bottom--none"></div>
-      </code-snippet>
-    </section>
-
-    <section>
-      <h2 class="header2">Button Grouping</h2>
-      <p>Set a grouping container for buttons.  This will add the correct padding etc.</p>
-
-      <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex sg-margin-bottom--none">
+    <style-wrapper header="Button grouping" description="Set a grouping container for buttons.  This will add the correct padding etc.">
+      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--primary button--medium">Button 1</button>
+          <button type="button" class="button button--simple button--primary button--medium">Button</button>
         </span>
         <span class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--primary button--medium">Button 2</button>
+          <button type="button" class="button button--simple button--primary button--medium">Button</button>
         </span>
       </div>
-
-      <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="buttonGroupingCodeSnippet" class="sg-margin-bottom--none"></div>
-      </code-snippet>
-    </section>
+      <div slot="codeSlot">
+        <code-snippet>
+          <div slot="codeSnippetSlot" v-html="buttonGroupingCodeSnippet" class="sg-margin-bottom--none"></div>
+        </code-snippet>
+      </div>
+    </style-wrapper>
 
   </div>
 </template>
 
 <script>
+  import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
-    components: { Heading, CodeSnippet },
+    components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {
       buttonGroupingCodeSnippet: function () {
@@ -106,24 +118,24 @@
     data: function () {
       return {
         buttonSize: [
-          {name: 'Small button', styling: 'button--small'},
-          {name: 'Medium button', styling: 'button--medium'},
-          {name: 'Large button', styling: 'button--large'}
+          {name: 'Small button', style: 'button--small'},
+          {name: 'Medium button', style: 'button--medium'},
+          {name: 'Large button', style: 'button--large'}
         ],
         buttonImportance: [
-          {name: 'Primary button', styling: 'button--primary'},
-          {name: 'Secondary button', styling: 'button--secondary'},
-          {name: 'Tertiary button', styling: 'button--tertiary'}
+          {name: 'Primary button', style: 'button--primary'},
+          {name: 'Secondary button', style: 'button--secondary'},
+          {name: 'Tertiary button', style: 'button--tertiary'}
         ],
         buttonWidth: [
-          {name: 'Half-width button', styling: 'button--halfwidth'},
-          {name: 'Full-width button', styling: 'button--fullwidth'}
+          {name: 'Half-width button', style: 'button--halfwidth'},
+          {name: 'Full-width button', style: 'button--fullwidth'}
         ],
         buttonStyle: [
-          {name: 'Simple button', styling: 'button--simple button--primary'},
-          {name: 'Ghost button', styling: 'button--ghost button-ghost--primary'}
+          {name: 'Simple button', style: 'button--simple button--primary'},
+          {name: 'Ghost button', style: 'button--ghost button-ghost--primary'}
         ],
-        buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button 1&lt;/button&gt;'
+        buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button&lt;/button&gt;'
       };
     }
   };
