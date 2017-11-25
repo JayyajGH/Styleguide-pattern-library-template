@@ -6,7 +6,12 @@
 
     <section>
       <h2 class="header2">Button sizes</h2>
-      <p>Define a button size with button--small, button--medium or button--large</p>
+      <p>Use these classes to define the button size.  The button sizes should be used as follows:</p>
+      <ul class="list">
+        <li>A small button is used...</li>
+        <li>A medium button is used...</li>
+        <li>A large button is used...</li>
+      </ul>
 
       <div class="button--group sg-flex sg-flex-button sg-sectionborder sg-padding--large u-flex sg-margin-bottom--none">
         <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
