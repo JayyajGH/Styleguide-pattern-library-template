@@ -8,11 +8,8 @@
         <p class="u-align--center">Center aligned text</p>
         <p class="u-align--right">Right aligned text</p>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;
-&lt;p class="u-align--center"&gt;Center aligned text&lt;/p&gt;
-&lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;</div>
+        <div slot="codeSnippetSlot" v-html="inlineContentAlignmentCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -20,9 +17,8 @@
       <div slot="exampleSlot">
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-block--center"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="blockContentAlignmentCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -33,10 +29,8 @@
         <!-- Hack to stop parent collapsing -->
         <div style="clear: both;"></div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-float--left"&gt;...&lt;/div&gt;
-&lt;div class="u-float--right"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="floatBlockCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -57,12 +51,8 @@
           <div class="sg-utility-block border--solid border-width--thin border-color--black sg-utility-block--wide u-flex sg-padding--medium">Element displayed as flex element</div>
         </div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-block"&gt;...&lt;/div&gt;
-&lt;div class="u-inline"&gt;...&lt;/div&gt;
-&lt;div class="u-inline-block"&gt;...&lt;/div&gt;
-&lt;div class="u-flex"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="displayCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -75,10 +65,8 @@
           <span class="u-absolute sg-absolute-block sg-utility-block border--solid border-width--thin border-color--black u-align--center sg-padding--medium">Absolutely positioned element</span>
         </div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-relative"&gt;...&lt;/div&gt;
-&lt;div class="u-absolute"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="positionCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -88,11 +76,8 @@
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-block"&gt;...&lt;/div&gt;
-&lt;div class="u-inline"&gt;...&lt;/div&gt;
-&lt;div class="u-inline-block"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="transformationCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -103,10 +88,8 @@
         <p>Following this line is a visually hidden element</p>
         <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
       </div>
-
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" class="sg-margin-bottom--none">&lt;div class="u-hidden"&gt;...&lt;/div&gt;
-&lt;div class="u-hidden-visually"&gt;...&lt;/div&gt;</div>
+        <div slot="codeSnippetSlot" v-html="contentHidingCodeSnippet" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -119,7 +102,62 @@
   import CodeSnippet from '@/components/codesnippet';
 
   export default {
-    components: { StyleWrapper, Heading, CodeSnippet }
+    components: { StyleWrapper, Heading, CodeSnippet },
+    computed: {
+      inlineContentAlignmentCodeSnippet: function () {
+        return `${this.inlineContentAlignment.leftAlignedText}\n${this.inlineContentAlignment.centreAlignedText}\n${this.inlineContentAlignment.rightAlignedText}`;
+      },
+      blockContentAlignmentCodeSnippet: function () {
+        return `&lt;div class="u-block--center"&gt;...&lt;/div&gt;`;
+      },
+      floatBlockCodeSnippet: function () {
+        return `${this.floatBlock.floatLeft}\n${this.floatBlock.floatRight}`;
+      },
+      displayCodeSnippet: function () {
+        return `${this.display.block}\n${this.display.inline}\n${this.display.inlineBlock}\n${this.display.flex}`;
+      },
+      positionCodeSnippet: function () {
+        return `${this.position.relative}\n${this.position.absolute}`;
+      },
+      transformationCodeSnippet: function () {
+        return `${this.transformation.lowercase}\n${this.transformation.uppercase}\n${this.transformation.capitalize}`;
+      },
+      contentHidingCodeSnippet: function () {
+        return `${this.contentHiding.hidden}\n${this.contentHiding.visuallyHidden}`;
+      }
+    },
+    data: function () {
+      return {
+        inlineContentAlignment: {
+          leftAlignedText: `&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;`,
+          centreAlignedText: `&lt;p class="u-align--center"&gt;Center aligned text&lt;/p&gt;`,
+          rightAlignedText: `&lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;`
+        },
+        floatBlock: {
+          floatLeft: `&lt;div class="u-float--left"&gt;...&lt;/div&gt;`,
+          floatRight: `&lt;div class="u-float--right"&gt;...&lt;/div&gt;`
+        },
+        display: {
+          block: `&lt;div class="u-block"&gt;...&lt;/div&gt;`,
+          inline: `&lt;div class="u-inline"&gt;...&lt;/div&gt;`,
+          inlineBlock: `&lt;div class="u-inline-block"&gt;...&lt;/div&gt;`,
+          flex: `&lt;div class="u-flex"&gt;...&lt;/div&gt;`
+        },
+        position: {
+          relative: `&lt;div class="u-relative"&gt;...&lt;/div&gt;`,
+          absolute: `&lt;div class="u-absolute"&gt;...&lt;/div&gt;`
+        },
+        transformation: {
+          lowercase: `&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;`,
+          uppercase: `&lt;p class="u-text-uppercase"&gt;Uppercase text&lt;/p&gt;`,
+          capitalize: `&lt;p class="u-text-capitalize"&gt;Capitalized text&lt;/p&gt;`
+        },
+        contentHiding: {
+          hidden: `&lt;div class="u-hidden"&gt;...&lt;/div&gt;`,
+          visuallyHidden: `&lt;div class="u-hidden-visually"&gt;...&lt;/div&gt;`
+        }
+      };
+    }
   };
 </script>
 
