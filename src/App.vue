@@ -41,7 +41,6 @@
             <ul>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/layout" class="sg-menu-anchor u-text-decoration--none">Layout</router-link></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/buttons" class="sg-menu-anchor u-text-decoration--none">Buttons</router-link></li>
-                <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><a href="" class="sg-menu-anchor u-text-decoration--none">Header</a></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/panels" class="sg-menu-anchor u-text-decoration--none">Panels</router-link></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/navigation" class="sg-menu-anchor u-text-decoration--none">Navigation</router-link></li>
                 <li class="list list--none sg-paddingleft--large sg-paddingbottom--medium"><router-link to="/forms" class="sg-menu-anchor u-text-decoration--none">Forms</router-link></li>
