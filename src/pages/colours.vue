@@ -2,11 +2,11 @@
   <div id="colours" class="spa-page">
     <heading title="Colours"></heading>
 
-    <div class="palette__container u-flex">
+    <section class="palette__container u-flex">
       <ul v-for="colour in colorList" class="palette sg-margin--medium">
         <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
-    </div>
+    </section>
 
   </div>
 </template>
