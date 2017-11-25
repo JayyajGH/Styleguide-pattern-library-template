@@ -1,10 +1,10 @@
 <template>
-  <div class="u-relative">
+  <header class="u-relative">
     <h1 class="header1 u-relative highzindex">{{title}}</h1>
 
     <div class="brush-stroke u-absolute u-full-width"
       :class="{'brush-stroke--large': isMainHeading, 'brush-stroke--small': !isMainHeading }"></div>
-  </div>
+  </header>
 </template>
 
 <script>
