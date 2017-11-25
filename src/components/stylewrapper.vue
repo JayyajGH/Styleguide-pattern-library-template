@@ -20,7 +20,10 @@ export default {
       type: String,
       required: true
     },
-    description: String
+    description: {
+      type: String,
+      required: false
+    }
   }
 };
 </script>
