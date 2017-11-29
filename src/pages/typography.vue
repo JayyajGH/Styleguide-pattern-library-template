@@ -134,14 +134,14 @@
   @import 'static/sass/abstracts/_abstracts';
 
   .sg-font--smallest {
-      @extend %bodysmallest;
+      @include body-smallest();
   }
 
   .sg-font--small {
-      @extend %bodysmall;
+      @include body-small();
   }
 
   .sg-font--bold {
-      @extend %bodybold;
+      @include body-bold();
   }
 </style>
