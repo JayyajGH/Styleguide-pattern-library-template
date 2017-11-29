@@ -38,6 +38,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
+  import {PreCodeSnippet} from '@/components/classes/precodesnippet';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
@@ -45,11 +46,11 @@
     data: function () {
       return {
         link: [
-          {content: 'Regular', style: 'link link--regular', element: 'a'},
-          {content: 'Subtle', style: 'link link--subtle', element: 'a'},
-          {content: 'Dark', style: 'link link--dark', element: 'a'},
-          {content: 'No decoration', style: 'link link--regular u-text-decoration--none', element: 'a'},
-          {content: '0800 111111', style: 'link link--phone', element: 'a'}
+          new PreCodeSnippet('Regular', 'link link--regular', 'a'),
+          new PreCodeSnippet('Subtle', 'link link--subtle', 'a'),
+          new PreCodeSnippet('Dark', 'link link--dark', 'a'),
+          new PreCodeSnippet('No decoration', 'link link--regular u-text-decoration--none', 'a'),
+          new PreCodeSnippet('0800 111111', 'link link--phone', 'a')
         ]
       };
     }

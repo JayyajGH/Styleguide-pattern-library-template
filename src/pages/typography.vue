@@ -73,6 +73,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
+  import {PreCodeSnippet} from '@/components/classes/precodesnippet';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
@@ -82,33 +83,33 @@
       return {
         pangramText,
         typeface: [
-          {content: '...', style: '', element: 'p'}
+          new PreCodeSnippet('...', 'header1', 'p')
         ],
         fontSizes: [
-          {content: pangramText, style: 'header1', element: 'p'},
-          {content: pangramText, style: 'header2', element: 'p'},
-          {content: pangramText, style: 'header3', element: 'p'},
-          {content: pangramText, style: 'header4', element: 'p'},
-          {content: pangramText, style: 'body', element: 'p'},
-          {content: pangramText, style: 'xyz1', element: 'p'},
-          {content: pangramText, style: 'xyz2', element: 'p'}
+          new PreCodeSnippet(pangramText, 'header1', 'p'),
+          new PreCodeSnippet(pangramText, 'header2', 'p'),
+          new PreCodeSnippet(pangramText, 'header3', 'p'),
+          new PreCodeSnippet(pangramText, 'header3', 'p'),
+          new PreCodeSnippet(pangramText, 'body', 'p'),
+          new PreCodeSnippet(pangramText, 'xyz1', 'p'),
+          new PreCodeSnippet(pangramText, 'xyz2', 'p')
         ],
         fontWeight: [
-          {content: 'Normal weight text', style: '', element: 'p'},
-          {content: 'Bold weight text', style: 'xyz', element: 'p'}
+          new PreCodeSnippet('Normal weight text', '', 'p'),
+          new PreCodeSnippet('Bold weight text', 'xyz', 'p')
         ],
         typeTags: [
-          {content: 'Paragraph tag', style: '', element: 'p'},
-          {content: 'Small tag', style: '', element: 'small'},
-          {content: 'Strong tag', style: '', element: 'strong'},
-          {content: 'Bold tag', style: '', element: 'bold'},
-          {content: 'Italic tag', style: '', element: 'i'},
-          {content: 'Emphasis tag', style: '', element: 'em'}
+          new PreCodeSnippet('Paragraph tag', '', 'p'),
+          new PreCodeSnippet('Small tag', '', 'small'),
+          new PreCodeSnippet('Strong tag', '', 'strong'),
+          new PreCodeSnippet('Bold tag', '', 'bold'),
+          new PreCodeSnippet('Italic tag', '', 'i'),
+          new PreCodeSnippet('Emphasis tag', '', 'em')
         ],
         transformation: [
-          {content: 'Lowercase text', style: 'u-text-lowercase', element: 'p'},
-          {content: 'Uppercase text', style: 'u-text-uppercase', element: 'p'},
-          {content: 'Capitalized text', style: 'u-text-capitalize', element: 'p'}
+          new PreCodeSnippet('Lowercase text', 'u-text-lowercase', 'p'),
+          new PreCodeSnippet('Uppercase text', 'u-text-uppercase', 'p'),
+          new PreCodeSnippet('Capitalized text', 'u-text-capitalize', 'p')
         ]
       };
     }
