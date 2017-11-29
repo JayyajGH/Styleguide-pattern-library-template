@@ -15,7 +15,7 @@
       </div>
       <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--primary" :class=bsize.style>{{bsize.name}}</button>
+          <button type="button" class="button button--simple button--primary" :class=bsize.style>{{bsize.content}}</button>
         </span>
       </div>
       <div slot="codeSlot">
@@ -36,7 +36,7 @@
       </div>
       <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--medium" :class=bimportant.style>{{bimportant.name}}</button>
+          <button type="button" class="button button--simple button--medium" :class=bimportant.style>{{bimportant.content}}</button>
         </span>
       </div>
       <div slot="codeSlot">
@@ -52,7 +52,7 @@
       </div>
       <div slot="exampleSlot" class="sg-margin-bottom--none">
         <div v-for="bwidth in buttonWidth" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--simple button--primary button--medium" :class=bwidth.style>{{bwidth.name}}</button>
+          <button type="button" class="button button--simple button--primary button--medium" :class=bwidth.style>{{bwidth.content}}</button>
         </div>
       </div>
       <div slot="codeSlot">
@@ -72,7 +72,7 @@
       </div>
       <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
         <span v-for="bstyle in buttonStyle" class="sg-margin-bottom--medium">
-          <button type="button" class="button button--medium" :class=bstyle.style>{{bstyle.name}}</button>
+          <button type="button" class="button button--medium" :class=bstyle.style>{{bstyle.content}}</button>
         </span>
       </div>
       <div slot="codeSlot">
@@ -118,22 +118,22 @@
     data: function () {
       return {
         buttonSize: [
-          {name: 'Small button', style: 'button--small'},
-          {name: 'Medium button', style: 'button--medium'},
-          {name: 'Large button', style: 'button--large'}
+          {content: 'Small button', style: 'button--small', element: 'div'},
+          {content: 'Medium button', style: 'button--medium', element: 'div'},
+          {content: 'Large button', style: 'button--large', element: 'div'}
         ],
         buttonImportance: [
-          {name: 'Primary button', style: 'button--primary'},
-          {name: 'Secondary button', style: 'button--secondary'},
-          {name: 'Tertiary button', style: 'button--tertiary'}
+          {content: 'Primary button', style: 'button--primary', element: 'div'},
+          {content: 'Secondary button', style: 'button--secondary', element: 'div'},
+          {content: 'Tertiary button', style: 'button--tertiary', element: 'div'}
         ],
         buttonWidth: [
-          {name: 'Half-width button', style: 'button--halfwidth'},
-          {name: 'Full-width button', style: 'button--fullwidth'}
+          {content: 'Half-width button', style: 'button--halfwidth', element: 'div'},
+          {content: 'Full-width button', style: 'button--fullwidth', element: 'div'}
         ],
         buttonStyle: [
-          {name: 'Simple button', style: 'button--simple button--primary'},
-          {name: 'Ghost button', style: 'button--ghost button-ghost--primary'}
+          {content: 'Simple button', style: 'button--simple button--primary', element: 'div'},
+          {content: 'Ghost button', style: 'button--ghost button-ghost--primary', element: 'div'}
         ],
         buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button&lt;/button&gt;'
       };

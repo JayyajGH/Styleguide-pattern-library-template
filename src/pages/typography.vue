@@ -11,7 +11,7 @@
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="typefaceCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeface, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -26,7 +26,7 @@
         <p class="sg-font--smallest">{{pangramText}}</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="fontSizesCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontSizes, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -36,7 +36,7 @@
         <p class="sg-font--bold">Bold weight text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="fontWeightCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontWeight, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -50,7 +50,7 @@
         <p><em>Emphasis tag</em></p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="typeTagsCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeTags, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -61,7 +61,7 @@
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="transformationCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -72,56 +72,44 @@
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
+  import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
-    computed: {
-      typefaceCodeSnippet: function () {
-        return '&lt;p&gt;...&lt;/p&gt;';
-      },
-      fontSizesCodeSnippet: function () {
-        return `${this.fontSizes.header1}\n${this.fontSizes.header2}\n${this.fontSizes.header3}\n${this.fontSizes.header4}\n${this.fontSizes.body}\n${this.fontSizes.xyz1}\n${this.fontSizes.xyz2}`;
-      },
-      fontWeightCodeSnippet: function () {
-        return `${this.fontWeight.normal}\n${this.fontWeight.bold}`;
-      },
-      typeTagsCodeSnippet: function () {
-        return `${this.typeTags.paragraph}\n${this.typeTags.small}\n${this.typeTags.strong}\n${this.typeTags.bold}\n${this.typeTags.italic}\n${this.typeTags.emphasis}`;
-      },
-      transformationCodeSnippet: function () {
-        return `${this.transformation.lowercase}\n${this.transformation.uppercase}\n${this.transformation.capitalize}\n`;
-      }
-    },
+    mixins: [returnFormattedCodeString],
     data: function () {
       var pangramText = 'Pack my box with five dozen liquor jugs';
       return {
         pangramText,
-        fontSizes: {
-          header1: `&lt;p class="header1"&gt;${pangramText}&lt;/p&gt;`,
-          header2: `&lt;p class="header2"&gt;${pangramText}&lt;/p&gt;`,
-          header3: `&lt;p class="header3"&gt;${pangramText}&lt;/p&gt;`,
-          header4: `&lt;p class="header4"&gt;${pangramText}&lt;/p&gt;`,
-          body: `&lt;p class="body"&gt;${pangramText}&lt;/p&gt;`,
-          xyz1: `&lt;p class="xyz1"&gt;${pangramText}&lt;/p&gt;`,
-          xyz2: `&lt;p class="xyz2"&gt;${pangramText}&lt;/p&gt;`
-        },
-        fontWeight: {
-          normal: `&lt;p&gt;Normal weight text&lt;/p&gt;`,
-          bold: `&lt;p class="xyz"&gt;Bold weight text&lt;/p&gt;`
-        },
-        typeTags: {
-          paragraph: `&lt;p&gt;Paragraph tag&lt;/p&gt;`,
-          small: `&lt;small&gt;Small tag&lt;/small&gt;`,
-          strong: `&lt;strong&gt;Strong tag&lt;/strong&gt;`,
-          bold: `&lt;b&gt;Bold tag&lt;/b&gt;`,
-          italic: `&lt;i&gt;Italic tag&lt;/i&gt;`,
-          emphasis: `&lt;em&gt;Emphasis tag&lt;/em&gt;`
-        },
-        transformation: {
-          lowercase: `&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;`,
-          uppercase: `&lt;p class="u-text-uppercase"&gt;Uppercase text&lt;/p&gt;`,
-          capitalize: `&lt;p class="u-text-capitalize"&gt;Capitalized text&lt;/p&gt;`
-        }
+        typeface: [
+          {content: '...', style: '', element: 'p'}
+        ],
+        fontSizes: [
+          {content: pangramText, style: 'header1', element: 'p'},
+          {content: pangramText, style: 'header2', element: 'p'},
+          {content: pangramText, style: 'header3', element: 'p'},
+          {content: pangramText, style: 'header4', element: 'p'},
+          {content: pangramText, style: 'body', element: 'p'},
+          {content: pangramText, style: 'xyz1', element: 'p'},
+          {content: pangramText, style: 'xyz2', element: 'p'}
+        ],
+        fontWeight: [
+          {content: 'Normal weight text', style: '', element: 'p'},
+          {content: 'Bold weight text', style: 'xyz', element: 'p'}
+        ],
+        typeTags: [
+          {content: 'Paragraph tag', style: '', element: 'p'},
+          {content: 'Small tag', style: '', element: 'small'},
+          {content: 'Strong tag', style: '', element: 'strong'},
+          {content: 'Bold tag', style: '', element: 'bold'},
+          {content: 'Italic tag', style: '', element: 'i'},
+          {content: 'Emphasis tag', style: '', element: 'em'}
+        ],
+        transformation: [
+          {content: 'Lowercase text', style: 'u-text-lowercase', element: 'p'},
+          {content: 'Uppercase text', style: 'u-text-uppercase', element: 'p'},
+          {content: 'Capitalized text', style: 'u-text-capitalize', element: 'p'}
+        ]
       };
     }
   };

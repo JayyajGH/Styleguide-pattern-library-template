@@ -26,7 +26,7 @@
       </div>
 
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="linkCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(link, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
 
     </style-wrapper>
@@ -37,23 +37,20 @@
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
+  import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
-    computed: {
-      linkCodeSnippet: function () {
-        return `${this.link.linkRegular}\n${this.link.linkSubtle}\n${this.link.linkDark}\n${this.link.linkNoDecoration}\n${this.link.linkPhone}`;
-      }
-    },
+    mixins: [returnFormattedCodeString],
     data: function () {
       return {
-        link: {
-          linkRegular: '&lt;a href="#" class="link link--regular"&gt;Regular&lt;/a&gt;',
-          linkSubtle: '&lt;a href="#" class="link link--subtle"&gt;Subtle&lt;/a&gt;',
-          linkDark: '&lt;a href="#" class="link link--dark"&gt;Dark&lt;/a&gt;',
-          linkNoDecoration: '&lt;a href="#" class="link link--regular u-text-decoration--none"&gt;No decoration&lt;/a&gt;',
-          linkPhone: '&lt;a href="tel: 0800 111111" class="link link--phone"&gt;0800 111111&lt;/a&gt;'
-        }
+        link: [
+          {content: 'Regular', style: 'link link--regular', element: 'a'},
+          {content: 'Subtle', style: 'link link--subtle', element: 'a'},
+          {content: 'Dark', style: 'link link--dark', element: 'a'},
+          {content: 'No decoration', style: 'link link--regular u-text-decoration--none', element: 'a'},
+          {content: '0800 111111', style: 'link link--phone', element: 'a'}
+        ]
       };
     }
   };

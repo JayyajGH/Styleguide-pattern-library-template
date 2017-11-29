@@ -5,7 +5,9 @@ export default {
 
       if (styleList) {
         styleList.forEach(value => {
-          templateString += `&lt;div class="${value.style} ${additionalClasses}"&gt;${value.name}&lt;/div&gt;\n`;
+          var styling = `${value.style}${additionalClasses ? ' ' + additionalClasses : ''}`;
+
+          templateString += `&lt;${value.element}${styling ? ` class="${styling}"` : ''}&gt;${value.content}&lt;/${value.element}&gt;\n`;
         });
       }
 

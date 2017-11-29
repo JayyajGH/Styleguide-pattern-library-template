@@ -9,7 +9,7 @@
         <p class="u-align--right">Right aligned text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="inlineContentAlignmentCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(inlineContentAlignment, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -18,7 +18,7 @@
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="blockContentAlignmentCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(blockContentAlignment, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -30,7 +30,7 @@
         <div style="clear: both;"></div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="floatBlockCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(floatBlock, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -52,7 +52,7 @@
         </div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="displayCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(display, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -66,7 +66,7 @@
         </div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="positionCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(position, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -77,7 +77,7 @@
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="transformationCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -89,7 +89,7 @@
         <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="contentHidingCodeSnippet" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(contentHiding, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -100,69 +100,48 @@
   import StyleWrapper from '@/components/stylewrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
+  import returnFormattedCodeString from '@/components/mixins/codestring';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
-    computed: {
-      inlineContentAlignmentCodeSnippet: function () {
-        return `${this.inlineContentAlignment.leftAlignedText}\n${this.inlineContentAlignment.centreAlignedText}\n${this.inlineContentAlignment.rightAlignedText}`;
-      },
-      blockContentAlignmentCodeSnippet: function () {
-        return `&lt;div class="u-block--center"&gt;...&lt;/div&gt;`;
-      },
-      floatBlockCodeSnippet: function () {
-        return `${this.floatBlock.floatLeft}\n${this.floatBlock.floatRight}`;
-      },
-      displayCodeSnippet: function () {
-        return `${this.display.block}\n${this.display.inline}\n${this.display.inlineBlock}\n${this.display.flex}`;
-      },
-      positionCodeSnippet: function () {
-        return `${this.position.relative}\n${this.position.absolute}`;
-      },
-      transformationCodeSnippet: function () {
-        return `${this.transformation.lowercase}\n${this.transformation.uppercase}\n${this.transformation.capitalize}`;
-      },
-      contentHidingCodeSnippet: function () {
-        return `${this.contentHiding.hidden}\n${this.contentHiding.visuallyHidden}`;
-      }
-    },
+    mixins: [returnFormattedCodeString],
     data: function () {
       return {
-        inlineContentAlignment: {
-          leftAlignedText: `&lt;p class="u-align--left"&gt;Left aligned text&lt;/p&gt;`,
-          centreAlignedText: `&lt;p class="u-align--center"&gt;Center aligned text&lt;/p&gt;`,
-          rightAlignedText: `&lt;p class="u-align--right"&gt;Right aligned text&lt;/p&gt;`
-        },
-        floatBlock: {
-          floatLeft: `&lt;div class="u-float--left"&gt;...&lt;/div&gt;`,
-          floatRight: `&lt;div class="u-float--right"&gt;...&lt;/div&gt;`
-        },
-        display: {
-          block: `&lt;div class="u-block"&gt;...&lt;/div&gt;`,
-          inline: `&lt;div class="u-inline"&gt;...&lt;/div&gt;`,
-          inlineBlock: `&lt;div class="u-inline-block"&gt;...&lt;/div&gt;`,
-          flex: `&lt;div class="u-flex"&gt;...&lt;/div&gt;`
-        },
-        position: {
-          relative: `&lt;div class="u-relative"&gt;...&lt;/div&gt;`,
-          absolute: `&lt;div class="u-absolute"&gt;...&lt;/div&gt;`
-        },
-        transformation: {
-          lowercase: `&lt;p class="u-text-lowercase"&gt;Lowercase text&lt;/p&gt;`,
-          uppercase: `&lt;p class="u-text-uppercase"&gt;Uppercase text&lt;/p&gt;`,
-          capitalize: `&lt;p class="u-text-capitalize"&gt;Capitalized text&lt;/p&gt;`
-        },
-        contentHiding: {
-          hidden: `&lt;div class="u-hidden"&gt;...&lt;/div&gt;`,
-          visuallyHidden: `&lt;div class="u-hidden-visually"&gt;...&lt;/div&gt;`
-        }
+        inlineContentAlignment: [
+          {content: 'Left aligned text', style: 'u-align--left', element: 'p'},
+          {content: 'Center aligned text', style: 'u-align--center', element: 'p'},
+          {content: 'Right aligned text', style: 'u-align--right', element: 'p'}
+        ],
+        blockContentAlignment: [
+          {content: '...', style: 'u-block--center', element: 'div'}
+        ],
+        floatBlock: [
+          {content: '...', style: 'u-float--left', element: 'div'},
+          {content: '...', style: 'u-float--right', element: 'div'}
+        ],
+        display: [
+          {content: '...', style: 'u-block', element: 'div'},
+          {content: '...', style: 'u-inline', element: 'div'},
+          {content: '...', style: 'u-inline-block', element: 'div'},
+          {content: '...', style: 'u-flex', element: 'div'}
+        ],
+        position: [
+          {content: '...', style: 'u-relative', element: 'div'},
+          {content: '...', style: 'u-absolute', element: 'div'}
+        ],
+        transformation: [
+          {content: 'Lowercase text', style: 'u-text-lowercase', element: 'p'},
+          {content: 'Uppercase text', style: 'u-text-uppercase', element: 'p'},
+          {content: 'Capitalized text', style: 'u-text-capitalize', element: 'p'}
+        ],
+        contentHiding: [
+          {content: '...', style: 'u-hidden', element: 'div'},
+          {content: '...', style: 'u-hidden-visually', element: 'div'}
+        ]
       };
     }
   };
 </script>
-
-<style lang="scss">
-</style>
 
 <style scoped lang="scss">
   @import 'static/sass/abstracts/_abstracts.scss';
