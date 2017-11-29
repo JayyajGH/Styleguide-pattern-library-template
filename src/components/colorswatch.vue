@@ -1,8 +1,13 @@
 <template>
   <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
       :class="classObject" :style="{backgroundColor: hex}">
-    <p class="sg-margin-bottom--none">{{text}}</p>
-    <p class="sg-margin-bottom--none">{{hex}}</p>
+    <div class="tone__name sg-paddingleft--medium sg-paddingright--medium">
+      <p class="sg-margin-bottom--none">{{text}}</p>
+    </div>
+
+    <div class="tone__hexcode">
+      <p class="sg-margin-bottom--none">{{hex}}</p>
+    </div>
   </li>
 </template>
 
@@ -50,6 +55,26 @@ export default {
     @include respond-to('large and above') {
         width: 100%;
     }
+
+    &:hover {
+      .tone__name {
+        display: none;
+      }
+      .tone__hexcode {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+
+  .tone__name {
+    @include body-bold();
+    margin-bottom: 0;
+  }
+
+  .tone__hexcode {
+    display: none;
+    margin-bottom: 0;
   }
 
   .sg-base-color {
