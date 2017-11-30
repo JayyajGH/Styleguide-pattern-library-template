@@ -70,6 +70,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
+  import {PreCodeSnippet} from '@/components/classes/precodesnippet';
 
   export default {
     components: { StyleWrapper, BorderExample, Heading, CodeSnippet },
@@ -77,38 +78,38 @@
     data: function () {
       return {
         borderStyle: [
-          {content: 'Solid', style: 'border--solid', element: 'div'},
-          {content: 'Dashed', style: 'border--dashed', element: 'div'},
-          {content: 'Dotted', style: 'border--dotted', element: 'div'}
+          new PreCodeSnippet('Solid', 'border--solid', 'div'),
+          new PreCodeSnippet('Dashed', 'border--dashed', 'div'),
+          new PreCodeSnippet('Dotted', 'border--dotted', 'div')
         ],
         borderSize: [
-          {content: 'Thin', style: 'border-width--thin', element: 'div'},
-          {content: 'Medium', style: 'border-width--medium', element: 'div'},
-          {content: 'Thick', style: 'border-width--thick', element: 'div'}
+          new PreCodeSnippet('Thin', 'border-width--thin', 'div'),
+          new PreCodeSnippet('Medium', 'border-width--medium', 'div'),
+          new PreCodeSnippet('Thick', 'border-width--thick', 'div')
         ],
         borderSizeUnequal: [
-          {content: 'Top Thin', style: 'bordertop-width--thin', element: 'div'},
-          {content: 'Top Medium', style: 'bordertop-width--medium', element: 'div'},
-          {content: 'Top Thick', style: 'bordertop-width--thick', element: 'div'},
-          {content: 'Bottom Thin', style: 'borderbottom-width--thin', element: 'div'},
-          {content: 'Bottom Medium', style: 'borderbottom-width--medium', element: 'div'},
-          {content: 'Bottom Thick', style: 'borderbottom-width--thick', element: 'div'},
-          {content: 'Left Thin', style: 'borderleft-width--thin', element: 'div'},
-          {content: 'Left Medium', style: 'borderleft-width--medium', element: 'div'},
-          {content: 'Left Thick', style: 'borderleft-width--thick', element: 'div'},
-          {content: 'Right Thin', style: 'borderright-width--thin', element: 'div'},
-          {content: 'Right Medium', style: 'borderright-width--medium', element: 'div'},
-          {content: 'Right Thick', style: 'borderright-width--thick', element: 'div'}
+          new PreCodeSnippet('Top Thin', 'bordertop-width--thin', 'div'),
+          new PreCodeSnippet('Top Medium', 'bordertop-width--medium', 'div'),
+          new PreCodeSnippet('Top Thick', 'bordertop-width--thick', 'div'),
+          new PreCodeSnippet('Bottom Thin', 'borderbottom-width--thin', 'div'),
+          new PreCodeSnippet('Bottom Medium', 'borderbottom-width--medium', 'div'),
+          new PreCodeSnippet('Bottom Thick', 'borderbottom-width--thick', 'div'),
+          new PreCodeSnippet('Left Thin', 'borderleft-width--thin', 'div'),
+          new PreCodeSnippet('Left Medium', 'borderleft-width--medium', 'div'),
+          new PreCodeSnippet('Left Thick', 'borderleft-width--thick', 'div'),
+          new PreCodeSnippet('Right Thin', 'borderright-width--thin', 'div'),
+          new PreCodeSnippet('Right Medium', 'borderright-width--medium', 'div'),
+          new PreCodeSnippet('Right Thick', 'borderright-width--thick', 'div')
         ],
         borderColour: [
-          {content: 'Black', style: 'border-color--black', element: 'div'},
-          {content: 'Grey', style: 'border-color--grey', element: 'div'}
+          new PreCodeSnippet('Black', 'border-color--black', 'div'),
+          new PreCodeSnippet('Grey', 'border-color--grey', 'div')
         ],
         borderRadius: [
-          {content: 'Small', style: 'border-radius--small', element: 'div'},
-          {content: 'Medium', style: 'border-radius--medium', element: 'div'},
-          {content: 'Large', style: 'border-radius--large', element: 'div'},
-          {content: 'Circle', style: 'border-radius--circle', element: 'div'}
+          new PreCodeSnippet('Small', 'border-radius--small', 'div'),
+          new PreCodeSnippet('Medium', 'border-radius--medium', 'div'),
+          new PreCodeSnippet('Large', 'border-radius--large', 'div'),
+          new PreCodeSnippet('Circle', 'border-radius--circle', 'div')
         ]
       };
     }
