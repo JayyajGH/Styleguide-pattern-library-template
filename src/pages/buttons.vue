@@ -106,6 +106,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
+  import {PreCodeSnippet} from '@/components/classes/precodesnippet';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
@@ -118,22 +119,22 @@
     data: function () {
       return {
         buttonSize: [
-          {content: 'Small button', style: 'button--small', element: 'div'},
-          {content: 'Medium button', style: 'button--medium', element: 'div'},
-          {content: 'Large button', style: 'button--large', element: 'div'}
+          new PreCodeSnippet('Small button', 'button--small', 'button'),
+          new PreCodeSnippet('Medium button', 'button--medium', 'button'),
+          new PreCodeSnippet('Large button', 'button--large', 'button')
         ],
         buttonImportance: [
-          {content: 'Primary button', style: 'button--primary', element: 'div'},
-          {content: 'Secondary button', style: 'button--secondary', element: 'div'},
-          {content: 'Tertiary button', style: 'button--tertiary', element: 'div'}
+          new PreCodeSnippet('Primary button', 'button--primary', 'button'),
+          new PreCodeSnippet('Secondary button', 'button--secondary', 'button'),
+          new PreCodeSnippet('Tertiary button', 'button--tertiary', 'button')
         ],
         buttonWidth: [
-          {content: 'Half-width button', style: 'button--halfwidth', element: 'div'},
-          {content: 'Full-width button', style: 'button--fullwidth', element: 'div'}
+          new PreCodeSnippet('Half-width button', 'button--halfwidth', 'button'),
+          new PreCodeSnippet('Full-width button', 'button--fullwidth', 'button')
         ],
         buttonStyle: [
-          {content: 'Simple button', style: 'button--simple button--primary', element: 'div'},
-          {content: 'Ghost button', style: 'button--ghost button-ghost--primary', element: 'div'}
+          new PreCodeSnippet('Simple button', 'button--simple button--primary', 'button'),
+          new PreCodeSnippet('Ghost button', 'button--ghost button-ghost--primary', 'button')
         ],
         buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button&lt;/button&gt;'
       };
