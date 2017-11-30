@@ -83,7 +83,7 @@
       return {
         pangramText,
         typeface: [
-          new PreCodeSnippet('...', 'header1', 'p')
+          new PreCodeSnippet('...', '', 'p')
         ],
         fontSizes: [
           new PreCodeSnippet(pangramText, 'header1', 'p'),
