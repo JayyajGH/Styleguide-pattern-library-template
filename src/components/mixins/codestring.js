@@ -1,10 +1,10 @@
 export default {
   methods: {
-    returnFormattedCodeString: function (styleList, additionalClasses) {
+    returnFormattedCodeString: function (snippetList, additionalClasses) {
       let templateString = ``;
 
-      if (styleList) {
-        styleList.forEach(value => {
+      if (snippetList) {
+        snippetList.forEach(value => {
           var styling = `${value.style}${additionalClasses ? ' ' + additionalClasses : ''}`;
 
           templateString += `&lt;${value.element}${styling ? ` class="${styling}"` : ''}&gt;${value.content}&lt;/${value.element}&gt;\n`;
