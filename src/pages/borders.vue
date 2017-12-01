@@ -70,7 +70,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
-  import PreCodeSnippet from '@/components/classes/precodesnippet';
+  import ElementExample from '@/components/classes/elementexample';
 
   export default {
     components: { StyleWrapper, BorderExample, Heading, CodeSnippet },
@@ -78,38 +78,38 @@
     data: function () {
       return {
         borderStyle: [
-          new PreCodeSnippet('Solid', 'border--solid', 'div'),
-          new PreCodeSnippet('Dashed', 'border--dashed', 'div'),
-          new PreCodeSnippet('Dotted', 'border--dotted', 'div')
+          new ElementExample('Solid', 'border--solid', 'div'),
+          new ElementExample('Dashed', 'border--dashed', 'div'),
+          new ElementExample('Dotted', 'border--dotted', 'div')
         ],
         borderSize: [
-          new PreCodeSnippet('Thin', 'border-width--thin', 'div'),
-          new PreCodeSnippet('Medium', 'border-width--medium', 'div'),
-          new PreCodeSnippet('Thick', 'border-width--thick', 'div')
+          new ElementExample('Thin', 'border-width--thin', 'div'),
+          new ElementExample('Medium', 'border-width--medium', 'div'),
+          new ElementExample('Thick', 'border-width--thick', 'div')
         ],
         borderSizeUnequal: [
-          new PreCodeSnippet('Top Thin', 'bordertop-width--thin', 'div'),
-          new PreCodeSnippet('Top Medium', 'bordertop-width--medium', 'div'),
-          new PreCodeSnippet('Top Thick', 'bordertop-width--thick', 'div'),
-          new PreCodeSnippet('Bottom Thin', 'borderbottom-width--thin', 'div'),
-          new PreCodeSnippet('Bottom Medium', 'borderbottom-width--medium', 'div'),
-          new PreCodeSnippet('Bottom Thick', 'borderbottom-width--thick', 'div'),
-          new PreCodeSnippet('Left Thin', 'borderleft-width--thin', 'div'),
-          new PreCodeSnippet('Left Medium', 'borderleft-width--medium', 'div'),
-          new PreCodeSnippet('Left Thick', 'borderleft-width--thick', 'div'),
-          new PreCodeSnippet('Right Thin', 'borderright-width--thin', 'div'),
-          new PreCodeSnippet('Right Medium', 'borderright-width--medium', 'div'),
-          new PreCodeSnippet('Right Thick', 'borderright-width--thick', 'div')
+          new ElementExample('Top Thin', 'bordertop-width--thin', 'div'),
+          new ElementExample('Top Medium', 'bordertop-width--medium', 'div'),
+          new ElementExample('Top Thick', 'bordertop-width--thick', 'div'),
+          new ElementExample('Bottom Thin', 'borderbottom-width--thin', 'div'),
+          new ElementExample('Bottom Medium', 'borderbottom-width--medium', 'div'),
+          new ElementExample('Bottom Thick', 'borderbottom-width--thick', 'div'),
+          new ElementExample('Left Thin', 'borderleft-width--thin', 'div'),
+          new ElementExample('Left Medium', 'borderleft-width--medium', 'div'),
+          new ElementExample('Left Thick', 'borderleft-width--thick', 'div'),
+          new ElementExample('Right Thin', 'borderright-width--thin', 'div'),
+          new ElementExample('Right Medium', 'borderright-width--medium', 'div'),
+          new ElementExample('Right Thick', 'borderright-width--thick', 'div')
         ],
         borderColour: [
-          new PreCodeSnippet('Black', 'border-color--black', 'div'),
-          new PreCodeSnippet('Grey', 'border-color--grey', 'div')
+          new ElementExample('Black', 'border-color--black', 'div'),
+          new ElementExample('Grey', 'border-color--grey', 'div')
         ],
         borderRadius: [
-          new PreCodeSnippet('Small', 'border-radius--small', 'div'),
-          new PreCodeSnippet('Medium', 'border-radius--medium', 'div'),
-          new PreCodeSnippet('Large', 'border-radius--large', 'div'),
-          new PreCodeSnippet('Circle', 'border-radius--circle', 'div')
+          new ElementExample('Small', 'border-radius--small', 'div'),
+          new ElementExample('Medium', 'border-radius--medium', 'div'),
+          new ElementExample('Large', 'border-radius--large', 'div'),
+          new ElementExample('Circle', 'border-radius--circle', 'div')
         ]
       };
     }

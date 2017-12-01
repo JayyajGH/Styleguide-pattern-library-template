@@ -73,7 +73,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
-  import PreCodeSnippet from '@/components/classes/precodesnippet';
+  import ElementExample from '@/components/classes/elementexample';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
@@ -83,33 +83,33 @@
       return {
         pangramText,
         typeface: [
-          new PreCodeSnippet('...', '', 'p')
+          new ElementExample('...', '', 'p')
         ],
         fontSizes: [
-          new PreCodeSnippet(pangramText, 'header1', 'p'),
-          new PreCodeSnippet(pangramText, 'header2', 'p'),
-          new PreCodeSnippet(pangramText, 'header3', 'p'),
-          new PreCodeSnippet(pangramText, 'header3', 'p'),
-          new PreCodeSnippet(pangramText, 'body', 'p'),
-          new PreCodeSnippet(pangramText, 'xyz1', 'p'),
-          new PreCodeSnippet(pangramText, 'xyz2', 'p')
+          new ElementExample(pangramText, 'header1', 'p'),
+          new ElementExample(pangramText, 'header2', 'p'),
+          new ElementExample(pangramText, 'header3', 'p'),
+          new ElementExample(pangramText, 'header3', 'p'),
+          new ElementExample(pangramText, 'body', 'p'),
+          new ElementExample(pangramText, 'xyz1', 'p'),
+          new ElementExample(pangramText, 'xyz2', 'p')
         ],
         fontWeight: [
-          new PreCodeSnippet('Normal weight text', '', 'p'),
-          new PreCodeSnippet('Bold weight text', 'xyz', 'p')
+          new ElementExample('Normal weight text', '', 'p'),
+          new ElementExample('Bold weight text', 'xyz', 'p')
         ],
         typeTags: [
-          new PreCodeSnippet('Paragraph tag', '', 'p'),
-          new PreCodeSnippet('Small tag', '', 'small'),
-          new PreCodeSnippet('Strong tag', '', 'strong'),
-          new PreCodeSnippet('Bold tag', '', 'bold'),
-          new PreCodeSnippet('Italic tag', '', 'i'),
-          new PreCodeSnippet('Emphasis tag', '', 'em')
+          new ElementExample('Paragraph tag', '', 'p'),
+          new ElementExample('Small tag', '', 'small'),
+          new ElementExample('Strong tag', '', 'strong'),
+          new ElementExample('Bold tag', '', 'bold'),
+          new ElementExample('Italic tag', '', 'i'),
+          new ElementExample('Emphasis tag', '', 'em')
         ],
         transformation: [
-          new PreCodeSnippet('Lowercase text', 'u-text-lowercase', 'p'),
-          new PreCodeSnippet('Uppercase text', 'u-text-uppercase', 'p'),
-          new PreCodeSnippet('Capitalized text', 'u-text-capitalize', 'p')
+          new ElementExample('Lowercase text', 'u-text-lowercase', 'p'),
+          new ElementExample('Uppercase text', 'u-text-uppercase', 'p'),
+          new ElementExample('Capitalized text', 'u-text-capitalize', 'p')
         ]
       };
     }

@@ -106,7 +106,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
-  import PreCodeSnippet from '@/components/classes/precodesnippet';
+  import ElementExample from '@/components/classes/elementexample';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
@@ -119,22 +119,22 @@
     data: function () {
       return {
         buttonSize: [
-          new PreCodeSnippet('Small button', 'button--small', 'button'),
-          new PreCodeSnippet('Medium button', 'button--medium', 'button'),
-          new PreCodeSnippet('Large button', 'button--large', 'button')
+          new ElementExample('Small button', 'button--small', 'button'),
+          new ElementExample('Medium button', 'button--medium', 'button'),
+          new ElementExample('Large button', 'button--large', 'button')
         ],
         buttonImportance: [
-          new PreCodeSnippet('Primary button', 'button--primary', 'button'),
-          new PreCodeSnippet('Secondary button', 'button--secondary', 'button'),
-          new PreCodeSnippet('Tertiary button', 'button--tertiary', 'button')
+          new ElementExample('Primary button', 'button--primary', 'button'),
+          new ElementExample('Secondary button', 'button--secondary', 'button'),
+          new ElementExample('Tertiary button', 'button--tertiary', 'button')
         ],
         buttonWidth: [
-          new PreCodeSnippet('Half-width button', 'button--halfwidth', 'button'),
-          new PreCodeSnippet('Full-width button', 'button--fullwidth', 'button')
+          new ElementExample('Half-width button', 'button--halfwidth', 'button'),
+          new ElementExample('Full-width button', 'button--fullwidth', 'button')
         ],
         buttonStyle: [
-          new PreCodeSnippet('Simple button', 'button--simple button--primary', 'button'),
-          new PreCodeSnippet('Ghost button', 'button--ghost button-ghost--primary', 'button')
+          new ElementExample('Simple button', 'button--simple button--primary', 'button'),
+          new ElementExample('Ghost button', 'button--ghost button-ghost--primary', 'button')
         ],
         buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button&lt;/button&gt;'
       };
