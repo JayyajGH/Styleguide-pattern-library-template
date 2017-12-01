@@ -73,7 +73,7 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
-  import {PreCodeSnippet} from '@/components/classes/precodesnippet';
+  import PreCodeSnippet from '@/components/classes/precodesnippet';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
