@@ -13,7 +13,7 @@
           <li>A large button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
           <button type="button" class="button button--simple button--primary" :class=bsize.style>{{bsize.content}}</button>
         </span>
@@ -34,7 +34,7 @@
           <li>A tertiary button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
           <button type="button" class="button button--simple button--medium" :class=bimportant.style>{{bimportant.content}}</button>
         </span>
@@ -70,7 +70,7 @@
           <li>A ghost button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bstyle in buttonStyle" class="sg-margin-bottom--medium">
           <button type="button" class="button button--medium" :class=bstyle.style>{{bstyle.content}}</button>
         </span>
