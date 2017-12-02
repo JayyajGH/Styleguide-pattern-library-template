@@ -142,9 +142,6 @@
   };
 </script>
 
-<style lang="scss">
-</style>
-
 <style scoped lang="scss">
   @import 'static/sass/abstracts/_abstracts.scss';
 
