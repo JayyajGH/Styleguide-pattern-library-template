@@ -20,7 +20,7 @@
       </div>
       <div slot="codeSlot">
         <code-snippet>
-          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonSize, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(buttonSize, 'button button--simple button--primary')" class="sg-margin-bottom--none"></div>
         </code-snippet>
       </div>
     </style-wrapper>
