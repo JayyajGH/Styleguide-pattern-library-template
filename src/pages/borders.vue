@@ -9,7 +9,7 @@
       </div>
       <div slot="codeSlot">
         <code-snippet>
-          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(borderStyle, 'border--solid border-color--black')" class="sg-margin-bottom--none"></div>
+          <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(borderStyle, 'border-width--medium border-color--black')" class="sg-margin-bottom--none"></div>
         </code-snippet>
       </div>
     </style-wrapper>
