@@ -5,9 +5,13 @@ export default {
 
       if (snippetList) {
         snippetList.forEach(value => {
-          let styling = `${value.style}${additionalClasses ? ' ' + additionalClasses : ''}`;
+          // Construct the elements class definition if required
+          let styling = `${value.style}${additionalClasses ? (' ' + additionalClasses) : ''}`;
+          let classDefinition = `${styling ? ` class="${styling}"` : ``}`;
 
-          templateString += `&lt;${value.element}${styling ? ` class="${styling}"` : ''}&gt;${value.content}&lt;/${value.element}&gt;\n`;
+          const {element} = value;
+
+          templateString += `&lt;${element}${classDefinition}&gt;${value.content}&lt;/${element}&gt;\n`;
         });
       }
 
