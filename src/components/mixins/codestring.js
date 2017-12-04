@@ -5,7 +5,7 @@ export default {
 
       if (snippetList) {
         snippetList.forEach(value => {
-          var styling = `${value.style}${additionalClasses ? ' ' + additionalClasses : ''}`;
+          let styling = `${value.style}${additionalClasses ? ' ' + additionalClasses : ''}`;
 
           templateString += `&lt;${value.element}${styling ? ` class="${styling}"` : ''}&gt;${value.content}&lt;/${value.element}&gt;\n`;
         });
