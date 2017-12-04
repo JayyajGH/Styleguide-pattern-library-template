@@ -79,7 +79,7 @@
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
-      var pangramText = 'Pack my box with five dozen liquor jugs';
+      const pangramText = 'Pack my box with five dozen liquor jugs';
       return {
         pangramText,
         typeface: [
