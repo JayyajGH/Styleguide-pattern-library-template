@@ -5,7 +5,8 @@ export default {
 
       if (snippetList) {
         snippetList.forEach(value => {
-          // Construct the elements class definition if required
+          // Construct the elements class definition if required.
+          // This can be a combination of the style passed in with the element and also any common styles
           let styling = `${value.style}${additionalClasses ? (' ' + additionalClasses) : ''}`;
           let classDefinition = `${styling ? ` class="${styling}"` : ``}`;
 
