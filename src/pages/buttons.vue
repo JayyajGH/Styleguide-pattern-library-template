@@ -113,7 +113,9 @@
     mixins: [returnFormattedCodeString],
     computed: {
       buttonGroupingCodeSnippet: function () {
-        return `&lt;div class="button--group"&gt;\n  ${this.buttonExampleCodeSnippet}\n  ${this.buttonExampleCodeSnippet}\n&lt;/div&gt;`;
+        const buttons = this.returnFormattedCodeString(this.buttonGroup, 'button button--simple button--primary button--medium', '&nbsp;&nbsp;');
+
+        return `&lt;div class="button--group"&gt;\n${buttons}\n&lt;/div&gt;`;
       }
     },
     data: function () {
@@ -136,7 +138,10 @@
           new ElementExample('Simple button', 'button--simple button--primary', 'button'),
           new ElementExample('Ghost button', 'button--ghost button-ghost--primary', 'button')
         ],
-        buttonExampleCodeSnippet: '&lt;button type="button" class="button button--simple button--primary button--medium"&gt;Button&lt;/button&gt;'
+        buttonGroup: [
+          new ElementExample('Button 1', '', 'button'),
+          new ElementExample('Button 2', '', 'button')
+        ]
       };
     }
   };
