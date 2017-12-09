@@ -1,7 +1,7 @@
 <template>
   <div id="forms" class="spa-page">
 
-    <heading title="Pattern Library" :isMainHeading=true></heading>
+    <h1 class="header1">Pattern Library</h1>
 
     <p>This pattern library describes the available collection of user interface elements.</p>
     <p>This allows us: </p>
@@ -16,11 +16,6 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
-
-  export default {
-    components: { Heading }
-  };
 </script>
 
 <style>
