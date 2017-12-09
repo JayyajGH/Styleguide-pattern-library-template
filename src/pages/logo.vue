@@ -42,6 +42,15 @@
       </ul>
     </section>
 
+    <section>
+      <header>
+        <h2 class="header2">Lockups</h2>
+        <ul class="list list--circle">
+          <li>What are the rules?</li>
+        </ul>
+      </header>
+    </section>
+
   </div>
 </template>
 
