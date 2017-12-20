@@ -30,7 +30,10 @@
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Font weight" description="There are x font weights available to use.">
+    <style-wrapper header="Font weight">
+      <div slot="descriptionSlot">
+        <p>There are 2 font weights available to use for body text.</p>
+      </div>
       <div slot="exampleSlot">
         <p class="">Normal weight text</p>
         <p class="sg-font--bold">Bold weight text</p>
