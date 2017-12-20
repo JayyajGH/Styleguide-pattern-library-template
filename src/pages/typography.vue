@@ -2,7 +2,7 @@
   <div id="typography" class="spa-page">
     <heading title="Typography"></heading>
 
-    <p>We follow a 1.5rem baseline grid for achieving a vertical rhythm on all block-level elements.</p>
+    <p>A 1.5rem baseline grid is used for achieving a consistent vertical rhythm on all block-level elements.</p>
 
     <style-wrapper header="Typefaces" description="Our standard typeface is Arial.  Arial is a sans-serif typeface.">
       <div slot="exampleSlot">
