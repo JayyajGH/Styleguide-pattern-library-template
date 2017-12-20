@@ -4,7 +4,7 @@
     <heading title="Panels"></heading>
 
     <style-wrapper header="Hero panels" description="These panels are used as the page hero.">
-      <div slot="exampleSlot" class="sg-flex panel-flex u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound panel-flex u-flex">
         <div class="panel panel--hero u-flex u-full-width">
           <h1 class="header1 hero__title u-align--center sg-paddingleft--large sg-paddingright--large">Brevity is beautiful</h1>
           <div class="button-group">
@@ -18,7 +18,7 @@
     </style-wrapper>
 
     <style-wrapper header="Promotional panels" description="These panels are used to promote a product or feature.">
-      <div slot="exampleSlot" class="sg-flex panel-flex u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound panel-flex u-flex">
         <div class="panel panel--promo u-flex u-full-width">
           <div class="panel__image sg-margin-bottom--none"></div>
           <div class="panel__text sg-margin-bottom--none">
