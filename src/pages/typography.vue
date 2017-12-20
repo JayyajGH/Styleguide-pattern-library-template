@@ -6,8 +6,8 @@
 
     <style-wrapper header="Typefaces" description="Our standard typeface is Arial.  Arial is a sans-serif typeface.">
       <div slot="exampleSlot">
-        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>{{alphabetText.toUpperCase()}}</p>
+        <p>{{alphabetText}}</p>
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
       <code-snippet slot="codeSlot">
@@ -83,8 +83,10 @@
     mixins: [returnFormattedCodeString],
     data: function () {
       const pangramText = 'Pack my box with five dozen liquor jugs';
+      const alphabetText = 'a b c d e f g h i j k l m n o p q r s t u v w x y z';
       return {
         pangramText,
+        alphabetText,
         typeface: [
           new ElementExample('...', '', 'p')
         ],
