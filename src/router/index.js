@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Home from '@/pages/home';
-import Brand from '@/pages/brand';
+import Brand from '@/pages/section-brand';
 import Logo from '@/pages/page-logo';
 import Typography from '@/pages/page-typography';
 import Language from '@/pages/page-language';
@@ -11,7 +11,7 @@ import Utility from '@/pages/page-utility';
 import Links from '@/pages/page-links';
 import Lists from '@/pages/page-lists';
 import Buttons from '@/pages/page-buttons';
-import PatternLibrary from '@/pages/patternlibrary';
+import PatternLibrary from '@/pages/section-patternlibrary';
 import Layout from '@/pages/page-layout';
 import Colours from '@/pages/page-colours';
 import Borders from '@/pages/page-borders';
