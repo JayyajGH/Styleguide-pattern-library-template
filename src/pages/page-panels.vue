@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper';
+  import StyleWrapper from '@/components/style-wrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
 
