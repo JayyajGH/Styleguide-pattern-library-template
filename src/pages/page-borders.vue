@@ -65,7 +65,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/style-wrapper';
+  import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import BorderExample from '@/components/borderexample';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
