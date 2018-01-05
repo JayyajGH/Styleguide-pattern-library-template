@@ -4,7 +4,7 @@
     <heading title="Borders"></heading>
     <!-- Border styles -->
     <style-wrapper :header=borderStyle.title :description=borderStyle.description>
-      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border sg-flex--wrap u-flex">
           <border-example v-for="bstyle in borderStyle.elements" :key=bstyle.content :title=bstyle.content :styling="[bstyle.style,borderStyle.commonClasses]"></border-example>
       </div>
       <div slot="codeSlot">
@@ -16,7 +16,7 @@
 
     <!-- Uniform border sizes -->
     <style-wrapper :header=borderSize.title :description=borderSize.description>
-      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border sg-flex--wrap u-flex">
         <border-example v-for="bsize in borderSize.elements" :key=bsize.content :title=bsize.content :styling="[bsize.style, borderSize.commonClasses]"></border-example>
       </div>
       <div slot="codeSlot">
@@ -40,7 +40,7 @@
 
     <!-- Border colour -->
     <style-wrapper :header=borderColour.title :description=borderColour.description>
-      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border sg-flex--wrap u-flex">
         <border-example v-for="bcolour in borderColour.elements" :key=bcolour.content :title=bcolour.content :styling="[bcolour.style, borderColour.commonClasses]"></border-example>
       </div>
       <div slot="codeSlot">
@@ -52,7 +52,7 @@
 
     <!-- Border radius -->
     <style-wrapper :header=borderRadius.title :description=borderRadius.description>
-      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border u-flex">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border sg-flex--wrap u-flex">
         <border-example v-for="bradius in borderRadius.elements" :key=bradius.content :title=bradius.content :styling="[bradius.style, borderRadius.commonClasses]"></border-example>
       </div>
       <div slot="codeSlot">
