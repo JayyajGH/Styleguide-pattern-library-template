@@ -4,18 +4,18 @@
 
     <p>A 1.5rem baseline grid is used for achieving a consistent vertical rhythm on all block-level elements.</p>
 
-    <style-wrapper header="Typefaces" description="Our standard typeface is Arial.  Arial is a sans-serif typeface.">
+    <style-wrapper :header=typeface.title :description=typeface.description>
       <div slot="exampleSlot">
         <p>{{alphabetText.toUpperCase()}}</p>
         <p>{{alphabetText}}</p>
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeface, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeface.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Font sizes" description="The font scale contains 7 different font sizes.">
+    <style-wrapper :header=fontSizes.title :description=fontSizes.description>
       <div slot="exampleSlot">
         <p class="header1">{{pangramText}}</p>
         <p class="header2">{{pangramText}}</p>
@@ -26,11 +26,11 @@
         <p class="sg-font--smallest">{{pangramText}}</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontSizes, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontSizes.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Font weight">
+    <style-wrapper :header=fontWeight.title>
       <div slot="descriptionSlot">
         <p>There are 2 font weights available to use for body text.</p>
       </div>
@@ -39,11 +39,11 @@
         <p class="sg-font--bold">Bold weight text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontWeight, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(fontWeight.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Type tags" description="Text can be set in a number of different semantic html tags. Each tag communicates a different semantic meaning but tags don't carry any aesthetic value.">
+    <style-wrapper :header=typeTags.title :description=typeTags.description>
       <div slot="exampleSlot">
         <p>Paragraph tag</p>
         <p><small>Small tag</small></p>
@@ -53,18 +53,18 @@
         <p><em>Emphasis tag</em></p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeTags, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(typeTags.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Transformation classes" description="Transform text with text transformation classes">
+    <style-wrapper :header=transformation.title :description=transformation.description>
       <div slot="exampleSlot">
         <p class="u-text-lowercase">Lowercase text</p>
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -87,35 +87,54 @@
       return {
         pangramText,
         alphabetText,
-        typeface: [
-          new ElementExample('...', '', 'p')
-        ],
-        fontSizes: [
-          new ElementExample(pangramText, 'header1', 'p'),
-          new ElementExample(pangramText, 'header2', 'p'),
-          new ElementExample(pangramText, 'header3', 'p'),
-          new ElementExample(pangramText, 'header3', 'p'),
-          new ElementExample(pangramText, 'body', 'p'),
-          new ElementExample(pangramText, 'xyz1', 'p'),
-          new ElementExample(pangramText, 'xyz2', 'p')
-        ],
-        fontWeight: [
-          new ElementExample('Normal weight text', '', 'p'),
-          new ElementExample('Bold weight text', 'xyz', 'p')
-        ],
-        typeTags: [
-          new ElementExample('Paragraph tag', '', 'p'),
-          new ElementExample('Small tag', '', 'small'),
-          new ElementExample('Strong tag', '', 'strong'),
-          new ElementExample('Bold tag', '', 'bold'),
-          new ElementExample('Italic tag', '', 'i'),
-          new ElementExample('Emphasis tag', '', 'em')
-        ],
-        transformation: [
-          new ElementExample('Lowercase text', 'u-text-lowercase', 'p'),
-          new ElementExample('Uppercase text', 'u-text-uppercase', 'p'),
-          new ElementExample('Capitalized text', 'u-text-capitalize', 'p')
-        ]
+        typeface: {
+          title: 'Typefaces',
+          description: 'Our standard typeface is Arial.  Arial is a sans-serif typeface.',
+          elements: [
+            new ElementExample('...', '', 'p')
+          ]
+        },
+        fontSizes: {
+          title: 'Font sizes',
+          description: 'The font scale contains 7 different font sizes.',
+          elements: [
+            new ElementExample(pangramText, 'header1', 'p'),
+            new ElementExample(pangramText, 'header2', 'p'),
+            new ElementExample(pangramText, 'header3', 'p'),
+            new ElementExample(pangramText, 'header3', 'p'),
+            new ElementExample(pangramText, 'body', 'p'),
+            new ElementExample(pangramText, 'xyz1', 'p'),
+            new ElementExample(pangramText, 'xyz2', 'p')
+          ]
+        },
+        fontWeight: {
+          title: 'Font weight',
+          elements: [
+            new ElementExample('Normal weight text', '', 'p'),
+            new ElementExample('Bold weight text', 'xyz', 'p')
+          ]
+        },
+        typeTags: {
+          title: 'Type tags',
+          description: 'Text can be set in a number of different semantic html tags. Each tag communicates a different semantic meaning but tags don\'t carry any aesthetic value.',
+          elements: [
+            new ElementExample('Paragraph tag', '', 'p'),
+            new ElementExample('Small tag', '', 'small'),
+            new ElementExample('Strong tag', '', 'strong'),
+            new ElementExample('Bold tag', '', 'bold'),
+            new ElementExample('Italic tag', '', 'i'),
+            new ElementExample('Emphasis tag', '', 'em')
+          ]
+        },
+        transformation: {
+          title: 'Transformation classes',
+          description: 'Transform text with text transformation classes',
+          elements: [
+            new ElementExample('Lowercase text', 'u-text-lowercase', 'p'),
+            new ElementExample('Uppercase text', 'u-text-uppercase', 'p'),
+            new ElementExample('Capitalized text', 'u-text-capitalize', 'p')
+          ]
+        }
       };
     }
   };
