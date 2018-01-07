@@ -2,27 +2,27 @@
   <div id="utility" class="spa-page">
     <heading title="Utility Classes"></heading>
 
-    <style-wrapper header="Inline content alignment" description="The following classes are used to align inline content">
+    <style-wrapper :header=inlineContentAlignment.title :description=inlineContentAlignment.description>
       <div slot="exampleSlot">
         <p class="u-align--left">Left aligned text</p>
         <p class="u-align--center">Center aligned text</p>
         <p class="u-align--right">Right aligned text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(inlineContentAlignment, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(inlineContentAlignment.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Block element alignment" description="The following class is used to align block elements">
+    <style-wrapper :header=blockContentAlignment.title :description=blockContentAlignment.description>
       <div slot="exampleSlot">
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(blockContentAlignment, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(blockContentAlignment.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Float elements" description="The following classes are used to float block elements.">
+    <style-wrapper :header=floatBlock.title :description=floatBlock.description>
       <div slot="exampleSlot">
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--left"></div>
         <div class="sg-utility-block border--solid border-width--thin border-color--black u-float--right"></div>
@@ -30,11 +30,11 @@
         <div style="clear: both;"></div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(floatBlock, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(floatBlock.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Display settings" description="The following classes are used to change the display property.">
+    <style-wrapper :header=display.title :description=display.description>
       <div slot="exampleSlot">
         <div>
           <span class="sg-utility-block border--solid border-width--thin border-color--black u-align--center u-block sg-padding--medium">Inline element displayed as block element</span>
@@ -52,11 +52,11 @@
         </div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(display, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(display.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Position settings" description="The following classes are used to change the position property.">
+    <style-wrapper :header=position.title :description=position.description>
       <div slot="exampleSlot">
         <div>
           <span class="u-relative sg-relative-block sg-utility-block border--solid border-width--thin border-color--black u-align--center sg-padding--medium">Relatively position element</span>
@@ -66,22 +66,22 @@
         </div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(position, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(position.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Text transforms" description="The following classes are used to transform text.">
+    <style-wrapper :header=transformation.title :description=transformation.description>
       <div slot="exampleSlot">
         <p class="u-text-lowercase">Lowercase text</p>
         <p class="u-text-uppercase">Uppercase text</p>
         <p class="u-text-capitalize">Capitalized text</p>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Hiding content" description="The following classes are used to hide content.  A visually hidden element is useful for screen-readers where an element is required for accessibility reasons but not desirable to be displayed on the screen.">
+    <style-wrapper :header=contentHiding.title :description=contentHiding.description>
       <div slot="exampleSlot">
         <p>Following this line is a hidden element</p>
         <div class="sg-utility-block u-hidden">This is a hidden element</div>
@@ -89,7 +89,7 @@
         <div class="sg-utility-block u-hidden-visually">This is a visually hidden element</div>
       </div>
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(contentHiding, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(contentHiding.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
     </style-wrapper>
 
@@ -101,43 +101,72 @@
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
+  import ElementExample from '@/components/classes/elementexample';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {
-        inlineContentAlignment: [
-          {content: 'Left aligned text', style: 'u-align--left', element: 'p'},
-          {content: 'Center aligned text', style: 'u-align--center', element: 'p'},
-          {content: 'Right aligned text', style: 'u-align--right', element: 'p'}
-        ],
-        blockContentAlignment: [
-          {content: '...', style: 'u-block--center', element: 'div'}
-        ],
-        floatBlock: [
-          {content: '...', style: 'u-float--left', element: 'div'},
-          {content: '...', style: 'u-float--right', element: 'div'}
-        ],
-        display: [
-          {content: '...', style: 'u-block', element: 'div'},
-          {content: '...', style: 'u-inline', element: 'div'},
-          {content: '...', style: 'u-inline-block', element: 'div'},
-          {content: '...', style: 'u-flex', element: 'div'}
-        ],
-        position: [
-          {content: '...', style: 'u-relative', element: 'div'},
-          {content: '...', style: 'u-absolute', element: 'div'}
-        ],
-        transformation: [
-          {content: 'Lowercase text', style: 'u-text-lowercase', element: 'p'},
-          {content: 'Uppercase text', style: 'u-text-uppercase', element: 'p'},
-          {content: 'Capitalized text', style: 'u-text-capitalize', element: 'p'}
-        ],
-        contentHiding: [
-          {content: '...', style: 'u-hidden', element: 'div'},
-          {content: '...', style: 'u-hidden-visually', element: 'div'}
-        ]
+        inlineContentAlignment: {
+          title: 'Inline content alignment',
+          description: 'The following classes are used to align inline content',
+          elements: [
+            new ElementExample('Left aligned text', 'u-align--left', 'p'),
+            new ElementExample('Center aligned text', 'u-align--center', 'p'),
+            new ElementExample('Right aligned text', 'u-align--right', 'p')
+          ]
+        },
+        blockContentAlignment: {
+          title: 'Block element alignment',
+          description: 'The following class is used to align block elements',
+          elements: [
+            new ElementExample('...', 'u-block--center', 'div')
+          ]
+        },
+        floatBlock: {
+          title: 'Float elements',
+          description: 'The following classes are used to float block elements.',
+          elements: [
+            new ElementExample('...', 'u-float--left', 'div'),
+            new ElementExample('...', 'u-float--right', 'div')
+          ]
+        },
+        display: {
+          title: 'Display settings',
+          description: 'The following classes are used to change the display property.',
+          elements: [
+            new ElementExample('...', 'u-block', 'div'),
+            new ElementExample('...', 'u-inline', 'div'),
+            new ElementExample('...', 'u-inline-block', 'div'),
+            new ElementExample('...', 'u-flex', 'div')
+          ]
+        },
+        position: {
+          title: 'Position settings',
+          description: 'The following classes are used to change the position property.',
+          elements: [
+            new ElementExample('...', 'u-relative', 'div'),
+            new ElementExample('...', 'u-absolute', 'div')
+          ]
+        },
+        transformation: {
+          title: 'Text transforms',
+          description: 'The following classes are used to transform text.',
+          elements: [
+            new ElementExample('Lowercase text', 'u-text-lowercase', 'p'),
+            new ElementExample('Uppercase text', 'u-text-uppercase', 'p'),
+            new ElementExample('Capitalized text', 'u-text-capitalize', 'p')
+          ]
+        },
+        contentHiding: {
+          title: 'Hiding content',
+          description: 'The following classes are used to hide content.  A visually hidden element is useful for screen-readers where an element is required for accessibility reasons but not desirable to be displayed on the screen.',
+          elements: [
+            new ElementExample('...', 'u-hidden', 'div'),
+            new ElementExample('...', 'u-hidden-visually', 'div')
+          ]
+        }
       };
     }
   };
