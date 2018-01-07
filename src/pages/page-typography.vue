@@ -2,12 +2,12 @@
   <div id="typography" class="spa-page">
     <heading title="Typography"></heading>
 
-    <p>We follow a 1.5rem baseline grid for achieving a vertical rhythm on all block-level elements.</p>
+    <p>A 1.5rem baseline grid is used for achieving a consistent vertical rhythm on all block-level elements.</p>
 
     <style-wrapper header="Typefaces" description="Our standard typeface is Arial.  Arial is a sans-serif typeface.">
       <div slot="exampleSlot">
-        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>{{alphabetText.toUpperCase()}}</p>
+        <p>{{alphabetText}}</p>
         <p>0 1 2 3 4 5 6 7 8 9</p>
       </div>
       <code-snippet slot="codeSlot">
@@ -30,7 +30,10 @@
       </code-snippet>
     </style-wrapper>
 
-    <style-wrapper header="Font weight" description="There are x font weights available to use.">
+    <style-wrapper header="Font weight">
+      <div slot="descriptionSlot">
+        <p>There are 2 font weights available to use for body text.</p>
+      </div>
       <div slot="exampleSlot">
         <p class="">Normal weight text</p>
         <p class="sg-font--bold">Bold weight text</p>
@@ -69,7 +72,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper';
+  import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
@@ -80,8 +83,10 @@
     mixins: [returnFormattedCodeString],
     data: function () {
       const pangramText = 'Pack my box with five dozen liquor jugs';
+      const alphabetText = 'a b c d e f g h i j k l m n o p q r s t u v w x y z';
       return {
         pangramText,
+        alphabetText,
         typeface: [
           new ElementExample('...', '', 'p')
         ],

@@ -8,8 +8,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
-</style>
-
 <style scoped lang="scss">
+  .sg-code__section {
+    font-family: consolas, menlo, monaco, monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
 </style>

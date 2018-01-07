@@ -13,7 +13,7 @@
 
 <script>
   import Heading from '@/components/heading';
-  import ColorSwatch from '@/components/colorswatch';
+  import ColorSwatch from '@/components/color-swatch';
 
   export default {
     components: { Heading, ColorSwatch },

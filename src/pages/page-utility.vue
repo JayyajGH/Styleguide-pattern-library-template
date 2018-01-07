@@ -97,7 +97,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper';
+  import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';

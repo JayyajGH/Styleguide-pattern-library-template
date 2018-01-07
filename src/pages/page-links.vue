@@ -3,7 +3,7 @@
     <heading title="Links"></heading>
 
     <style-wrapper header="Link styles" description="Define a link style with link--regular, link--subtle, link--dark or link--phone">
-      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center u-flex sg-margin-bottom--none">
         <span>
           <a href="#" class="link link--regular sg-margin-bottom--none">Regular</a>
         </span>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper';
+  import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';

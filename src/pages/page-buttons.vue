@@ -13,7 +13,7 @@
           <li>A large button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bsize in buttonSize" class="sg-margin-bottom--medium">
           <button type="button" class="button button--simple button--primary" :class=bsize.style>{{bsize.content}}</button>
         </span>
@@ -34,7 +34,7 @@
           <li>A tertiary button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bimportant in buttonImportance" class="sg-margin-bottom--medium">
           <button type="button" class="button button--simple button--medium" :class=bimportant.style>{{bimportant.content}}</button>
         </span>
@@ -70,7 +70,7 @@
           <li>A ghost button is used...</li>
         </ul>
       </div>
-      <div slot="exampleSlot" class="sg-flex sg-flex-button u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-button u-flex sg-margin-bottom--none">
         <span v-for="bstyle in buttonStyle" class="sg-margin-bottom--medium">
           <button type="button" class="button button--medium" :class=bstyle.style>{{bstyle.content}}</button>
         </span>
@@ -83,7 +83,7 @@
     </style-wrapper>
 
     <style-wrapper header="Button grouping" description="Set a grouping container for buttons.  This will add the correct padding etc.">
-      <div slot="exampleSlot" class="sg-flex u-flex sg-margin-bottom--none">
+      <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center u-flex sg-margin-bottom--none">
         <span class="sg-margin-bottom--medium">
           <button type="button" class="button button--simple button--primary button--medium">Button</button>
         </span>
@@ -102,7 +102,7 @@
 </template>
 
 <script>
-  import StyleWrapper from '@/components/stylewrapper';
+  import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';

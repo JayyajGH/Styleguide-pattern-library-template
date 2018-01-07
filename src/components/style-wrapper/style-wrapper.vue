@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  name: 'StyleWrapper',
   props: {
     header: {
       type: String,
