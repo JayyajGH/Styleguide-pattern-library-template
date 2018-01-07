@@ -2,7 +2,7 @@
   <div id="links" class="spa-page">
     <heading title="Links"></heading>
 
-    <style-wrapper header="Link styles" description="Define a link style with link--regular, link--subtle, link--dark or link--phone">
+    <style-wrapper :header=link.title :description=link.description>
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center u-flex sg-margin-bottom--none">
         <span>
           <a href="#" class="link link--regular sg-margin-bottom--none">Regular</a>
@@ -26,7 +26,7 @@
       </div>
 
       <code-snippet slot="codeSlot">
-        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(link, '')" class="sg-margin-bottom--none"></div>
+        <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(link.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
 
     </style-wrapper>
@@ -45,13 +45,17 @@
     mixins: [returnFormattedCodeString],
     data: function () {
       return {
-        link: [
-          new ElementExample('Regular', 'link link--regular', 'a'),
-          new ElementExample('Subtle', 'link link--subtle', 'a'),
-          new ElementExample('Dark', 'link link--dark', 'a'),
-          new ElementExample('No decoration', 'link link--regular u-text-decoration--none', 'a'),
-          new ElementExample('0800 111111', 'link link--phone', 'a')
-        ]
+        link: {
+          title: 'Link styles',
+          description: 'Define a link style with link--regular, link--subtle, link--dark or link--phone',
+          elements: [
+            new ElementExample('Regular', 'link link--regular', 'a'),
+            new ElementExample('Subtle', 'link link--subtle', 'a'),
+            new ElementExample('Dark', 'link link--dark', 'a'),
+            new ElementExample('No decoration', 'link link--regular u-text-decoration--none', 'a'),
+            new ElementExample('0800 111111', 'link link--phone', 'a')
+          ]
+        }
       };
     }
   };
