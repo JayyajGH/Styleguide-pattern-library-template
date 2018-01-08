@@ -4,6 +4,8 @@
 
     <p>A 1.5rem baseline grid is used for achieving a consistent vertical rhythm on all block-level elements.</p>
 
+    <p>Add some information on the font licencing</p>
+
     <style-wrapper :header=typeface.title :description=typeface.description>
       <div slot="exampleSlot">
         <p>{{alphabetText.toUpperCase()}}</p>
