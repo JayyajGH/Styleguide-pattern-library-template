@@ -1,7 +1,9 @@
 <template>
   <div id="borders" class="spa-page">
 
-    <heading title="Borders"></heading>
+    <heading title="Borders and lines"></heading>
+
+    <p>Describe how and when each border type should be used...</p>
 
     <style-wrapper v-for="section in sections" :header=section.title :description=section.description :key=section.title>
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-border sg-flex--wrap u-flex">
