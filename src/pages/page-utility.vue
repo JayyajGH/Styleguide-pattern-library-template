@@ -14,7 +14,7 @@
     <style-wrapper :header=blockContentAlignment.title :description=blockContentAlignment.description>
       <div slot="exampleSlot" v-for="item in blockContentAlignment.elements">
         <utility-example :title=item.content :styling="[item.style, blockContentAlignment.commonClasses]" :element=item.element></utility-example>
-        </div>
+      </div>
       <code-snippet slot="codeSlot">
         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(blockContentAlignment.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
@@ -69,10 +69,8 @@
     </style-wrapper>
 
     <style-wrapper :header=transformation.title :description=transformation.description>
-      <div slot="exampleSlot">
-        <p class="u-text-lowercase">Lowercase text</p>
-        <p class="u-text-uppercase">Uppercase text</p>
-        <p class="u-text-capitalize">Capitalized text</p>
+      <div slot="exampleSlot" v-for="item in transformation.elements">
+        <utility-example :title=item.content :styling=item.style :element=item.element></utility-example>
       </div>
       <code-snippet slot="codeSlot">
         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(transformation.elements, '')" class="sg-margin-bottom--none"></div>
