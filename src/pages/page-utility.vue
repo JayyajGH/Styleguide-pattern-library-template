@@ -3,10 +3,8 @@
     <heading title="Utility Classes"></heading>
 
     <style-wrapper :header=inlineContentAlignment.title :description=inlineContentAlignment.description>
-      <div slot="exampleSlot">
-        <p class="u-align--left">Left aligned text</p>
-        <p class="u-align--center">Center aligned text</p>
-        <p class="u-align--right">Right aligned text</p>
+      <div slot="exampleSlot" v-for="item in inlineContentAlignment.elements">
+        <utility-example :title=item.content :styling=item.style :element=item.element></utility-example>
       </div>
       <code-snippet slot="codeSlot">
         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(inlineContentAlignment.elements, '')" class="sg-margin-bottom--none"></div>
@@ -14,9 +12,9 @@
     </style-wrapper>
 
     <style-wrapper :header=blockContentAlignment.title :description=blockContentAlignment.description>
-      <div slot="exampleSlot">
-        <div class="sg-utility-block border--solid border-width--thin border-color--black u-block--center"></div>
-      </div>
+      <div slot="exampleSlot" v-for="item in blockContentAlignment.elements">
+        <utility-example :title=item.content :styling="[item.style, blockContentAlignment.commonClasses]" :element=item.element></utility-example>
+        </div>
       <code-snippet slot="codeSlot">
         <div slot="codeSnippetSlot" v-html="returnFormattedCodeString(blockContentAlignment.elements, '')" class="sg-margin-bottom--none"></div>
       </code-snippet>
@@ -102,9 +100,10 @@
   import CodeSnippet from '@/components/codesnippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
+  import UtilityExample from '@/components/utilityexample';
 
   export default {
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, Heading, CodeSnippet, UtilityExample },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {
@@ -120,8 +119,9 @@
         blockContentAlignment: {
           title: 'Block element alignment',
           description: 'The following class is used to align block elements',
+          commonClasses: 'sg-utility-block border--solid border-width--thin border-color--black',
           elements: [
-            new ElementExample('...', 'u-block--center', 'div')
+            new ElementExample('', 'u-block--center', 'div')
           ]
         },
         floatBlock: {
