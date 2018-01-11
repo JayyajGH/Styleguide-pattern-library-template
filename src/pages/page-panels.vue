@@ -53,7 +53,7 @@
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
-  import CodeSnippet from '@/components/codesnippet';
+  import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
     components: { StyleWrapper, Heading, CodeSnippet },

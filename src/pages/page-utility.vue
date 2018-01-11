@@ -95,7 +95,7 @@
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import Heading from '@/components/heading';
-  import CodeSnippet from '@/components/codesnippet';
+  import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
   import UtilityExample from '@/components/utilityexample';

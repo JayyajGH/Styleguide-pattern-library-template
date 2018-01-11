@@ -74,7 +74,7 @@
 
 <script>
   import Heading from '@/components/heading';
-  import CodeSnippet from '@/components/codesnippet';
+  import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
     components: { Heading, CodeSnippet },
