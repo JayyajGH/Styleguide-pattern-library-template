@@ -22,7 +22,7 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import BorderExample from '@/components/borderexample';
+  import BorderExample from '@/components/border-example';
   import Heading from '@/components/heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
