@@ -47,6 +47,7 @@
   import Heading from '@/components/heading';
 
   export default {
+    name: 'PageLanguage',
     components: { Heading }
   };
 </script>

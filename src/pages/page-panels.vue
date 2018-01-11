@@ -56,6 +56,7 @@
   import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
+    name: 'PagePanels',
     components: { StyleWrapper, Heading, CodeSnippet },
     computed: {
       heroPanelCodeSnippet: function () {

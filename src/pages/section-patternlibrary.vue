@@ -16,6 +16,9 @@
 </template>
 
 <script>
+  export default {
+    name: 'SectionPatternLibrary'
+  };
 </script>
 
 <style>

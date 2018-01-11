@@ -29,6 +29,7 @@
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
+    name: 'PageBorders',
     components: { StyleWrapper, BorderExample, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {

@@ -16,6 +16,7 @@
   import ColorSwatch from '@/components/color-swatch';
 
   export default {
+    name: 'PageColours',
     components: { Heading, ColorSwatch },
     data: function () {
       return {

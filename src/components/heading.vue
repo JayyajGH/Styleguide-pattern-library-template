@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'Heading',
   props: {
     title: String,
     isMainHeading: {

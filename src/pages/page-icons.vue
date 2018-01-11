@@ -11,6 +11,7 @@
   import Heading from '@/components/heading';
 
   export default {
+    name: 'PageIcons',
     components: { Heading }
   };
 </script>

@@ -37,6 +37,7 @@
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
+    name: 'PageLists',
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {

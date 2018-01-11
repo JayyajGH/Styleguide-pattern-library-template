@@ -77,6 +77,7 @@
   import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
+    name: 'PageLayout',
     components: { Heading, CodeSnippet },
     computed: {
       layoutCodeSnippet: function () {

@@ -48,6 +48,7 @@
   import Heading from '@/components/heading';
 
   export default {
+    name: 'PageForms',
     components: { Heading }
   };
 </script>

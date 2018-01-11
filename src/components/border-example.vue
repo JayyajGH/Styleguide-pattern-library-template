@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'BorderExample',
   props: {
     title: String,
     styling: [String, Array]

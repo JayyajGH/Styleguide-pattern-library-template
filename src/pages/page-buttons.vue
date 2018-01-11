@@ -109,6 +109,7 @@
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
+    name: 'PageButtons',
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {

@@ -41,6 +41,7 @@
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
+    name: 'PageLinks',
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {

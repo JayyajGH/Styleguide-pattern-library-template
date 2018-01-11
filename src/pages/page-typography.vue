@@ -81,6 +81,7 @@
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
+    name: 'PageTypography',
     components: { StyleWrapper, Heading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {

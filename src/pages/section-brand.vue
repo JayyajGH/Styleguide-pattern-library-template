@@ -9,6 +9,9 @@
 </template>
 
 <script>
+  export default {
+    name: 'SectionBrand'
+  };
 </script>
 
 <style scoped lang="scss">

@@ -8,12 +8,10 @@
   import Heading from '@/components/heading';
 
   export default {
+    name: 'PageNavigation',
     components: { Heading }
   };
 </script>
-
-<style>
-</style>
 
 <style scoped lang="scss">
 </style>

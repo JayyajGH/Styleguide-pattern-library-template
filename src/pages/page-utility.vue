@@ -101,6 +101,7 @@
   import UtilityExample from '@/components/utility-example';
 
   export default {
+    name: 'PageUtility',
     components: { StyleWrapper, Heading, CodeSnippet, UtilityExample },
     mixins: [returnFormattedCodeString],
     data: function () {
