@@ -4,9 +4,20 @@
 The style wrapper component...
 
 ## Usage
+
+### Props
 <style-wrapper> supports the following custom component attributes:
 
-| attribute   | type   | description                                |
-| ----------- | ------ | ------------------------------------------ |
-| header      | String | The text to display in the section heading |
-| description | String | The description of the section             |
+| attribute   | type   | mandatory | description                                |
+| ----------- | ------ | --------- | ------------------------------------------ |
+| header      | String | true      | The text to display in the section heading |
+| description | String | false     | The description of the section. A more detailed description can be provided using the descriptionSlot  |
+
+### Slots
+<code-snippet> supports the following slots:
+
+| slot name        | description                                                          |
+| ---------------- | -------------------------------------------------------------------- |
+| descriptionSlot  |  Holds a description of the section. A simple description can be provided using the description property |
+| exampleSlot      |  Holds HTML containing the details of the section                    |
+| codeSlot         |  Holds the contents to be passed to the Code Snippet component       |
