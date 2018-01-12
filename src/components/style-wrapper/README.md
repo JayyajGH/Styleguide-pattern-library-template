@@ -1,7 +1,7 @@
 # Style Wrapper
 
 ## Functionality
-The style wrapper component...
+The style wrapper component provides a common container to display component examples with the associated HTML required to create the component.
 
 ## Usage
 
