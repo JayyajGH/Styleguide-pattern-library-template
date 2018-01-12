@@ -8,7 +8,10 @@
     props: {
       title: String,
       styling: [String, Array],
-      element: String
+      element: {
+        type: String,
+        required: true
+      }
     }
   };
 </script>

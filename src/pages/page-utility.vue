@@ -98,7 +98,7 @@
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
-  import UtilityExample from '@/components/utility-example';
+  import UtilityExample from '@/components/utility-example/utility-example';
 
   export default {
     name: 'PageUtility',

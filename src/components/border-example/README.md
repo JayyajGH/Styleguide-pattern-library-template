@@ -6,7 +6,7 @@ The Border Example component displays examples of how a specific border is displ
 ## Usage
 
 ### Props
-<border-example> supports the following custom component attributes:
+<border-example> supports the following props:
 
 | attribute  | type          | mandatory | description                                |
 | ---------- | ------------- | --------- | ------------------------------------------ |
@@ -14,5 +14,5 @@ The Border Example component displays examples of how a specific border is displ
 | styling    | String, Array | false     | A list of classes or an array of classes to style the border example  |
 
 ### Slots
-<code-snippet> supports the following slots:
+<border-example> supports the following slots:
 None
