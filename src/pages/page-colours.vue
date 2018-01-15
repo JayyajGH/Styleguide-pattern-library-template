@@ -13,7 +13,7 @@
 
 <script>
   import Heading from '@/components/heading';
-  import ColorSwatch from '@/components/color-swatch';
+  import ColorSwatch from '@/components/color-swatch/color-swatch';
 
   export default {
     name: 'PageColours',
