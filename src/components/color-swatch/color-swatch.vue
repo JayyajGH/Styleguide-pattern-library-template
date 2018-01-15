@@ -1,12 +1,12 @@
 <template>
   <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
-      :class="classObject" :style="{backgroundColor: hex}">
+      :class="classObject" :style="{backgroundColor: hexCode}">
     <div class="tone__name sg-paddingleft--medium sg-paddingright--medium">
-      <p class="sg-margin-bottom--none">{{text}}</p>
+      <p class="sg-margin-bottom--none">{{colorName}}</p>
     </div>
 
     <div class="tone__hexcode">
-      <p class="sg-margin-bottom--none">{{hex}}</p>
+      <p class="sg-margin-bottom--none">{{hexCode}}</p>
     </div>
   </li>
 </template>
@@ -15,9 +15,11 @@
 export default {
   name: 'ColorSwatch',
   props: {
-    text: String,
-    hex: String,
-    styling: String,
+    colorName: String,
+    hexCode: {
+      type: String,
+      required: true
+    },
     isBase: {
       type: Boolean,
       default: false

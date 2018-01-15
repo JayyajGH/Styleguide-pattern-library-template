@@ -4,7 +4,7 @@
 
     <section class="palette__container u-flex">
       <ul v-for="colour in colorList" class="palette sg-margin--medium">
-        <color-swatch v-for="item in colour" :text=item.name :hex=item.hex :styling=item.styling :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
+        <color-swatch v-for="item in colour" :colorName=item.name :hexCode=item.hex :isBase=item.isBase :isDarkColour=item.isDarkColour :isLightColour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
     </section>
 
