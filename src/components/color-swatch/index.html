@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Swatch demo</title>
+    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+  <body>
+    <div id="color-swatch-demo">
+      <h1>{{ msg }}</h1>
+      <!--<color-swatch color-name='Black' hex-code='#000' is-base=true is-dark-colour=true key='#000'></color-swatch>-->
+    </div>
+
+    <script>
+      new Vue({
+        el: "#color-swatch-demo",
+        data() {
+          return {
+            msg: "Hello World!"
+          }
+        }
+      });
+    </script>
+
+  </body>
+</html>
