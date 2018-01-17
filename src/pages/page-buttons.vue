@@ -35,8 +35,8 @@
         </ul>
       </div>
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center sg-flex-button u-flex sg-margin-bottom--none">
-        <span v-for="bimportant in buttonImportance.elements" class="sg-margin-bottom--medium">
-          <button type="button" :class="[bimportant.style, buttonImportance.commonClasses]">{{bimportant.content}}</button>
+        <span v-for="bimportance in buttonImportance.elements" class="sg-margin-bottom--medium">
+          <button type="button" :class="[bimportance.style, buttonImportance.commonClasses]">{{bimportance.content}}</button>
         </span>
       </div>
       <div slot="codeSlot">
