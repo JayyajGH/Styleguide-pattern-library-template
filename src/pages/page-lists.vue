@@ -19,6 +19,11 @@
           <li>Item 2</li>
         </ul>
 
+        <ol class="list list-ordered--decimal sg-margin-bottom--none">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+
       </div>
 
       <code-snippet slot="codeSlot">

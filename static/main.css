@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-�  v2.0b1 | 201101 
+/* http://meyerweb.com/eric/tools/css/reset/
+�  v2.0b1 | 201101
 �  NOTE: WORK IN PROGRESS
 �  USE WITH CAUTION AND TEST WITH ABANDON */
 html, body, div, span, applet, object, iframe,
@@ -42,7 +42,7 @@ q:before, q:after {
   content: '';
   content: none; }
 
-/* remember to define visible focus styles! 
+/* remember to define visible focus styles!
 :focus {
 	outline: ?????;
 } */
@@ -475,6 +475,9 @@ sub {
 
 .list--circle {
   list-style-type: circle; }
+
+.list-ordered--decimal {
+  list-style-type: decimal; }
 
 .border--solid {
   border-style: solid; }
