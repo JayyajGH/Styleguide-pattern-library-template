@@ -7,11 +7,14 @@
 
     <div class="tone__hexcode">
       <p class="sg-margin-bottom--none">{{hexCode}}</p>
+      <p class="sg-margin-bottom--none">{{converthextorgb}}</p>
     </div>
   </li>
 </template>
 
 <script>
+import Colr from 'Colr';
+
 export default {
   name: 'ColorSwatch',
   props: {
@@ -40,6 +43,10 @@ export default {
         'light-text': this.isDarkColour,
         'light-border': this.isLightColour
       };
+    },
+    converthextorgb: function () {
+      var colr = Colr.fromHex(this.hexCode);
+      return 'rgb(' + colr.toRgbArray() + ')';
     }
   }
 };
@@ -49,7 +56,7 @@ export default {
   @import 'static/sass/abstracts/_abstracts.scss';
 
   .tone {
-    width: 250px;
+    height: 75px;
 
     @include respond-to('medium and above') {
       width: 100px;

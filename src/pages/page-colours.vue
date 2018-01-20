@@ -78,7 +78,7 @@
 
     @include respond-to('medium and above') {
       flex-direction: row;
-      flex: 0 0 120px;
+      flex: 0 0 135px;
     }
 
     @include respond-to('large and above') {
