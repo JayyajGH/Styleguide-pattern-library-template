@@ -1,6 +1,6 @@
 <template>
   <div id="typography" class="spa-page">
-    <heading title="Typography"></heading>
+    <stroked-heading title="Typography"></stroked-heading>
 
     <p>A 1.5rem baseline grid is used for achieving a consistent vertical rhythm on all block-level elements.</p>
 
@@ -75,14 +75,14 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
     name: 'PageTypography',
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
       const pangramText = 'Pack my box with five dozen liquor jugs';

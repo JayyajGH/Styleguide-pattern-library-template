@@ -1,6 +1,6 @@
 <template>
   <div id="language" class="spa-page">
-    <heading title="Language"></heading>
+    <stroked-heading title="Language"></stroked-heading>
 
     <p>Refer to this guide when crafting language for "company".</p>
 
@@ -44,11 +44,11 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
 
   export default {
     name: 'PageLanguage',
-    components: { Heading }
+    components: { StrokedHeading }
   };
 </script>
 

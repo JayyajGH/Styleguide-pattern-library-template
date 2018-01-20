@@ -1,6 +1,6 @@
 <template>
   <div id="utility" class="spa-page">
-    <heading title="Utility Classes"></heading>
+    <stroked-heading title="Utility Classes"></stroked-heading>
 
     <style-wrapper :header=inlineContentAlignment.title :description=inlineContentAlignment.description>
       <div slot="exampleSlot" v-for="item in inlineContentAlignment.elements">
@@ -94,7 +94,7 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
@@ -102,7 +102,7 @@
 
   export default {
     name: 'PageUtility',
-    components: { StyleWrapper, Heading, CodeSnippet, UtilityExample },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet, UtilityExample },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {

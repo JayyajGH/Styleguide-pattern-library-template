@@ -1,6 +1,6 @@
 <template>
   <div id="forms" class="spa-page">
-    <heading title="Forms"></heading>
+    <stroked-heading title="Forms"></stroked-heading>
 
     <section>
       <header>
@@ -45,11 +45,11 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
 
   export default {
     name: 'PageForms',
-    components: { Heading }
+    components: { StrokedHeading }
   };
 </script>
 

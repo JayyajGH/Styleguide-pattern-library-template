@@ -1,7 +1,7 @@
 <template>
   <div id="borders" class="spa-page">
 
-    <heading title="Borders and lines"></heading>
+    <stroked-heading title="Borders and lines"></stroked-heading>
 
     <p>Describe how and when each border type should be used...</p>
 
@@ -23,14 +23,14 @@
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
   import BorderExample from '@/components/border-example/border-example';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
     name: 'PageBorders',
-    components: { StyleWrapper, BorderExample, Heading, CodeSnippet },
+    components: { StyleWrapper, BorderExample, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {

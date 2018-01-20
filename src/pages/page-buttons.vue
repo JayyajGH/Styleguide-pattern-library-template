@@ -1,6 +1,6 @@
 <template>
   <div id="buttons" class="spa-page">
-    <heading title="Buttons"></heading>
+    <stroked-heading title="Buttons"></stroked-heading>
 
     <p>These styles will work on the button element, an input element with a type of button and an anchor styled as a button</p>
 
@@ -103,14 +103,14 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
     name: 'PageButtons',
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {
       buttonGroupingCodeSnippet: function () {

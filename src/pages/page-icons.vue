@@ -1,6 +1,6 @@
 <template>
   <div id="icons" class="spa-page">
-    <heading title="Icons"></heading>
+    <stroked-heading title="Icons"></stroked-heading>
 
     <h2 class="header2">Social Icons</h2>
     <h2 class="header2">General</h2>
@@ -8,11 +8,11 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
 
   export default {
     name: 'PageIcons',
-    components: { Heading }
+    components: { StrokedHeading }
   };
 </script>
 

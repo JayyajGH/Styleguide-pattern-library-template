@@ -1,7 +1,7 @@
 <template>
   <div id="borders" class="spa-page">
 
-    <heading title="Panels"></heading>
+    <stroked-heading title="Panels"></stroked-heading>
 
     <style-wrapper header="Hero panels" description="These panels are used as the page hero.">
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound panel-flex u-flex">
@@ -52,12 +52,12 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
     name: 'PagePanels',
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet },
     computed: {
       heroPanelCodeSnippet: function () {
         return `&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;

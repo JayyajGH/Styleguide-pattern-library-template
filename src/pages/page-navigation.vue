@@ -1,15 +1,15 @@
 <template>
   <div id="forms" class="spa-page">
-    <heading title="Navigation"></heading>
+    <stroked-heading title="Navigation"></stroked-heading>
   </div>
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
 
   export default {
     name: 'PageNavigation',
-    components: { Heading }
+    components: { StrokedHeading }
   };
 </script>
 

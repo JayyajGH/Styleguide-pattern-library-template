@@ -1,6 +1,6 @@
 <template>
   <div id="layout" class="spa-page">
-    <heading title="Layout"></heading>
+    <stroked-heading title="Layout"></stroked-heading>
 
     <p>Uniform spacing.  How to add padding/margins etc.</p>
 
@@ -73,12 +73,12 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
 
   export default {
     name: 'PageLayout',
-    components: { Heading, CodeSnippet },
+    components: { StrokedHeading, CodeSnippet },
     computed: {
       layoutCodeSnippet: function () {
         return `${this.layoutCodeSnippet}`;

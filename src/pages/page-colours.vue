@@ -1,6 +1,6 @@
 <template>
   <div id="colours" class="spa-page">
-    <heading title="Colours"></heading>
+    <stroked-heading title="Colours"></stroked-heading>
 
     <section class="palette__container u-flex">
       <ul v-for="colour in colorList" class="palette sg-margin--medium">
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import ColorSwatch from '@/components/color-swatch/color-swatch';
 
   export default {
     name: 'PageColours',
-    components: { Heading, ColorSwatch },
+    components: { StrokedHeading, ColorSwatch },
     data: function () {
       return {
         colorList: [

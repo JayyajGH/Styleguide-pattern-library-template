@@ -1,6 +1,6 @@
 <template>
   <div id="lists" class="spa-page">
-    <heading title="Lists"></heading>
+    <stroked-heading title="Lists"></stroked-heading>
 
     <style-wrapper header="List styles" description="Define a list style with list--disc or list--circle">
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound u-flex sg-margin-bottom--none">
@@ -31,14 +31,14 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
     name: 'PageLists',
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {
       listCodeSnippet: function () {

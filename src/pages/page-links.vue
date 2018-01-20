@@ -1,6 +1,6 @@
 <template>
   <div id="links" class="spa-page">
-    <heading title="Links"></heading>
+    <stroked-heading title="Links"></stroked-heading>
 
     <style-wrapper :header=link.title :description=link.description>
       <div slot="exampleSlot" class="sg-flex--main-axis-spacearound sg-flex--cross-axis-center u-flex sg-margin-bottom--none">
@@ -35,14 +35,14 @@
 
 <script>
   import StyleWrapper from '@/components/style-wrapper/style-wrapper';
-  import Heading from '@/components/heading';
+  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import CodeSnippet from '@/components/code-snippet/code-snippet';
   import returnFormattedCodeString from '@/components/mixins/codestring';
   import ElementExample from '@/components/classes/elementexample';
 
   export default {
     name: 'PageLinks',
-    components: { StyleWrapper, Heading, CodeSnippet },
+    components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     data: function () {
       return {

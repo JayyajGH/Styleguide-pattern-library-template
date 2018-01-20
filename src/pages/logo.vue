@@ -1,6 +1,6 @@
 <template>
   <div id="logo" class="spa-page">
-    <stroked-heading title="Logo"></stroked-heading>
+    <heading title="Logo"></heading>
 
     <section>
       <header>
@@ -55,11 +55,10 @@
 </template>
 
 <script>
-  import StrokedHeading from '@/components/stroked-heading/stroked-heading';
+  import Heading from '@/components/heading';
 
   export default {
-    name: 'PageLogo',
-    components: { StrokedHeading }
+    components: { Heading }
   };
 </script>
 
