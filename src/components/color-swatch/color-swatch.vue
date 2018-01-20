@@ -1,5 +1,5 @@
 <template>
-  <li class="tone list--none u-align--center sg-paddingtop--large sg-paddingbottom--large"
+  <li class="tone list--none u-align--center"
       :class="classObject" :style="{backgroundColor: hexCode}">
     <div class="tone__name sg-paddingleft--medium sg-paddingright--medium">
       <p class="sg-margin-bottom--none">{{colorName}}</p>
@@ -57,9 +57,12 @@ export default {
 
   .tone {
     height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include respond-to('medium and above') {
-      width: 100px;
+      width: 130px;
     }
 
     @include respond-to('large and above') {
@@ -85,6 +88,8 @@ export default {
   .tone__hexcode {
     display: none;
     margin-bottom: 0;
+    font-size : 15px;
+    font-weight: 400;
   }
 
   .sg-base-color {
