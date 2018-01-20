@@ -89,7 +89,7 @@ export default {
     display: none;
     margin-bottom: 0;
     font-size : 15px;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .sg-base-color {
