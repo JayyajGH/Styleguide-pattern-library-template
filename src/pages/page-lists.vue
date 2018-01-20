@@ -49,9 +49,10 @@
       listCodeSnippet: function () {
         const items = this.returnFormattedCodeString(this.listItems, '', '&nbsp;&nbsp;');
 
-        return `${this.list.listDisc}\n${items}\n${this.list.listEndList}\n
-${this.list.listCircle}\n${items}}\n${this.list.listEndList}\n
-${this.list.listNone}\n${items}}\n${this.list.listEndList}`;
+        return `${this.list.listDisc}\n${items}\n${this.list.listUnorderedEndList}\n
+${this.list.listCircle}\n${items}}\n${this.list.listUnorderedEndList}\n
+${this.list.listNone}\n${items}}\n${this.list.listUnorderedEndList}\n
+${this.list.listOrderedDecimal}\n${items}}\n${this.list.listOrderedEndList}`;
       }
     },
     data: function () {
@@ -60,7 +61,9 @@ ${this.list.listNone}\n${items}}\n${this.list.listEndList}`;
           listDisc: '&lt;ul class="list list--disc"&gt;',
           listCircle: '&lt;ul class="list list--circle"&gt;',
           listNone: '&lt;ul class="list list--none"&gt;',
-          listEndList: '&lt;/ul&gt;'
+          listUnorderedEndList: '&lt;/ul&gt;',
+          listOrderedEndList: '&lt;/ol&gt;',
+          listOrderedDecimal: '&lt;ol class="list list-ordered--decimal"&gt;'
         },
         listItems: [
           new ElementExample('Item 1', '', 'li'),
