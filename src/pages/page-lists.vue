@@ -46,7 +46,7 @@
     components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {
-      listCodeSnippet: function () {
+      listCodeSnippet () {
         const items = this.returnFormattedCodeString(this.listItems, '', '&nbsp;&nbsp;');
 
         return `${this.list.listDisc}\n${items}\n${this.list.listUnorderedEndList}\n

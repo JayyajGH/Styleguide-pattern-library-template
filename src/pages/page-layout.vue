@@ -80,7 +80,7 @@
     name: 'PageLayout',
     components: { StrokedHeading, CodeSnippet },
     computed: {
-      layoutCodeSnippet: function () {
+      layoutCodeSnippet () {
         return `${this.layoutCodeSnippet}`;
       }
     },
