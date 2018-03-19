@@ -13,7 +13,7 @@ function generateRequiredClasses (style, additionalClasses) {
 
 export default {
   methods: {
-    returnFormattedCodeString: function (snippetList, additionalClasses, elementPrefix) {
+    returnFormattedCodeString (snippetList, additionalClasses, elementPrefix) {
       let codeSnippetList = [];
       let codeSnippetString = ``;
 

@@ -59,11 +59,11 @@
     name: 'PagePanels',
     components: { StyleWrapper, StrokedHeading, CodeSnippet },
     computed: {
-      heroPanelCodeSnippet: function () {
+      heroPanelCodeSnippet () {
         return `&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
 &lt;panel class="panel panel--hero"&gt;...&lt;/panel&gt;`;
       },
-      promoPanelCodeSnippet: function () {
+      promoPanelCodeSnippet () {
         return `&sol;&ast; This code is for demo purposes only.  These classes only exist for the purpose of demonstration &ast;&sol;
 &lt;panel class="panel panel--promo"&gt;...&lt;/panel&gt;`;
       }

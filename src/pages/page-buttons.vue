@@ -113,7 +113,7 @@
     components: { StyleWrapper, StrokedHeading, CodeSnippet },
     mixins: [returnFormattedCodeString],
     computed: {
-      buttonGroupingCodeSnippet: function () {
+      buttonGroupingCodeSnippet () {
         const buttons = this.returnFormattedCodeString(this.buttonGroup.elements, 'button button--simple button--primary button--medium', '&nbsp;&nbsp;');
 
         return `&lt;div class="button--group"&gt;\n${buttons}\n&lt;/div&gt;`;
