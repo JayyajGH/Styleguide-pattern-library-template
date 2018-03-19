@@ -2,9 +2,22 @@
   <div id="colours" class="spa-page">
     <stroked-heading title="Colours"></stroked-heading>
 
+    <table>
+      <tr>
+        <th class="color-format__item color-format__header">Hex</th>
+        <th class="color-format__item color-format__header">RGB</th>
+        <th class="color-format__item color-format__header">HSL</th>
+      </tr>
+      <tr>
+        <td class="color-format__item">{{hexcode}}</td>
+        <td class="color-format__item">{{rgbcode}}</td>
+        <td class="color-format__item">{{hslcode}}</td>
+      </tr>
+    </table>
+
     <section class="palette__container u-flex">
       <ul v-for="colour in colorList" class="palette sg-margin--medium">
-        <color-swatch v-for="item in colour" :color-name=item.name :hex-code=item.hex :is-base=item.isBase :is-dark-colour=item.isDarkColour :is-light-colour=item.isLightColour :key=item.hex></color-swatch>
+        <color-swatch @mouseover.native="showme(item.hex)"  v-for="item in colour" :color-name=item.name :hex-code=item.hex :is-base=item.isBase :is-dark-colour=item.isDarkColour :is-light-colour=item.isLightColour :key=item.hex></color-swatch>
       </ul>
     </section>
 
@@ -12,6 +25,7 @@
 </template>
 
 <script>
+  import Colr from 'Colr';
   import StrokedHeading from '@/components/stroked-heading/stroked-heading';
   import ColorSwatch from '@/components/color-swatch/color-swatch';
 
@@ -19,7 +33,9 @@
     name: 'PageColours',
     components: { StrokedHeading, ColorSwatch },
     data: function () {
+      var cde = '#FFF';
       return {
+        cde,
         colorList: [
           [
             {name: 'White Base', hex: '#FFF', isBase: true, isLightColour: true}
@@ -51,8 +67,27 @@
           ]
         ]
       };
+    },
+    computed: {
+      hexcode: function () {
+        return this.cde;
+      },
+      rgbcode: function () {
+        var colr = Colr.fromHex(this.cde);
+        return 'rgb(' + colr.toRgbArray() + ')';
+      },
+      hslcode: function () {
+        var colr = Colr.fromHex(this.cde);
+        return 'hsl(' + colr.toHslArray() + ')';
+      }
+    },
+    methods: {
+      showme: function (hex) {
+        this.cde = hex;
+      }
     }
   };
+
 </script>
 
 <style scoped lang="scss">
@@ -85,4 +120,14 @@
       display: block;
     }
   }
+
+ .color-format__header {
+   background-color: color('grey', 'light')
+ }
+
+ .color-format__item {
+     border: 1px solid black;
+     padding: 5px;
+     width: 150px;
+   }
 </style>

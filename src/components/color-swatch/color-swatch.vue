@@ -7,7 +7,6 @@
 
     <div class="tone__hexcode">
       <p class="sg-margin-bottom--none">{{hexCode}}</p>
-      <p class="sg-margin-bottom--none">{{converthextorgb}}</p>
     </div>
   </li>
 </template>
