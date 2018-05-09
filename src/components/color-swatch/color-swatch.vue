@@ -36,14 +36,14 @@ export default {
     }
   },
   computed: {
-    classObject: function () {
+    classObject () {
       return {
         'sg-base-color': this.isBase,
         'light-text': this.isDarkColour,
         'light-border': this.isLightColour
       };
     },
-    converthextorgb: function () {
+    converthextorgb () {
       var colr = Colr.fromHex(this.hexCode);
       return 'rgb(' + colr.toRgbArray() + ')';
     }

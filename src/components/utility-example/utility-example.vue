@@ -1,7 +1,7 @@
 
 <script>
   export default {
-    render: function (createElement) {
+    render (createElement) {
       return createElement(this.element, {'class': this.styling}, this.title);
     },
     name: 'UtilityExample',

@@ -69,20 +69,20 @@
       };
     },
     computed: {
-      hexcode: function () {
+      hexcode () {
         return this.cde;
       },
-      rgbcode: function () {
+      rgbcode () {
         var colr = Colr.fromHex(this.cde);
         return 'rgb(' + colr.toRgbArray() + ')';
       },
-      hslcode: function () {
+      hslcode () {
         var colr = Colr.fromHex(this.cde);
         return 'hsl(' + colr.toHslArray() + ')';
       }
     },
     methods: {
-      showme: function (hex) {
+      showme (hex) {
         this.cde = hex;
       }
     }
